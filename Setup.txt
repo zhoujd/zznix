@@ -1,0 +1,8 @@
+MinGW（Minimalist GNU for Windows）
+http://code.google.com/p/mingw/
+
+Git for Windows
+http://msysgit.github.io/
+http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git
+
+
