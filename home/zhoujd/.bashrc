@@ -13,4 +13,5 @@ else
   alias ll='ls -l'
 fi
 
+export LS_COLORS='di=1'
 
