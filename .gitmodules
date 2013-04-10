@@ -1,0 +1,7 @@
+[submodule "git"]
+	path = share/git
+	url = https://github.com/msysgit/git.git
+[submodule "zzemacs"]
+	path = home/zhoujd/zzemacs
+	url = https://github.com/zhoujd/zzemacs.git
+
