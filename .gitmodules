@@ -1,6 +1,3 @@
-[submodule "share/git"]
-	path = share/git
-	url = https://github.com/msysgit/git.git
 [submodule "home/zhoujd/zzemacs"]
 	path = home/zhoujd/zzemacs
 	url = https://github.com/zhoujd/zzemacs.git
