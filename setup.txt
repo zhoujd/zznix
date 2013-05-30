@@ -5,4 +5,7 @@ Git for Windows
 http://msysgit.github.io/
 http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git
 
+Putty && Xming for x11 forward
+http://www.straightrunning.com/XmingNotes/
+http://www.chiark.greenend.org.uk/~sgtatham/putty/
 
