@@ -1,0 +1,10 @@
+;;setting asdf libs path
+(require :asdf)
+(setf asdf:*central-registry*
+      ;; Default directories, usually just the ``current directory''
+      '(*default-pathname-defaults*
+
+        ;; Additional places where ASDF can find
+        ;; system definition files
+        #p"c:/lisp/systems/"
+        ))
