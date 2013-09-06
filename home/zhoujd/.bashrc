@@ -8,6 +8,7 @@ else
   PS1='\u@\h \w\$ '
 fi
 
+##for chinese file name show
 alias ls='ls --show-control-chars --color=auto'
 alias ll='ls -l'
 export LS_COLORS='di=1'
