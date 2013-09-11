@@ -9,7 +9,7 @@ else
 fi
 
 ##for chinese file name show
-alias ls='ls --show-control-chars --color=auto'
+alias ls='ls --show-control-chars --color=always'
 alias ll='ls -l'
 export LS_COLORS='di=1'
 
