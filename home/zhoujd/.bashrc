@@ -13,6 +13,7 @@ fi
 ##for chinese file name show
 alias ls='ls --show-control-chars --color=always'
 alias ll='ls -l'
+alias dir='ll'
 
 export LS_COLORS='di=1'
 
