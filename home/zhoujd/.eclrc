@@ -17,4 +17,5 @@
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
 
-
+(require :cmp)
+(setf C::*COMPILE-IN-CONSTANTS* t)
