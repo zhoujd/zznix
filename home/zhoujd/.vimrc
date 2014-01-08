@@ -10,7 +10,7 @@ endif
 
 "font setting
 set guifont=Consolas:h12:cANSI
-set guifontset=-*-Consolas-medium-r-normal--12-*-*-*-*-*-iso8859-1,fixed
+set guifontset=-*-Consolas-normal-r-normal--12-*-*-*-*-*-iso8859-1,fixed
 
 "color scheme setting
 colo desert
