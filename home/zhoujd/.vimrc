@@ -3,9 +3,9 @@ set nocompatible
 
 "windows os setting
 if !has("unix")
-    source $VIMRUNTIME/vimrc_example.vim
-    source $VIMRUNTIME/mswin.vim
-    behave mswin
+  source $VIMRUNTIME/vimrc_example.vim
+  source $VIMRUNTIME/mswin.vim
+  behave mswin
 endif
 
 "font setting
@@ -29,7 +29,7 @@ set shiftwidth=4
 set noexpandtab
 set smarttab
 if has("gui_running")
-	set number
+  set number
 endif
 set history=1000
 set ignorecase
