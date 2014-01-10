@@ -12,6 +12,9 @@ endif
 set guifont=Consolas:h12:cANSI
 set guifontset=-*-Consolas-normal-r-normal--12-*-*-*-*-*-iso8859-1,fixed
 
+"ui setting
+set shortmess=atI
+
 "color scheme setting
 colo desert
 
