@@ -1,36 +1,36 @@
 " Vim Setting for Zachary Zhou
 set nocompatible
 
-" windows os setting
+" OS(unix/win32) setting 
 if has("win32")
   source $VIMRUNTIME/vimrc_example.vim
   source $VIMRUNTIME/mswin.vim
   behave mswin
 endif
 
-" font setting
+" Font setting
 set guifont=Consolas:h12:cANSI
 set guifontset=-*-Consolas-normal-r-normal--12-*-*-*-*-*-iso8859-1,fixed
 
-" ui setting
+" UI setting
 set shortmess=atI
 set gcr=n:block-blinkon0
 set listchars=tab:\^\ ,trail:.,extends:>,precedes:<,eol:$
 
-" no scrollbar
+" No scrollbar
 set guioptions-=l
 set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
-" no menu toolbar
+" No menu toolbar
 "set guioptions-=m
 "set guioptions-=T
 
-" color scheme setting
+" Color scheme setting
 colo desert
 
-" other setting"
+" Other setting"
 set novisualbell
 set nobackup
 set noswapfile
@@ -52,13 +52,13 @@ set hlsearch
 set incsearch
 set gdefault
 
-" status line setting
+" Status line setting
 set statusline=%<%f%m%r\ %y\ (%{&fileformat})\ \ (ascii=\%b,hex=\%B)\ \ (%l,%c)\ %p%%\ \ %=[%{strftime(\"%H:%M,%d/%m/%Y\")}]
 set laststatus=2
 set cmdheight=1
 set ruler
 
-" diff setting
+" Diff setting
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
