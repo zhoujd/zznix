@@ -16,6 +16,7 @@ set guifontset=-*-Consolas-normal-r-normal--12-*-*-*-*-*-iso8859-1,fixed
 set shortmess=atI
 set gcr=n:block-blinkon0
 set listchars=tab:\^\ ,trail:.,extends:>,precedes:<,eol:$
+set lines=27 columns=108
 
 " No scrollbar
 set guioptions-=l
