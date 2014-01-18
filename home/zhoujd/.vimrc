@@ -19,10 +19,10 @@ set listchars=tab:\^\ ,trail:.,extends:>,precedes:<,eol:$
 set lines=27 columns=108
 
 " No scrollbar
-set guioptions-=l
-set guioptions-=L
-set guioptions-=r
-set guioptions-=R
+"set guioptions-=l
+"set guioptions-=L
+"set guioptions-=r
+"set guioptions-=R
 
 " No menu toolbar
 "set guioptions-=m
