@@ -9,12 +9,13 @@ if has("win32")
 endif
 
 " coding system
+let &termencoding=&encoding
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,sjis,cp936,big5,latin1,gbk
 
 " Font setting
-set guifont=Consolas:h12:cANSI
-set guifontset=-*-Consolas-normal-r-normal--12-*-*-*-*-*-iso8859-1,fixed
+set guifont=Microsoft\ YaHei\ Mono:h11:cANSI
+set guifontset=-*-Microsoft\ YaHei\ Mono-medium-r-normal--11-*-*-*-*-*-gb2312.1980-0,fixed
 
 " UI setting
 set shortmess=atI
