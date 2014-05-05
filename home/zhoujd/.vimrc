@@ -15,7 +15,7 @@ set fileencodings=ucs-bom,utf-8,sjis,cp936,big5,latin1,gbk
 
 " Font setting
 set guifont=Microsoft\ YaHei\ Mono:h11:cANSI
-set guifontset=-*-Microsoft\ YaHei\ Mono-medium-r-normal--11-*-*-*-*-*-gb2312.1980-0,fixed
+set guifontset=-*-Microsoft\ YaHei\ Mono-medium-r-normal--11-*-*-*-*-*-iso8859-1,fixed
 
 " UI setting
 set shortmess=atI
