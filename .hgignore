@@ -11,7 +11,8 @@ home/zhoujd/.slime-history.eld
 home/zhoujd/.smex-items
 home/zhoujd/.hgrc
 home/zhoujd/.gitk
-home/zhoujd/hg-serve.pid
+hg-serve.pid
+Multiviewer.config
 
 syntax: regexp
 .elc
