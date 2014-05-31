@@ -1,10 +1,15 @@
 @echo off
 
+set temp_file=temp.log
+
 echo setup start ...
 echo pwd %CD%
 
 echo add %CD%\bin to user path
 bin\add_path.exe /user %CD%\bin
+
+echo add %CD%\cmd to user path
+bin\add_path.exe /user %CD%\cmd
 
 echo add %CD%\home\zhoujd\zzemacs\bin to user path
 bin\add_path.exe /user %CD%\home\zhoujd\zzemacs\bin
@@ -43,12 +48,17 @@ echo import reg file: ms_dos.reg
 reg import misc\ms_dos.reg
 
 echo install git-core
-bin\7z.exe x -y libexec\git-core.7z -olibexec
+bin\7z.exe x -y libexec\git-core.7z -olibexec > %temp_file%
 
 echo install lib
-bin\7z.exe x -y lib\lib.7z -olib
+bin\7z.exe x -y lib\lib.7z -olib > %temp_file%
+
+rem clean temp file
+del %temp_file%
 
 echo setup end ...
 pause
+
+set temp_file=
 
 @echo on
