@@ -25,7 +25,11 @@ localhost:0
 
     <http://ftp.gnome.org/pub/gnome/binaries/win32/gedit/>
 
-5. Others
+5. Fiddler web debugger
+
+    <http://www.telerik.com/download/fiddler>
+
+6. Others
 
     <http://superuser.com/><br>
     <http://stackoverflow.com/><br>
