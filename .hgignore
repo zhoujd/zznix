@@ -21,6 +21,7 @@ lib/perl5
 lib/tcl8
 lib/tcl8.5
 lib/tk8.5
+PUTTY.chw
 
 syntax: regexp
 .elc

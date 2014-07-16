@@ -20,7 +20,10 @@ alias lt='ls -ltr'       # sort by date
 alias lm='ls -al | more' # pipeline to more
 alias tree='tree -Csu'   # another better way for 'ls'
 
-alias sshX='ssh +X'
+alias sshX='ssh2 +X'
+alias psshX='putty -X -ssh'
+alias pserial='putty -sercfg 19200,8,n,1,N -serial'
+alias ifconfig='ipconfig'
 alias pwd='pwd -W'       # only on win7
 
 alias h='history'
