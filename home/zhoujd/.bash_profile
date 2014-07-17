@@ -12,7 +12,7 @@ $ '
 
 # set window title
 TITLEBAR='\[\033]0; $(prompt_short)\007\]'
-PS1="${TITLEBAR}"${PS1}
+PS1=${TITLEBAR}${PS1}
 
 if [ -f ${HOME}/.bashrc ] ; then
     . ${HOME}/.bashrc
