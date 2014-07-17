@@ -1,0 +1,4 @@
+#!/bin/sh
+# ifconfig -> ipconfig on win7
+
+$COMSPEC //C ipconfig
