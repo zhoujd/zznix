@@ -22,6 +22,7 @@ alias tree='tree -Csu'   # another better way for 'ls'
 
 alias sshX='ssh2 +X'
 alias psshX='putty -X -ssh'
+alias putty='putty -load x11-forward'
 alias pserial='putty -sercfg 19200,8,n,1,N -serial'
 alias ifconfig='ipconfig' # only on win7
 alias pwd='pwd -W'        # only on win7
