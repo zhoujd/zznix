@@ -19,5 +19,12 @@ if [ -f ${HOME}/.bashrc ] ; then
 fi
 
 # Git ssh tool select
-#GIT_SSH=/share/putty/TortoisePlink
-#GIT_SSH=/bin/ssh
+GITSSH_SELECT=""
+case "$GITSSH_SELECT" in
+    "plink" | "PLINK" )
+        export GIT_SSH="/share/putty/TortoisePlink -ssh 2"
+        ;;
+    "ssh" | "SSH" )
+        export GIT_SSH="/bin/ssh"
+        ;;
+esac
