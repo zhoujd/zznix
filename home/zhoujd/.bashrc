@@ -47,3 +47,6 @@ export PLINK_PROTOCOL=ssh
 
 # set git editor
 export GIT_EDITOR="nano"
+
+# set hg editor
+export HGEDITOR="nano"
