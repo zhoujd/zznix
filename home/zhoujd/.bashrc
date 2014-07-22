@@ -30,6 +30,7 @@ alias path='echo -e ${PATH//:/\\n}'
 alias du='du -kh'
 alias df='df -kTh'
 alias cls='clear'
+alias nano='nano -w'
 
 # set ls folder color
 export MAKE_MODE=unix
