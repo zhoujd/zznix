@@ -8,35 +8,16 @@ fi
 # for chinese file name show
 alias ls='ls -hF --show-control-chars --color=always'
 alias ll='ls -l'
-alias dir='ls -C'
-
-alias la='ls -Al'        # show hide files
-alias lx='ls -lXB'       # sort by extend
-alias lk='ls -lSr'       # sort by size
-alias lc='ls -lcr'       # sort by time
-alias lu='ls -lur'       # sort by access time
-alias lr='ls -lR'        # recurse ls
-alias lt='ls -ltr'       # sort by date
-alias lm='ls -al | more' # pipeline to more
-alias tree='tree -Csu'   # another better way for 'ls'
+alias dir='ls -C'        # only on win7
 alias pwd='pwd -W'       # only on win7
-
-alias h='history'
-alias j='jobs -l'
-alias r='rlogin'
-alias which='type -all'
-alias ..='cd ..'
-alias path='echo -e ${PATH//:/\\n}'
-alias du='du -kh'
-alias df='df -kTh'
-alias cls='clear'
+alias cls='clear'        # only on win7
 alias nano='nano -w'
+alias more='less'
 
 # set ls folder color
 export MAKE_MODE=unix
 
 # set default options for 'less'
-alias more='less'
 export PAGER=less
 export LESS=-FRSX
 export LESSCHARSET=utf-8
@@ -48,7 +29,7 @@ export PLINK_PROTOCOL=ssh
 export GIT_EDITOR="nano"
 export HGEDITOR="nano"
 
-# Git ssh tool select
+# git ssh tool select
 case "$GITSSH_SELECT" in
     "plink" | "PLINK" )
         export GIT_SSH="/share/putty/TortoisePlink -ssh 2"
@@ -58,7 +39,7 @@ case "$GITSSH_SELECT" in
         ;;
 esac
 
-# Shell directory bookmark
+# shell directory bookmark
 if [ -e $HOME/zzemacs/misc/.bashrc ] ; then
     . $HOME/zzemacs/misc/.bashrc
 fi
