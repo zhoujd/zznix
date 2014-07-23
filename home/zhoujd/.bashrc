@@ -45,8 +45,17 @@ export LESSCHARSET=utf-8
 # set default protocol for 'plink'
 export PLINK_PROTOCOL=ssh
 
-# set git editor
+# set git && hg editor
 export GIT_EDITOR="nano"
-
-# set hg editor
 export HGEDITOR="nano"
+
+# Git ssh tool select
+case "$GITSSH_SELECT" in
+    "plink" | "PLINK" )
+        export GIT_SSH="/share/putty/TortoisePlink -ssh 2"
+        ;;
+    "ssh" | "SSH" )
+        export GIT_SSH="/bin/ssh"
+        ;;
+esac
+
