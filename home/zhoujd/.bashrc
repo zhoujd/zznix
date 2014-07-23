@@ -59,3 +59,7 @@ case "$GITSSH_SELECT" in
         ;;
 esac
 
+# Shell directory bookmark
+if [ -e $HOME/zzemacs/bin/bashmarks.sh ] ; then
+    . $HOME/zzemacs/bin/bashmarks.sh
+fi
