@@ -34,7 +34,6 @@ alias nano='nano -w'
 
 # set ls folder color
 export MAKE_MODE=unix
-export LS_COLORS='di=1'
 
 # set default options for 'less'
 alias more='less'
@@ -60,6 +59,6 @@ case "$GITSSH_SELECT" in
 esac
 
 # Shell directory bookmark
-if [ -e $HOME/zzemacs/bin/bashmarks.sh ] ; then
-    . $HOME/zzemacs/bin/bashmarks.sh
+if [ -e $HOME/zzemacs/misc/.bashrc ] ; then
+    . $HOME/zzemacs/misc/.bashrc
 fi
