@@ -1,0 +1,19 @@
+<job id="command4">
+  <script language="JScript">
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var shell = new ActiveXObject("WScript.Shell");
+
+	var TemporaryFolder = 2;
+	var linkfile = fso.BuildPath(fso.GetSpecialFolder(TemporaryFolder), "command4.lnk");
+	var dir = fso.GetParentFolderName(WScript.ScriptFullName);
+
+	var link = shell.CreateShortcut(linkfile);
+	link.TargetPath = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe";
+	link.Arguments = "http://www.baidu.com";
+	link.Save();
+
+	var app = new ActiveXObject("Shell.Application");
+	app.ShellExecute(linkfile);
+  </script>
+</job>
+

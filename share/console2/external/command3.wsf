@@ -1,0 +1,8 @@
+<job id="command3">
+  <script language="JScript">
+	var cmdLine = "C:\\zznix\\home\\zhoujd\\zztools\\bcompare\\BCompare.exe";
+
+	var objShell = WScript.CreateObject("WScript.Shell");
+	objShell.Run(cmdLine, 0, false);
+  </script>
+</job>

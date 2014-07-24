@@ -1,0 +1,26 @@
+<job id="command5">
+  <script language="JScript">
+    if (WScript.Arguments.Count() == 0) {
+        WScript.Echo("command5.wsf <directory>");
+        WScript.Quit();
+    }
+
+	var directory = WScript.Arguments(0);
+
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var shell = new ActiveXObject("WScript.Shell");
+
+	var TemporaryFolder = 2;
+	var linkfile = fso.BuildPath(fso.GetSpecialFolder(TemporaryFolder), "command5.lnk");
+	var dir = fso.GetParentFolderName(WScript.ScriptFullName);
+
+	var link = shell.CreateShortcut(linkfile);
+	link.TargetPath = "explorer.exe";
+	link.Arguments = directory;
+	link.Save();
+
+	var app = new ActiveXObject("Shell.Application");
+	app.ShellExecute(linkfile);
+  </script>
+</job>
+

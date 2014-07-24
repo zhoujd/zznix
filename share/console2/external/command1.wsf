@@ -1,0 +1,19 @@
+<job id="command1">
+  <script language="JScript">
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var shell = new ActiveXObject("WScript.Shell");
+
+	var TemporaryFolder = 2;
+	var linkfile = fso.BuildPath(fso.GetSpecialFolder(TemporaryFolder), "command1.lnk");
+	var dir = fso.GetParentFolderName(WScript.ScriptFullName);
+
+	var link = shell.CreateShortcut(linkfile);
+	link.TargetPath = fso.BuildPath(dir, "..\\..\\putty\\putty.exe");
+	link.Arguments = "-load x11-forward";
+	link.Save();
+
+	var app = new ActiveXObject("Shell.Application");
+	app.ShellExecute(linkfile);
+  </script>
+</job>
+
