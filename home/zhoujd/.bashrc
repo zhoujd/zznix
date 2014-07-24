@@ -6,8 +6,8 @@ if [ -z "$PS1" -o "$TERM" == "emacs" ]; then
 fi    
 
 # for chinese file name show
-alias ls='ls -hF --show-control-chars --color=always'
-alias ll='ls -l'
+alias ls='ls --show-control-chars --color=always'
+alias ll='ls -alF'
 alias l='ls -CF'
 alias dir='ls -C'        # only on win7
 alias pwd='pwd -W'       # only on win7
