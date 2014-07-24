@@ -108,13 +108,13 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findnext"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findprev"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="dumpbuffer"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="49" command="externalcmd1"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="50" command="externalcmd2"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="51" command="externalcmd3"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="52" command="externalcmd4"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="53" command="externalcmd5"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="54" command="externalcmd6"/>
-		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="55" command="externalcmd7"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="49" command="externalcmd1"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="50" command="externalcmd2"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="51" command="externalcmd3"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="52" command="externalcmd4"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="53" command="externalcmd5"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="54" command="externalcmd6"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="55" command="externalcmd7"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd8"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd9"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd10"/>
@@ -160,5 +160,5 @@
 		<external_command id="5" value="wscript C%:\zznix\share\console2\external\command5.wsf %d"/>
 		<external_command id="6" value="wscript C%:\zznix\share\console2\external\command6.wsf"/>
 		<external_command id="7" value="wscript C%:\zznix\share\console2\external\command7.wsf"/>
-</external_commands>
+	</external_commands>
 </settings>
