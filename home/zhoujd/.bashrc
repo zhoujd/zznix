@@ -41,6 +41,6 @@ case "$GITSSH_SELECT" in
 esac
 
 # shell directory bookmark
-if [ -e $HOME/zzemacs/misc/.bashrc ] ; then
+if [ -f $HOME/zzemacs/misc/.bashrc ] ; then
     . $HOME/zzemacs/misc/.bashrc
 fi
