@@ -1,0 +1,19 @@
+<job id="command7">
+  <script language="JScript">
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	var shell = new ActiveXObject("WScript.Shell");
+
+	var TemporaryFolder = 2;
+	var linkfile = fso.BuildPath(fso.GetSpecialFolder(TemporaryFolder), "command7.lnk");
+	var dir = fso.GetParentFolderName(WScript.ScriptFullName);
+
+	var link = shell.CreateShortcut(linkfile);
+	link.TargetPath = fso.BuildPath(dir, "..\\..\\depends\\x86\\depends.exe");
+	link.Arguments = "";
+	link.Save();
+
+	var app = new ActiveXObject("Shell.Application");
+	app.ShellExecute(linkfile);
+  </script>
+</job>
+
