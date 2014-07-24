@@ -8,6 +8,7 @@ fi
 # for chinese file name show
 alias ls='ls -hF --show-control-chars --color=always'
 alias ll='ls -l'
+alias l='ls -CF'
 alias dir='ls -C'        # only on win7
 alias pwd='pwd -W'       # only on win7
 alias cls='clear'        # only on win7
