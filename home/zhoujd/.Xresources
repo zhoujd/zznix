@@ -1,31 +1,23 @@
 !For Zachary Zhou on Linux
 !~/.Xresources
-!xrdb ~/.Xresources
-!english using default font, chinese using WenQuanYi Zen Hei resolution 1280x800
+!xrdb -load .Xresources
 
-!look and feel
-xterm.termName: xterm-256color
-xterm.geometry: 80x36
-xterm*scrollBar: false
-xterm*rightScrollBar: true
-xterm*loginshell: true
-xterm*cursorBlink: true
-xterm*background:   black
-xterm*foreground:   gray
-xterm.borderLess: true
-xterm.cursorBlink: true
-xterm*colorUL: yellow
-xterm*colorBD: white
-
-!font and locale
-xterm*locale: true
-xterm.utf8:     true
-xterm*utf8Title: true
-xterm*fontMenu*fontdefault*Label: Default
-xterm*faceName:Monospace:antialias=True:pixelsize=14
-xterm*boldFont:Sans:style=Bold:pixelsize=13
-xterm*faceNameDoublesize:WenQuanYi Zen Hei:antialias=True:pixelsize=13
-xterm*xftAntialias: true
-xterm.cjkWidth:true
-XTerm*preeditType: Root
-
+XTerm*locale: true
+XTerm*utf8Title: true
+XTerm*fontMenu*fontdefault*Label: Default
+XTerm*faceName: Lucida Console
+XTerm*faceNameDoublesize: LiHei Pro
+XTerm*faceSize: 10
+XTerm*faceSize1: 10
+XTerm*faceSize2: 10
+XTerm*faceSize3: 10
+XTerm*faceSize4: 10
+XTerm*faceSize5: 10
+XTerm*faceSize6: 10
+XTerm.cjkWidth: true
+XTerm*background: black
+XTerm*foreground: white
+XTerm*scrollBar: false
+XTerm*rightScrollBar: true
+XTerm*jumpScroll: true
+XTerm*SaveLines: 1000
