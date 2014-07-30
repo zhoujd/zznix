@@ -40,6 +40,11 @@ case "$GITSSH_SELECT" in
         ;;
 esac
 
+# path add zzemacs/bin
+if [ -d $HOME/zzemacs/bin ] ; then
+    export PATH=$HOME/zzemacs/bin:$PATH
+fi
+
 # shell directory bookmark
 if [ -f $HOME/zzemacs/misc/.bashrc ] ; then
     . $HOME/zzemacs/misc/.bashrc
