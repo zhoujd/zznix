@@ -38,19 +38,19 @@
 		<tab_highlight flashes="3" stay_highligted="1"/>
 		<close allow_closing_last_view="0" confirm_closing_multiple_views="1"/><focus follow_mouse="0"/><instance allow_multi="1"/><clone use_current_dir="1"/><search match_case="0" match_whole_word="0"/><runas use_credprov="1"/></behavior>
 	<hotkeys use_scroll_lock="1">
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="83" command="settings"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="83" command="settings"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="112" command="help"/>
 		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="115" command="exit"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="84" command="newtab1"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="113" command="newtab2"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="114" command="newtab3"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="115" command="newtab4"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="116" command="newtab5"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="117" command="newtab6"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="118" command="newtab7"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="119" command="newtab8"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="120" command="newtab9"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="121" command="newtab10"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="84" command="newtab1"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="67" command="newtab2"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab3"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab4"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab5"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab6"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab7"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab8"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab9"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab10"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab11"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab12"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="49" command="switchtab1"/>
@@ -65,8 +65,8 @@
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="48" command="switchtab10"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="9" command="nexttab"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="9" command="prevtab"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="87" command="closetab"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="82" command="renametab"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="87" command="closetab"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="82" command="renametab"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="nextview"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="prevview"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="leftview"/>
@@ -94,7 +94,7 @@
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="45" command="copy"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="selectall"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="46" command="clear_selection"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="86" command="paste"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="86" command="paste"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="stopscroll"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollrowup"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollrowdown"/>
@@ -107,18 +107,18 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="find"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findnext"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findprev"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="dumpbuffer"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="49" command="externalcmd1"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="50" command="externalcmd2"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="51" command="externalcmd3"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="52" command="externalcmd4"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="53" command="externalcmd5"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="54" command="externalcmd6"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="55" command="externalcmd7"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="122" command="dumpbuffer"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="externalcmd1"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="113" command="externalcmd2"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="114" command="externalcmd3"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="115" command="externalcmd4"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="116" command="externalcmd5"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="117" command="externalcmd6"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="118" command="externalcmd7"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd8"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd9"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd10"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="activate" win="0"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="123" command="activate" win="0"/>
 	</hotkeys>
 	<mouse>
 		<actions>
