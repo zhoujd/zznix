@@ -1,0 +1,14 @@
+#!/bin/sh
+
+## chmod +x socks_gw
+## add following line to ~/.profile
+## export GIT_PROXY_COMMAND=<absolute path to socks-gw fold>/socks-gw
+## source ~/.bash_profile
+
+echo $1 | grep "\.xxx\.com$" > /dev/null 2>&1
+if [ $? -eq 0 ] ; then
+    connect $@
+else
+    connect -S proxy-xxx.com:1080 $@
+fi
+
