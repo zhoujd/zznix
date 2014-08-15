@@ -31,14 +31,8 @@ export GIT_EDITOR="nano"
 export HGEDITOR="nano"
 
 # git ssh tool select
-case "$GITSSH_SELECT" in
-    "plink" | "PLINK" )
-        export GIT_SSH="/share/putty/TortoisePlink -ssh 2"
-        ;;
-    "ssh" | "SSH" )
-        export GIT_SSH="/bin/ssh"
-        ;;
-esac
+#export GIT_SSH="/share/putty/TortoisePlink -ssh"
+#export GIT_SSH="/bin/ssh"
 
 # path add zzemacs/bin
 if [ -d $HOME/zzemacs/bin ] ; then
