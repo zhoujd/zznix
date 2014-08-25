@@ -10,10 +10,13 @@ home/zhoujd/.slime-history.eld
 home/zhoujd/.smex-items
 home/zhoujd/.hgrc
 home/zhoujd/.gitk
+home/zhoujd/.hgk
 .bash_history
 hg-serve.pid
 .recently-used.xbel
 _viminfo
+httplog.log
+nano.log
 Multiviewer.config
 libexec/git-core
 doc/git/html
