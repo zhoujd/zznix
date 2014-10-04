@@ -31,7 +31,7 @@ set autoexpand
 set history = 100
 set savehist = 10
 
-set correct = cmd
+#set correct = cmd
 
 set noclobber
 
