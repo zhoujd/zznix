@@ -14,9 +14,9 @@ set c0 = "%{\e[0m%}"  #恢复为默认色彩
 # Set some variables for interactive shells
 if ( $?prompt ) then
     if ( "$uid" == "0" ) then
-	set prompt = "%B%U%n%u@%m.$cr%l$c0%b %c2 %B%#%b " 
+	set prompt = "%B%U%n%u@%m.$cr%l$c0%b %c2 %B\n%#%b " 
     else
-	set prompt = "%B%U%n%u@%m.$cg%l$c0%b %c2 %B%%%b "
+	set prompt = "%B%U%n%u@%m.$cg%l$c0%b %c2 %B\n%%%b "
     endif
 endif
 
