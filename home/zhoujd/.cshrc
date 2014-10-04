@@ -3,9 +3,7 @@
 bindkey '\e[1~' beginning-of-line      # Home
 bindkey '\e[3~' delete-char            # Delete
 bindkey '\e[4~' end-of-line            # End
-bindkey "^W" backward-delete-word      # Delete
-#bindkey -k up history-search-backward  # PageUp
-#bindkey -k down history-search-forward # PageDown
+bindkey "^W"    backward-delete-word   # Delete
 
 set cr = "%{\e[31m%}" #开始红色
 set cg = "%{\e[32m%}" #开始绿色
@@ -30,8 +28,6 @@ set autolist
 set autoexpand
 set history = 100
 set savehist = 10
-
-#set correct = cmd
 
 set noclobber
 
@@ -61,4 +57,3 @@ alias find-py	'find . -name ".py"'
 alias wc-c	'find . -name "*.h" -o -name "*.c" | xargs wc | sort -k 4'
 alias wc-x	'find . -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.cxx" | xargs wc | sort -k 4'
 alias wc-py	'find . -name ".py" | xargs wc | sort -k 4'
-
