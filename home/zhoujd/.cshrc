@@ -5,9 +5,9 @@ bindkey '\e[3~' delete-char            # Delete
 bindkey '\e[4~' end-of-line            # End
 bindkey "^W"    backward-delete-word   # Delete
 
-set cr = "%{\e[31m%}" #开始红色
-set cg = "%{\e[32m%}" #开始绿色
-set c0 = "%{\e[0m%}"  #恢复为默认色彩
+set cr = "%{\e[31m%}" #red
+set cg = "%{\e[32m%}" #green
+set c0 = "%{\e[0m%}"  #back to default
 
 # Set some variables for interactive shells
 if ( $?prompt ) then
@@ -18,11 +18,11 @@ if ( $?prompt ) then
     endif
 endif
 
-#让 ls 鲜艳些
+# ls colors
 setenv LSCOLORS ExGxFxdxCxegedabagExEx
 setenv CLICOLOR yes
 
-#让 grep 匹配到的字符高亮
+# grep colors
 #setenv GREP_OPTIONS --color=auto
 
 set autolist
@@ -35,20 +35,20 @@ set noclobber
 alias mv 'mv -i'
 alias cp 'cp -i'
 
-alias ..    'cd ..'       #两点即可回到上级目录
-alias -	    'cd -'        #一杠返回上次的目录
-alias q	    'exit'        #退出登录
-alias rm    'rm -i'       #误删防御
-alias del   'rm -r'       #删除整个目录
-alias mv    'mv -i'       #覆盖防御
-alias cp    'cp -i'       #覆盖防御
+alias ..    'cd ..'       # up directory
+alias -	    'cd -'        # last directory
+alias q	    'exit'        # exit
+alias rm    'rm -i'       # remove protect
+alias del   'rm -r'       # remove dirctoyr
+alias mv    'mv -i'       # rename protect
+alias cp    'cp -i'       # copy protect
 alias ls    'ls --show-control-chars --color=always' 
-alias la    'ls -a'       #显示所有文件
-alias ll    'ls -h -l'    #显示文件权限和大小（以合理的单位）
-alias lr    'ls -R'       #递归显示目录
-alias dh    'df -h -a -T' #以合适的单位显示所有磁盘的剩余空间，以及文件系统类型（如ufs、devfs、procfs）。
-alias ds    'du -sh'      #以合适的单位显示查看每个文件/文件夹的大小
-alias pwd   'dirs'        #当前目录
+alias la    'ls -a'       # show all files
+alias ll    'ls -h -l'    # show file size limited
+alias lr    'ls -R'       # rescuse
+alias dh    'df -h -a -T' # disk remainin show
+alias ds    'du -sh'      # file/dirs size
+alias pwd   'dirs'        # current directory
 
 alias dir   'ls -C'
 alias gitk  'gitk.cmd'
