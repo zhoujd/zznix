@@ -49,7 +49,11 @@ alias lr    'ls -R'       #递归显示目录
 alias dh    'df -h -a -T' #以合适的单位显示所有磁盘的剩余空间，以及文件系统类型（如ufs、devfs、procfs）。
 alias ds    'du -sh'      #以合适的单位显示查看每个文件/文件夹的大小
 alias pwd   'dirs'        #当前目录
+
 alias dir   'ls -C'
+alias gitk  'gitk.cmd'
+alias hgk   'hg view'
+alias find  'find2'
 
 alias find-c	'find . -name "*.h" -o -name "*.c"'
 alias find-x	'find . -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.cxx"'
