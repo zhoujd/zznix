@@ -21,8 +21,9 @@ endif
 #让 ls 鲜艳些
 setenv LSCOLORS ExGxFxdxCxegedabagExEx
 setenv CLICOLOR yes
+
 #让 grep 匹配到的字符高亮
-setenv GREP_OPTIONS --color=auto
+#setenv GREP_OPTIONS --color=auto
 
 set autolist
 set autoexpand
