@@ -51,7 +51,7 @@ alias ds    'du -sh'      # file/dirs size
 alias pwd   'dirs'        # current directory
 
 alias dir   'ls -C'
-alias gitk  'gitk.cmd'
+alias gitk  'wish c:/zznix/bin/gitk'
 alias hgk   'hg view'
 alias find  'find2'
 

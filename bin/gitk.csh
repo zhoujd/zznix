@@ -1,3 +1,3 @@
 #!/bin/csh
 
-wish c:/zznix/bin/gitk
+wish c:/zznix/bin/gitk $argv
