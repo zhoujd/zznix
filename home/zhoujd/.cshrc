@@ -7,14 +7,15 @@ bindkey "^W"    backward-delete-word   # Delete
 
 set cr = "%{\e[31m%}" #red
 set cg = "%{\e[32m%}" #green
+set cy = "%{\e[33m%}" #yellow
 set c0 = "%{\e[0m%}"  #back to default
 
 # Set some variables for interactive shells
 if ( $?prompt ) then
     if ( "$uid" == "0" ) then
-	set prompt = "%B%U%n%u@%m.$cr%l$c0%b %c2 %B\n%#%b " 
+	set prompt = "$cy%B%U%n%u@%m.$cr%l$cg%b %c2 %B\n$c0%#%b " 
     else
-	set prompt = "%B%U%n%u@%m.$cg%l$c0%b %c2 %B\n%%%b "
+	set prompt = "$cy%B%U%n%u@%m.$cg%l$cr%b %c2 %B\n$c0%%%b "
     endif
 endif
 
