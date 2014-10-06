@@ -15,3 +15,5 @@
 @goto END
 
 :END
+@set ZZNIX=
+@set HOME=
