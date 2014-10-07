@@ -37,6 +37,10 @@ set noclobber
 alias mv 'mv -i'
 alias cp 'cp -i'
 
+# add path
+set zznix_root = c:/zznix
+set path = ($zznix_root/bin $zznix_root/cmd $path)
+
 alias ..    'cd ..'       # up directory
 alias -	    'cd -'        # last directory
 alias q	    'exit'        # exit
@@ -53,9 +57,8 @@ alias ds    'du -sh'      # file/dirs size
 alias pwd   'dirs'        # current directory
 
 alias dir   'ls -C'
-alias gitk  'wish c:/zznix/bin/gitk'
+alias gitk  'wish $zznix_root/bin/gitk'
 alias hgk   'hg view'
-alias find  'find2'
 
 alias find-c	'find . -name "*.h" -o -name "*.c"'
 alias find-x	'find . -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.cxx"'
