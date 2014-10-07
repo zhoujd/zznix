@@ -7,11 +7,11 @@
 @if exist %ZZNIX%/bin/sh.exe goto 2
 
 :1
-@%ZZNIX%/share/tcsh/tcsh-x64.exe -l
+@%ZZNIX%/bin/csh.exe -l
 @goto END
 
 :2
-@%ZZNIX%/share/bash/sh --login -i
+@%ZZNIX%/bin/sh.exe --login -i
 @goto END
 
 :END
