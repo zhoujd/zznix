@@ -60,7 +60,7 @@ alias dir   'ls -C'
 alias gitk  'wish $zznix_root/bin/gitk'
 alias hgk   'hg view'
 
-# git some
+# git something
 alias git-pull        'git fetch && git merge'
 alias git-pull-master 'git fetch && git merge origin/master'
 
