@@ -28,16 +28,7 @@ sub diff_emacs {
     my $diff_a = shift;
     my $diff_b = shift;
 
-    my $elisp_string = "\
-(progn \
- (load-file \\\"c:/zznix/home/zhoujd/zzemacs/elisp/ediff-sample.el\\\") \
- (ediff-sample-diff \\\"$diff_a\\\" \\\"$diff_b\\\") \
- )";
-   
-    my $diff_select = "emacs -q --no-site-file --eval \"$elisp_string\"";
-
-    print $diff_select."\n";
-    (system("$diff_select") == 0) || die "Cannot run $diff_select $!";
+    (system("cmd //c start c:/zznix/cmd/emacs-diff.cmd $diff_a $diff_b") == 0) || die "Cannot run $!";
 }
 
 sub main {
