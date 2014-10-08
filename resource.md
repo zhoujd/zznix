@@ -34,3 +34,10 @@ localhost:0
     <http://superuser.com/><br>
     <http://stackoverflow.com/><br>
     <http://www.autohotkey.com/><br>
+
+7. Reset U disk
+    
+    diskpart ==> run as administrator
+    list disk
+    select disk <u disk>
+    clean
