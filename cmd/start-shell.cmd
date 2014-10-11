@@ -6,6 +6,7 @@
 
 @if %SELECT% == csh goto 1
 @if %SELECT% == sh goto 2
+@goto END
 
 :1
 @%ZZNIX%/bin/csh.exe -l
@@ -18,3 +19,4 @@
 :END
 @set ZZNIX=
 @set HOME=
+@set SELECT=
