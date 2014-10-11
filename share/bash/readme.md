@@ -12,5 +12,4 @@ Share bash
         $ apt-get update
         $ apt-get -y install --only-upgrade bash
 
-        
-
+3. https://github.com/hannob/bashcheck
