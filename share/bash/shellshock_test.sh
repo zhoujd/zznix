@@ -4,7 +4,8 @@
 #
 # Joe Moss (joseph.v.moss@intel.com) - 9/27/2014
 
-DIR="." || exit 1
+mkdir ./tmp
+DIR="./tmp" || exit 1
 cd $DIR
 
 trap "" SIGSEGV
