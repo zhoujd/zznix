@@ -14,6 +14,7 @@ alias pwd='pwd -W'       # only on win7
 alias cls='clear'        # only on win7
 alias nano='nano -w'
 alias more='less'
+alias sh2csh='csh -l'
 
 # set ls folder color
 export MAKE_MODE=unix
