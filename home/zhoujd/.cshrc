@@ -45,7 +45,7 @@ alias ..    'cd ..'       # up directory
 alias -	    'cd -'        # last directory
 alias q	    'exit'        # exit
 alias rm    'rm -i'       # remove protect
-alias del   'rm -r'       # remove dirctoyr
+alias del   'rm -r'       # remove dirctory
 alias mv    'mv -i'       # rename protect
 alias cp    'cp -i'       # copy protect
 alias ls    'ls --show-control-chars --color=always' 
