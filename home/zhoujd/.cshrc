@@ -65,7 +65,7 @@ alias git-pull        'git fetch && git merge'
 alias git-pull-master 'git fetch && git merge origin/master'
 
 # switch shell
-alias csh2sh    'bash --login -i'
+alias 2sh    'bash --login -i'
 
 alias find-c	'find . -name "*.h" -o -name "*.c"'
 alias find-x	'find . -name "*.h" -o -name "*.hpp" -o -name "*.cpp" -o -name "*.cxx"'
