@@ -19,6 +19,12 @@ _viminfo
 nano.log
 httplog.log
 home/zhoujd/.history
+home/zhoujd/.emacs-bmk-bmenu-state.el
+home/zhoujd/.geiser_history.racket
+home/zhoujd/.lesshst
+home/zhoujd/.recently-used.xbel
+home/zhoujd/.slime-history.eld
+home/zhoujd/tmp/
 
 zz*/
 .*/
@@ -29,4 +35,6 @@ lib/tcl8/
 lib/tcl8.5/
 lib/tk8.5/
 doc/git/html/
+
+share/multiviewer/Multiviewer.config
 
