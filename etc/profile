@@ -115,7 +115,7 @@ Commands like 'git-add' will NOT work. Add more wrappers as appropriate.
 EOF
 esac
 
-
+. /etc/hg-completion.bash
 . /etc/git-completion.bash
 [ -r /etc/git-prompt.sh ] && . /etc/git-prompt.sh
 
