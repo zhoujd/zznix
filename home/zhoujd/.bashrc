@@ -35,12 +35,16 @@ export HGEDITOR="nano"
 #export GIT_SSH="/share/putty/TortoisePlink -ssh"
 #export GIT_SSH="/bin/ssh"
 
-# path add zzemacs/bin
-if [ -d $HOME/zzemacs/bin ] ; then
-    export PATH=$HOME/zzemacs/bin:$PATH
-fi
-
-# shell directory bookmark
-if [ -f $HOME/zzemacs/misc/.bashrc ] ; then
-    . $HOME/zzemacs/misc/.bashrc
+# self bash-setting from zzemacs
+if [ -d $HOME/zzemacs ] ; then
+    export PATH=$HOME/zzemacs/bin:$HOME/zzemacs/libexec:$PATH
+    for i in $HOME/zzemacs/etc/profile.d/*.sh ; do
+        if [ -r "$i" ]; then
+            if [ "${-#*i}" != "$-" ]; then
+                . "$i"
+            else
+                . "$i" >/dev/null 2>&1
+            fi
+        fi
+    done
 fi
