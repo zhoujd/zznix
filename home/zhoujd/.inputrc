@@ -11,7 +11,7 @@ set completion-query-items 50
 set completion-ignore-case on
 
 # none, visible or audible
-set bell-style audible
+set bell-style visible
 
 # disable/enable 8bit input
 set meta-flag on
