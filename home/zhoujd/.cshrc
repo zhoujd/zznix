@@ -21,7 +21,8 @@ if ( $?prompt ) then
 endif
 
 # ls colors
-setenv LSCOLORS ExGxFxdxCxegedabagExEx
+# http://geoff.greer.fm/lscolors/
+setenv LSCOLORS Fxfxcxdxbxegedabagacad
 setenv LS_COLORS 'di=01;35:ln=04'
 setenv CLICOLOR yes
 
