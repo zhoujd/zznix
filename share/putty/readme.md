@@ -11,8 +11,6 @@ Putty
 
 3 X11 forward
     
-    pietty.exe -X
+    pietty -X
     putty -X
     putty -load x11-forward
-
-
