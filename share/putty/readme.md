@@ -8,3 +8,9 @@ Putty
 2. TortoisePlink
 
 	C:\set GIT_SSH=C:\Program Files\TortoiseSVN\bin\TortoisePlink.exe
+
+3 X11 forward
+    
+    pietty -X
+    putty -X
+    putty -load x11-forward
