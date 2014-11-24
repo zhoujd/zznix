@@ -26,6 +26,9 @@ bin\add_path.exe /user %CD%\share\nano
 echo add %CD%\share\console2 to user path
 bin\add_path.exe /user %CD%\share\console2
 
+echo add %CD%\share\xz\bin_x86-64 to user path
+bin\add_path.exe /user %CD%\share\xz\bin_x86-64
+
 echo import reg file: env_zznix.reg 
 regedit /s misc\env_zznix.reg
 
