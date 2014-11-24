@@ -5,11 +5,6 @@ if [ -f ${HOME}/.bash_profile ] ; then
     . ${HOME}/.bash_profile
 fi
 
-# PS1 setting
-if [ -z "$PS1" -o "$TERM" == "emacs" ]; then
-    PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zhoujd!~!)]$ '
-fi    
-
 # for chinese file name show
 alias ls='ls --show-control-chars --color=always'
 alias ll='ls -alF'
