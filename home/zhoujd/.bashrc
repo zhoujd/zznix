@@ -1,5 +1,10 @@
 ####.bashrc for zznix
 
+# source .bash_profile
+if [ -f ${HOME}/.bash_profile ] ; then
+    . ${HOME}/.bash_profile
+fi
+
 # PS1 setting
 if [ -z "$PS1" -o "$TERM" == "emacs" ]; then
     PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zhoujd!~!)]$ '
