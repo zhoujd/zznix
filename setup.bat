@@ -29,6 +29,9 @@ bin\add_path.exe /user %CD%\share\console2
 echo add %CD%\share\xz\bin_x86-64 to user path
 bin\add_path.exe /user %CD%\share\xz\bin_x86-64
 
+echo add %CD%\share\xming\bin to user path
+bin\add_path.exe /user %CD%\share\xming\bin
+
 echo import reg file: env_zznix.reg 
 regedit /s misc\env_zznix.reg
 

@@ -14,4 +14,6 @@ Xming Readme
         ssh +X -l <username> <host>
         xclock
 
-
+4. Xming-tools-and-clients-6-9-0-28.zip
+   
+        <http://ftp.psu.ac.th/pub/xming/>
