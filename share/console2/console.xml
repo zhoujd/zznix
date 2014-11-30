@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
 	<console change_refresh="10" refresh="100" rows="25" columns="90" buffer_rows="500" buffer_columns="0" shell="" init_dir="" start_hidden="0" save_size="0" background_text_opacity="255">
-		<colors>
+		<colors background_text_opacity="255">
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="0" g="0" b="128"/>
 			<color id="2" r="0" g="150" b="0"/>
@@ -19,7 +19,7 @@
 			<color id="14" r="255" g="255" b="0"/>
 			<color id="15" r="255" g="255" b="255"/>
 		</colors>
-	</console>
+		<cursor style="0" r="255" g="255" b="255"/><background type="0" r="0" g="0" b="0"><image file="" relative="0" extend="0" position="0"><tint opacity="0" r="0" g="0" b="0"/></image></background></console>
 	<appearance>
 		<font name="Microsoft YaHei Mono" size="12" bold="0" italic="0" smoothing="0" extra_width="0" bold_intensified="0" italic_intensified="0">
 			<color use="0" r="0" g="0" b="0"/>
@@ -91,6 +91,7 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="ungroupall"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="grouptab"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="ungrouptab"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="clear"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="45" command="copy"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="selectall"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="46" command="clear_selection"/>
@@ -108,6 +109,9 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findnext"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findprev"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="122" command="dumpbuffer"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu1"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu2"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu3"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="externalcmd1"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="113" command="externalcmd2"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="114" command="externalcmd3"/>
@@ -127,6 +131,7 @@
 			<action ctrl="0" shift="0" alt="0" button="0" name="select_column"/>
 			<action ctrl="0" shift="0" alt="0" button="2" name="paste"/>
 			<action ctrl="1" shift="0" alt="0" button="1" name="drag"/>
+			<action ctrl="0" shift="0" alt="0" button="0" name="link"/>
 			<action ctrl="0" shift="0" alt="0" button="3" name="menu"/>
 			<action ctrl="0" shift="0" alt="0" button="0" name="menu2"/>
 			<action ctrl="0" shift="0" alt="0" button="0" name="menu3"/>
@@ -134,7 +139,7 @@
 	</mouse>
 	<tabs>
 		<tab title="Git" icon="C:\zznix\etc\git.ico" use_default_icon="0">
-			<console shell="C:\zznix\cmd\start-shell.cmd" init_dir="c:\zznix\home\zhoujd" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<console shell="C:\zznix\cmd\start-shell.cmd" init_dir="c:\zznix\home\zhoujd" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -143,7 +148,7 @@
 			</background>
 		</tab>
 		<tab title="Console2" use_default_icon="0">
-			<console shell="" init_dir="" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<console shell="" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -152,7 +157,7 @@
 			</background>
 		</tab>
 		<tab title="Clisp" icon="C:\Lisp\clisp\clisp.exe" use_default_icon="0">
-			<console shell="C:\Lisp\clisp\clisp.exe -K full" init_dir="C:\zznix\home\zhoujd" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<console shell="C:\Lisp\clisp\clisp.exe -K full" init_dir="C:\zznix\home\zhoujd" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
