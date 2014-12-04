@@ -15,6 +15,7 @@
 PUTTY.chw
 .sdirs
 .hgk
+.phistory
 _viminfo
 nano.log
 httplog.log
