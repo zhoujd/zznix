@@ -28,8 +28,8 @@ export LESSCHARSET=utf-8
 export PLINK_PROTOCOL=ssh
 
 # set git && hg editor
-export GIT_EDITOR="nano"
-export HGEDITOR="nano"
+#export GIT_EDITOR="nano"
+#export HGEDITOR="nano"
 
 # git ssh tool select
 #export GIT_SSH="/share/putty/TortoisePlink -ssh"
