@@ -5,13 +5,16 @@
         WScript.Quit();
     }
 
-	var user   = WScript.Arguments(0);
+    var user   = WScript.Arguments(0);
     var passwd = WScript.Arguments(1);
     var ip     = WScript.Arguments(2);
     var app    = WScript.Arguments(3);
 
     var cmdLine = "plink -X -l " + user + " -pw " + passwd + " " + ip + " " + app;
-	var objShell = WScript.CreateObject("WScript.Shell");
-	objShell.Run(cmdLine, 0, false);
+    var objShell = WScript.CreateObject("WScript.Shell");
+    var ret = objShell.Run(cmdLine, 0, true);
+    if (ret != 0) {
+       WScript.Echo("plink run " + cmdLine + " failed. error: " + ret);
+    }
   </script>
 </job>
