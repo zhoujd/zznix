@@ -1,1 +1,1 @@
-@c:\zznix\bin\ls.exe --show-control-chars --color=always %*
+@c:\zznix\bin\ls.exe -C --show-control-chars --color=always %*
