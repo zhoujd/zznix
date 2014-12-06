@@ -5,11 +5,11 @@ set TEMP_LOG="temp.log"
 echo setup start ...
 echo pwd %CD%
 
-echo add %CD%\bin to user path
-bin\add_path.exe /user %CD%\bin
-
 echo add %CD%\cmd to user path
 bin\add_path.exe /user %CD%\cmd
+
+echo add %CD%\bin to user path
+bin\add_path.exe /user %CD%\bin
 
 echo add %CD%\home\zhoujd\zzemacs\bin to user path
 bin\add_path.exe /user %CD%\home\zhoujd\zzemacs\bin
