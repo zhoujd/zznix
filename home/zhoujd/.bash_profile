@@ -23,3 +23,14 @@ PS1=${TITLEBAR}${PS1}
 if [ "$TERM" == "emacs" ]; then
     PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zhoujd!~!)]$ '
 fi
+
+# for chinese file name show
+alias ls='ls --show-control-chars --color=always'
+alias ll='ls -alF'
+alias l='ls -CF'
+alias dir='ls -C'        # only on win7
+alias pwd='pwd -W'       # only on win7
+alias cls='clear'        # only on win7
+alias nano='nano -w'
+alias more='less'
+alias lcsh='csh -l'
