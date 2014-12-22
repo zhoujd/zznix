@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTPutty version="1.0">
+	<Globals>
+		<PuttyLocation>putty.exe -load x11-forward</PuttyLocation>
+		<GUI>
+			<Pos Left="149" Top="49" Right="1238" Bottom="663" Maximized="0"/>
+			<ServersBox Visible="0" Width="242" Height="515" Dock="left" Autohide="0"/>
+			<Toolbar Visible="1"/>
+			<MainMenu Visible="1"/>
+			<StartPage HideOnTab="1"/>
+		</GUI>
+		<General>
+			<TabCaption>0</TabCaption>
+			<NormalTermination>0</NormalTermination>
+			<AbnormalTermination>0</AbnormalTermination>
+			<QuitNoConfrim>0</QuitNoConfrim>
+			<CloseButtonOnTabs>1</CloseButtonOnTabs>
+		</General>
+	</Globals>
+	<Servers>
+		<Putty/>
+	</Servers>
+	<Internals>
+		<Putty/>
+	</Internals>
+	<Recents>
+		<PuttyCon/>
+	</Recents>
+	<Hotkeys>
+		<NextTab>0</NextTab>
+		<PrevTab>0</PrevTab>
+		<AppSwitch>16576</AppSwitch>
+		<acPuttyLocation>0</acPuttyLocation>
+		<acSettings>0</acSettings>
+		<acHideServers>16450</acHideServers>
+		<acHideMenu>16461</acHideMenu>
+		<acHideToolbar>16468</acHideToolbar>
+		<acAddServer>0</acAddServer>
+		<acAddGroup>0</acAddGroup>
+		<acRemove>0</acRemove>
+		<acDetach>0</acDetach>
+		<acConnect>0</acConnect>
+		<acConnectTo>16459</acConnectTo>
+		<acTreeProps>0</acTreeProps>
+		<acSendScript>0</acSendScript>
+		<acAttach>0</acAttach>
+		<acRenameTab>0</acRenameTab>
+		<acImportTree>0</acImportTree>
+		<acExportTree>0</acExportTree>
+		<acHotkeysMap>0</acHotkeysMap>
+		<acDuplicate>0</acDuplicate>
+	</Hotkeys>
+</MTPutty>

@@ -29,6 +29,7 @@ lib/tcl8
 lib/tcl8.5
 lib/tk8.5
 PUTTY.chw
+mtputty.xml
 .sdirs
 
 syntax: regexp
