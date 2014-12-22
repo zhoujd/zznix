@@ -78,7 +78,6 @@ menu apps {
 	bash      execd	"C:\zznix\bin\bash --login -i"  # Comment
 	"dos"	  execd	"C:\WINDOWS\system32\cmd"
 	notepad	  execd	notepad
-	gedit     execd "C:\gedit\bin\gedit.exe"
 }
 
 menu root {
