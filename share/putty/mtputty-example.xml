@@ -3,11 +3,11 @@
 	<Globals>
 		<PuttyLocation>putty.exe -load x11-forward</PuttyLocation>
 		<GUI>
-			<Pos Left="149" Top="49" Right="1238" Bottom="663" Maximized="0"/>
-			<ServersBox Visible="0" Width="242" Height="515" Dock="left" Autohide="0"/>
+			<Pos Left="149" Top="49" Right="1163" Bottom="674" Maximized="0"/>
+			<ServersBox Visible="0" Width="242" Height="528" Dock="left" Autohide="0"/>
 			<Toolbar Visible="1"/>
 			<MainMenu Visible="1"/>
-			<StartPage HideOnTab="1"/>
+			<StartPage HideOnTab="0"/>
 		</GUI>
 		<General>
 			<TabCaption>0</TabCaption>
