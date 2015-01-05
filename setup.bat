@@ -11,6 +11,9 @@ bin\add_path.exe /user %CD%\bin
 echo add %CD%\cmd to user path
 bin\add_path.exe /user %CD%\cmd
 
+echo add %CD%\libexec to user path
+bin\add_path.exe /user %CD%\libexec
+
 echo add %CD%\home\zhoujd\zzemacs\bin to user path
 bin\add_path.exe /user %CD%\home\zhoujd\zzemacs\bin
 
@@ -32,25 +35,25 @@ bin\add_path.exe /user %CD%\share\xz\bin_x86-64
 echo add %CD%\share\xming\bin to user path
 bin\add_path.exe /user %CD%\share\xming\bin
 
-echo import reg file: env_zznix.reg 
+echo import reg file: env_zznix.reg
 regedit /s misc\env_zznix.reg
 
-echo import reg file: git_bg_gui.reg 
+echo import reg file: git_bg_gui.reg
 regedit /s misc\git_bg_gui.reg
 
-echo import reg file: git_bg_shell.reg 
+echo import reg file: git_bg_shell.reg
 regedit /s misc\git_bg_shell.reg
 
-echo import reg file: git_gui.reg 
+echo import reg file: git_gui.reg
 regedit /s misc\git_gui.reg
 
-echo import reg file: git_shell.reg 
+echo import reg file: git_shell.reg
 regedit /s misc\git_shell.reg
 
-echo import reg file: ms_bg_dos.reg 
+echo import reg file: ms_bg_dos.reg
 regedit /s misc\ms_bg_dos.reg
 
-echo import reg file: ms_dos.reg 
+echo import reg file: ms_dos.reg
 regedit /s misc\ms_dos.reg
 
 echo import reg file: fixed_cn.reg
