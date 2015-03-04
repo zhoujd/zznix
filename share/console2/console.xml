@@ -108,10 +108,12 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="find"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findnext"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findprev"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="switchtransparency"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="122" command="dumpbuffer"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu1"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu2"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu3"/>
+		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="ctrlC"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="externalcmd1"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="113" command="externalcmd2"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="114" command="externalcmd3"/>
@@ -147,7 +149,7 @@
 				</image>
 			</background>
 		</tab>
-		<tab title="Console2" use_default_icon="0">
+		<tab title="Cmd" use_default_icon="0">
 			<console shell="" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
