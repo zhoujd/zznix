@@ -17,6 +17,9 @@ export PLINK_PROTOCOL=ssh
 #export GIT_SSH="/share/putty/TortoisePlink -ssh"
 #export GIT_SSH="/bin/ssh"
 
+# set DISPLAY environment
+export DISPLAY=localhost:0.0
+
 # self bash-setting from zzemacs
 if [ -d $HOME/zzemacs ] ; then
     export PATH=$HOME/zzemacs/bin:$HOME/zzemacs/libexec:$PATH
