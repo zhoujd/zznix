@@ -3,7 +3,7 @@
 	<Globals>
 		<PuttyLocation>putty.exe -load x11-forward</PuttyLocation>
 		<GUI>
-			<Pos Left="215" Top="129" Right="1148" Bottom="690" Maximized="0"/>
+			<Pos Left="228" Top="115" Right="1216" Bottom="727" Maximized="0"/>
 			<ServersBox Visible="0" Width="242" Height="523" Dock="left" Autohide="0"/>
 			<Toolbar Visible="0"/>
 			<MainMenu Visible="0"/>
