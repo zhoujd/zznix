@@ -3,14 +3,14 @@
 	<Globals>
 		<PuttyLocation>putty.exe -load x11-forward</PuttyLocation>
 		<GUI>
-			<Pos Left="149" Top="49" Right="1163" Bottom="674" Maximized="0"/>
-			<ServersBox Visible="0" Width="242" Height="528" Dock="left" Autohide="0"/>
-			<Toolbar Visible="1"/>
-			<MainMenu Visible="1"/>
+			<Pos Left="215" Top="129" Right="1148" Bottom="690" Maximized="0"/>
+			<ServersBox Visible="0" Width="242" Height="523" Dock="left" Autohide="0"/>
+			<Toolbar Visible="0"/>
+			<MainMenu Visible="0"/>
 			<StartPage HideOnTab="0"/>
 		</GUI>
 		<General>
-			<TabCaption>0</TabCaption>
+			<TabCaption>1</TabCaption>
 			<NormalTermination>0</NormalTermination>
 			<AbnormalTermination>0</AbnormalTermination>
 			<QuitNoConfrim>0</QuitNoConfrim>
@@ -35,8 +35,8 @@
 		<acHideServers>16450</acHideServers>
 		<acHideMenu>16461</acHideMenu>
 		<acHideToolbar>16468</acHideToolbar>
-		<acAddServer>0</acAddServer>
-		<acAddGroup>0</acAddGroup>
+		<acAddServer>16462</acAddServer>
+		<acAddGroup>16449</acAddGroup>
 		<acRemove>0</acRemove>
 		<acDetach>0</acDetach>
 		<acConnect>0</acConnect>
@@ -48,6 +48,6 @@
 		<acImportTree>0</acImportTree>
 		<acExportTree>0</acExportTree>
 		<acHotkeysMap>0</acHotkeysMap>
-		<acDuplicate>0</acDuplicate>
+		<acDuplicate>16466</acDuplicate>
 	</Hotkeys>
 </MTPutty>
