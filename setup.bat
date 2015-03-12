@@ -72,7 +72,7 @@ echo install lib
 bin\7z.exe x -y lib\lib.7z -olib > %TEMP_LOG%
 
 rem clean temp log file
-del  %TEMP_LOG%
+del %TEMP_LOG%
 
 echo setup end ...
 pause
