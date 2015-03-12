@@ -59,8 +59,8 @@ regedit /s misc\ms_dos.reg
 echo import reg file: fixed_cn.reg
 regedit /s share\console2\fixed_cn.reg
 
-echo import reg file: puttyconf.reg
-regedit /s share\putty\puttyconf.reg
+echo import reg file: putty.reg
+regedit /s share\putty\putty.reg
 
 echo install git-core
 bin\7z.exe x -y libexec\git-core.7z -olibexec > %TEMP_LOG%
