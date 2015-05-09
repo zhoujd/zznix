@@ -1,10 +1,5 @@
 ####.bashrc for zznix
 
-# source .bash_profile
-if [ -f ${HOME}/.bash_profile ] ; then
-    . ${HOME}/.bash_profile
-fi
-
 # set ls folder color
 export MAKE_MODE=unix
 
@@ -37,4 +32,9 @@ if [ -d $HOME/zzemacs ] ; then
             fi
         fi
     done
+fi
+
+# source .bash_profile
+if [ -f ${HOME}/.bash_profile ] ; then
+    . ${HOME}/.bash_profile
 fi
