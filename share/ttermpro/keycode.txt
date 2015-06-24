@@ -1,0 +1,226 @@
+	KEYCODE.EXE for Tera Term
+	T. Teranishi
+	
+	Copyright (C) 1994-1997 T. Teranishi
+	All Rights Reserved.
+
+KEYCODE.EXE is a utility which displays key codes used in the
+Tera Term's keyboard setup file.
+
+-------------------------------------------------------------------------------
+1. INSTALLATION
+ 
+If you are using Windows NT 3.X, install KEYCODE.EXE
+in Program Manager with its icon. If you are using Windows 95,
+create a shortcut for KEYCODE.EXE in a folder of your choice,
+or in the Start menu, or on the desktop.
+
+-------------------------------------------------------------------------------
+2. USAGE
+
+When you run KEYCODE.EXE, the message "Push any key" will be displayed
+in the window.  When you press a key or a combination of keys (such as
+Ctrl+key), the message "Key code is XXXX." will be displayed. XXXX is a
+decimal number.
+
+-------------------------------------------------------------------------------
+3. ABOUT THE KEYBOARD SETUP FILE
+
+The keyboard setup file assigns keys on PC keyboard for various functions
+such as VT terminal functions, sending user defined character strings,
+Tera Term commands and executing macro files.
+
+The default keyboard setup stored in the file KEYBOARD.CNF is almost
+compatible with VT terminal keyboard. You can modify key assignments
+by editing the file.
+
+The file name of keyboard setup file to be loaded by Tera Term can be
+specified as a command line parameter of Tera Term (see Tera Term help).
+If you omit the file name extension, the default extension ".CNF" is used.
+If you omit the file name, the default file KEYBOARD.CNF is loaded.
+...............................................................................
+3.1 FORMAT OF THE KEYBOARD SETUP FILE
+
+Each key or key combination has a unique key code, which is called
+"PC key code". 
+
+The keyboard setup file has six sections:  [VT editor keypad],
+[VT numeric keypad], [VT function keys], [X function keys], [Shortcut keys]
+and [User keys].
+
+1) [VT editor keypad] section
+In this section, VT editor keys are assigned to PC keys.
+
+	Format:
+		<VT editor key name>=<PC key code>
+
+	where:
+
+	<VT editor key name>
+		Up, Down, Right, Left, Find, Insert, Remove, Select,
+		Prev, Next
+
+	  <PC key code>
+		PC key code (decimal number)
+
+	Example:
+		Up=328
+
+2) [VT numeric keypad] section
+In this section, VT numeric keys are assigned to PC keys.
+
+	Format:
+		<VT numeric key name>=<PC key code>
+
+	where:
+
+	  <VT numeric key name>
+		Num0, Num1, Num2, Num3, Num4, Num5, Num6, Num7, Num8,
+		Num9, NumMinus, NumComma, NumPeriod, NumEnter, PF1,
+		PF2, PF3, PF4
+
+	  <PC key code>
+		PC key code (decimal number)
+
+	Example:
+		Num0=82
+
+3) [VT function keys] section
+In this section, VT function keys are assigned to PC keys.
+
+	Format:
+		<VT function key name>=<PC key code>
+
+	where:
+
+	  <VT function key name>
+		(Function keys of VT terminal)
+		Hold, Print, Break, F6, F7, F8, F9, F10, F11, F12,
+		F13, F14, Help, Do, F17, F18, F19, F20
+		("User defined keys" of VT terminal)
+		UDK6, UDK7, UDK8, UDK9, UDK10, UDK11, UDK12, UDK13,
+		UDK14, UDK15, UDK16, UDK17, UDK18, UDK19, UDK20
+
+	  <PC key code>
+		PC key code (decimal number)
+
+	Example:
+		F6=64
+
+4) [X function keys] section
+In this section, Xterm F1-F5 keys are assigned to PC keys.
+
+	Format:
+		<Xterm function key name>=<PC key code>
+
+	where:
+
+	  <Xterm function key name>
+		XF1, XF2, XF3, XF4, XF5
+
+	  <PC key code>
+		PC key code (decimal number)
+
+	Example:
+		XF1=59
+
+5) [Shortcut keys] section
+In this section, Tera Term functions are assigned to PC keys.
+
+	Format:
+		<Shortcut key name>=<PC key code>
+
+	where:
+	  <Shortcut key name>	Function
+	  --------------------------------------------
+	  EditCopy		[Edit] Copy command
+	  EditPaste		[Edit] Paste comannd
+	  EditPasteCR		[Edit] Paste<CR> command
+	  LineUp		Scrolls up screen by 1 line
+	  LineDown		Scrolls down by 1 line
+	  PageUp		Scrolls up by 1 page
+	  PageDown		Scrolls down by 1 page
+	  BuffTop		Scrolls screen to buffer top
+	  BuffBottom		Scrolls screen to buffer bottom
+	  NextWin		Moves to the next Tera Term window
+	  PrevWin		Moves to the previous Tera Term window
+	  LocalEcho		Toggles the local echo status
+
+	  <PC key code>
+		PC key code (decimal number)
+
+	Example:
+		LineUp=1352
+
+6) [User keys] section
+This section defines user keys and character strings to be sent
+or macro file names to be executed by pressing the user keys.
+
+	Format:
+		<User key name>=<PC key code>,<Control flag>,
+				<Character string>
+
+	where:
+
+	  <User key name>
+		User1, User2, User3,...., User99
+		Maximum number of the user keys is 99. 
+		For example, if you want to define ten user keys,
+		you must use the first ten names, from "User1" to "User10".
+
+	  <PC key code>
+		PC key code (decimal number)
+
+	  <Control flag>
+		Control flag which specifies how <character string>
+		is treated when the PC key is pressed.
+			0	<character string> is sent as it is.
+			1	New-line codes in <character string>
+				are converted by Tera Term and
+				the converted string is sent.
+			2	A macro file which has the name of
+				<character string> is executed.
+	
+	  <Character string>
+		Character string to be sent or name of a macro file
+		to be executed by pressing the user key.
+		A non-printable character (control character) in
+		the string can be expressed as a "$" and ASCII code
+		in two-character hex number. For example, CR character
+		is expressed as "$0D". "$" itself is expressed as "$24".
+
+	Example:
+		User1=1083,0,telnet myhost
+		User2=1084,0,$0D$0A
+		User3=1085,1,$0D
+		User4=1086,2,test.ttl
+
+...............................................................................
+3.2 NOTE
+
+You can use a PC key code only once in the setup file.
+If you use a PC key code for multiple key assignments,
+the warning message "Key code XXX is used more than once" is
+displayed when the file is loaded by Tera Term. In this case,
+one of the assignments becomes active and others are ignored.
+
+If you don't want to assign a key item to any PC key,
+use the word "off" like the following:
+
+EditCopy=off
+
+...............................................................................
+3.3 KEY COMBINATIONS
+
+The following key combinations are acceptable to Tera Term and KEYCODE.EXE:
+
+	Shift+key
+	Ctrl+key
+	Shift+Ctrl+key
+	Shift+Alt+key
+	Ctrl+Alt+key
+	Shift+Ctrl+Alt+key
+
+Since some combinations (such as Alt+key) are used as shortcut keys of
+Tera Term and Windows, they don't have PC key codes and can't be specified
+in the keyboard setup file.

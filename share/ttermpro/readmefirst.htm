@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>TeraTerm Web 3.1 Notes</TITLE>
+</HEAD>
+<BODY>
+10/8/2002
+<P>
+First off, please forgive our shabby documentation with this release of TeraTerm Web 3.1.3.  We know 
+it stinks.  A complete rewrite of the help file and documentation are currently in the works.
+
+<P>
+We have included the original TeraTerm 2.3 documentation in the zip file, and this web page is our
+attempt to list what changes and improvements we have made.  We are currently rewriting the user and
+developer's manuals from scratch.  Please check our web site regularly for an update.
+<P>
+<B><U>Installation</U></B><BR>
+Unzip the ZIP file into a subdirectory of your choice.  That was hard, wasn't it?
+<P>
+
+<B><U>Configuration</U></B><BR>
+The teraterm.ini file contains all the configuration settings and parameters used by the application.  You may modify
+the file directly or through the executable (teraterm.exe) by changing settings then saving the configuration via the 
+<I>Setup --&gt; Save Setup...</I> menu.
+<P>
+
+<B><U>What has been added to TeraTerm 3.1?</U></B><BR>
+We have added a variety of features.  Two of the most predominant changes are:<P>
+(1) Adding the ability to connect to SSH2 based hosts.  To connect to a SSH host, simply choose the SSH service radio
+button when connecting via the new connection dialog box.<BR>
+(2) Adding a built in web server to allow
+a remote web browser or web application server (such as PHP, ColdFusion, WebSphere, ASP, etc) to send one 
+or more commands to the telnet or SSH host that TeraTerm is currently connected to.  The resulting text stream
+is captured and sent back to the calling web client where it can then be parsed and processed.
+<P>
+Here's how to make it work:
+<P>
+<OL>
+<LI>Modify the result.htm template to your taste.  The text "%result%" will be replaced with the captured text stream and the entire result template will be passed back to the calling web client</LI>
+<LI>Modify the error.htm template if desired.  The text "%error%" will be replaced with and error message (if an error is encountered) and that template will be returned back to the calling web client.</LI>
+<LI>Go into the Web menu and choose "Accept HTTP Connections...".  Make sure that the result and error templates point to the correct files.</LI>
+<LI>Select the desired IP address and port you want to listen on.</LI>
+<LI>Check the "Activate HTTP Listening" checkbox.  Once you do this, TeraTerm will begin listening for incoming web requests.</LI>
+</OL>
+The web client can pass commands in one of two ways:
+<P>
+<B>Via HTTP GET</B>
+<P>
+http://127.0.0.1:8080/get.htm?command1=xxx\n&amp;termstring1=aaa|bbb|ccc&amp;timeout1=5&amp;command2=yyy\n&&amp;termstring2=ddd|eee|fff&amp;timeout2=10
+<P>
+In this web call, TeraTerm will send the command "xxx" (with a newline "\n") to the connected host.  It will
+then wait and watch the host's text stream for one of the following termination strings, "aaa", "bbb", "ccc",
+<B>OR</B> 5 seconds to elapse (whichever comes first).  (Please note that the delimiter for termstring's to
+watch for it the pipe character by default but can be changed in the configuration settings).  Next,
+TeraTerm will pass the command "yyy" (with a newline) to the host and wait for termstrings "ddd", "eee", "fff", or
+10 seconds to elapse (whichever comes first).  It will then stop it's text stream capture and pass the 
+entire captured block of text back to the calling web client.  Please note that carriage returns will be escaped with 
+a "\r", linefeeds with a "\n", tabs with a "\t" etc.
+<P>
+You may pass as many commands as you wish as long as an accompying termstring and timeout parameter is passed as well.
+<P>
+<B>Via HTTP POST</B>
+<P>
+You may issue the same parameters via an HTTP POST instead of a GET if desired.  The following HTML code 
+demonstrates an example of passing the same data as the GET example above:
+<P>
+<FONT FACE="Courier New" SIZE="-1">
+&lt;FORM NAME="myform" ACTION="http://127.0.0.1:8080/post.htm" METHOD="post"&gt;<BR>
+&lt;INPUT TYPE="hidden" NAME="command1" VALUE="xxx\n"&gt;<BR>
+&lt;INPUT TYPE="hidden" NAME="termstring1" VALUE="aaa|bbb|ccc"&gt;<BR>
+&lt;INPUT TYPE="hidden" NAME="timeout1" VALUE="5"&gt;<BR>
+&lt;INPUT TYPE="hidden" NAME="command2" VALUE="yyy\n"&gt;<BR>
+&lt;INPUT TYPE="hidden" NAME="termstring2" VALUE="ddd|eee|fff"&gt;<BR>
+&lt;INPUT TYPE="hidden" NAME="timeout2" VALUE="10"&gt;<BR>
+&lt;INPUT TYPE="submit" NAME="Submit" VALUE="Submit"&gt;<BR>
+&lt;/FORM&gt;<BR>
+</FONT>
+
+<P>
+<B>Obtaining the connection status of Tera Term</B>
+<P>
+You may issue a status request to Tera Term to request the current connection status, which can optionally include the hostname and 
+port it is connected to and the duration it has been connected.  This is very useful since a web application may 
+want to make sure Tera Term is connected before passing a GET or POST sequence of commands. 
+Here is an example of how to call the status request:
+<P>
+http://127.0.0.1:8080/status.htm
+<P>
+You may modify the status template returned by specifying it in the configuration settings.  Be sure that the variables %hostname%, 
+%port% and %time% are included, as these will be replaced by the actual data when returned back to the calling HTTP client.  If Tera Term is 
+currently disconnected, the error template will be returned with the %error% variable set to "Not Connected"
+
+<P>
+<B>Making Tera Term connect to a remote host</B>
+<P>
+You, of course, can manually connect Tera Term to a remote Telnet or SSH host before issuing HTTP GET or POST command sequences to it. 
+You can also have Tera Term connect to a remote host by calling a connect template, which is very useful for a web application to programmatic 
+cause Tera Term to connect to a remote host.  Example:
+<P>
+http://127.0.0.1:8080/connect.htm?hostname=www.foo.com&amp;port=23
+<P>
+This will cause Tera Term to connect to the remote host.  If unable to connect, the error template will be returned with the appropriate error
+message swapped with the %error% variable.  Please note that at this time you are unable to use this template to connect to 
+a SSH host.  Connecting to a SSH host will still have to be done manually. 
+
+<P>
+<B>Making Tera Term disconnect from a remote host</B>
+<P>
+You can cause Tera Term to disconnect from it's currently connected host by issuing a call to the disconnect template as follows:
+<P>
+http://127.0.0.1:8080/disconnect.htm
+<P>
+Please note that the ability to call this can be disabled in the configuration settings, if desired.
+
+<P>
+<B>Authentication</B>
+<P>
+Authentication can be set in the configuration file as required to prevent unauthorized passing of 
+commands to a remote telnet host via Tera Term.  Unfortunately, documentation regarding forms and 
+methods of authenticating these requests will not be available until the full documentation set is released.  Please 
+check the Ayera website (<A HREF="http://www.ayera.com/index.htm?ttdoc=3%2E1%2E3">http://www.ayera.com</A>) frequently for
+an update.
+<P>
+Any questions or concerns can be emailed to <A HREF="mailto:support@ayera.com">support@ayera.com</A>
+
+
+
+</BODY>
+</HTML>

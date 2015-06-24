@@ -7,9 +7,9 @@ gitdir = fso.GetParentFolderName(WScript.ScriptFullName)
 
 ' Dynamically create a shortcut with the current directory as the working directory.
 Set link = shell.CreateShortcut(linkfile)
-link.TargetPath = fso.BuildPath(gitdir, "bin\sh.exe")
+link.TargetPath = fso.BuildPath(gitdir, "..\bin\sh.exe")
 link.Arguments = "--login -i"
-link.IconLocation = fso.BuildPath(gitdir, "etc\git.ico")
+link.IconLocation = fso.BuildPath(gitdir, "..\etc\git.ico")
 If WScript.Arguments.Length > 0 Then link.WorkingDirectory = WScript.Arguments(0)
 link.Save
 

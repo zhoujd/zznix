@@ -1,0 +1,5 @@
+connect "/c=1 /baud=38400"
+sendln ""
+wait "pSH+>"
+messagebox "Hello World! I caught the string!" "First ttl"
+closett

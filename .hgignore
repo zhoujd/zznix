@@ -12,6 +12,8 @@ home/zhoujd/.hgrc
 home/zhoujd/.gitk
 .bash_history
 hg-serve.pid
+.recently-used.xbel
+_viminfo
 Multiviewer.config
 libexec/git-core
 doc/git/html

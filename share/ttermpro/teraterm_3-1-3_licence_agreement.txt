@@ -1,0 +1,23 @@
+Ayera Technologies, Inc. Software Agreement
+
+Tera Term Pro Web 3.1.3 (October 8, 2002)
+Original Code Base, Copyright (C) 1994-1998 T. Teranishi
+Modified Code, Copyright (C) 2002 Ayera Technologies, Inc.
+All Rights Reserved
+
+You should carefully read the following terms and conditions before using this software.  Unless you have a different license agreement signed by Ayera Technologies, Inc.  ("Ayera") your use, distribution, or installation of this copy of Tera Term Pro Web indicates your acceptance of this License.
+
+If you do not agree to any of the terms of this License, then do not install or use this copy of Tera Term Pro Web.  
+
+THIS SOFTWARE, AND ALL ACCOMPANYING FILES, DATA AND MATERIALS, ARE DISTRIBUTED "AS IS" AND WITH NO WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED.  The user must assume the entire risk of
+using the program.  THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THE AGREEMENT.
+
+ANY LIABILITY OF AYERA WILL BE LIMITED EXCLUSIVELY TO REFUND OF PURCHASE PRICE.  IN ADDITION, IN NO EVENT SHALL AYERA, OR ITS PRINCIPALS, SHAREHOLDERS, OFFICERS, EMPLOYEES, AFFILIATES, CONTRACTORS, SUBSIDIARIES, OR PARENT ORGANIZATIONS, BE LIABLE FOR ANY INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES WHATSOEVER RELATING TO THE USE OF TERA TERM PRO WEB, OR YOUR RELATIONSHIP WITH AYERA.
+
+IN ADDITION, IN NO EVENT DOES AYERA AUTHORIZE YOU TO USE TERA TERM PRO WEB IN APPLICATIONS OR SYSTEMS WHERE IT'S FAILURE TO PERFORM CAN REASONABLY BE EXPECTED TO RESULT IN A SIGNIFICANT PHYSICAL INJURY, OR IN LOSS OF LIFE.  ANY SUCH USE BY YOU IS ENTIRELY AT YOUR OWN RISK, AND YOU AGREE TO HOLD AYERA HARMLESS FROM ANY CLAIMS OR LOSSES RELATING TO SUCH UNAUTHORIZED USE.
+
+This Agreement is the complete statement of the Agreement between the parties on the subject matter, and merges and supersedes all other or prior understandings, purchase orders, agreements and arrangements.  This Agreement shall be governed by the laws of the State of California.  Exclusive jurisdiction and venue for all matters relating to this Agreement shall be in courts and fora located in the State of California, and you consent to such jurisdiction and venue.
+
+All rights of any kind in Tera Term Pro Web which are not expressly granted in this License are entirely and exclusively reserved to and by Ayera Technologies, Inc. and T. Teranishi. You may not rent, lease, modify, translate, reverse engineer, decompile, disassemble or create derivative works based on Tera Term Pro Web. There are no third party beneficiaries of any promises, obligations or representations made by Ayera herein.
+
+You may not distribute Tera Term Pro Web by any means to any other individual, company or entity. 
