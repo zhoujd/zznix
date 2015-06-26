@@ -35,6 +35,9 @@ bin\add_path.exe /user %CD%\share\xz\bin_x86-64
 echo add %CD%\share\xming\bin to user path
 bin\add_path.exe /user %CD%\share\xming\bin
 
+echo add %CD%\share\mc to user path
+bin\add_path.exe /user %CD%\share\mc
+
 echo import reg file: env_zznix.reg
 regedit /s misc\env_zznix.reg
 
