@@ -19,6 +19,9 @@ bin\7z.exe x -y doc\git\html.7z -odoc\git > %TEMP_LOG%
 echo install lib
 bin\7z.exe x -y lib\lib.7z -olib > %TEMP_LOG%
 
+echo setup .bash_addpath
+copy /y home\zhoujd\.bash_pathmin home\zhoujd\.bash_addpath
+
 rem clean temp log file
 del %TEMP_LOG%
 

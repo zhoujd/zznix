@@ -1,0 +1,16 @@
+# add zznix interval path
+ADD_PATH=(
+    /bin
+    /cmd
+    /libexec/git-core
+    /share/putty
+    /share/ssh2
+    /share/nano
+    /share/console2
+    /share/xz/bin_x86-64
+    /share/mc
+)
+
+for path in ${ADD_PATH[@]} ; do
+    PATH=$path:$PATH
+done
