@@ -24,7 +24,7 @@ export DISPLAY=localhost:0.0
 ADD_PATH=(
     /bin
     /cmd
-    /libexec
+    /libexec/git-core
     /share/putty
     /share/ssh2
     /share/nano
