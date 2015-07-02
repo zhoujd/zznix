@@ -20,6 +20,23 @@ export PLINK_PROTOCOL=ssh
 # set DISPLAY environment
 export DISPLAY=localhost:0.0
 
+# add zznix interval path
+ADD_PATH=(
+    /bin
+    /cmd
+    /libexec
+    /share/putty
+    /share/ssh2
+    /share/nano
+    /share/console2
+    /share/xz/bin_x86-64
+    /share/mc
+)
+
+for path in ${ADD_PATH[@]} ; do
+    PATH=$path:$PATH
+done
+
 # self bash-setting from zzemacs
 if [ -d $HOME/zzemacs ] ; then
     export PATH=$HOME/zzemacs/bin:$HOME/zzemacs/libexec:$PATH
