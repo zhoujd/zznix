@@ -1,0 +1,36 @@
+#
+# This is the config file, and
+# a '#' or ';' character indicates
+# a comment
+#
+
+[core]
+	autocrlf = false
+	safecrlf = true
+	filemode = false
+[user]
+	name = zhoujd
+	email = zjd-405@163.com
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	fp = format-patch
+	df = difftool
+	dc = difftool --cached
+	de = ediff
+	ds = diff --stat
+	nlog = log -n
+	llog = log -n 10
+	lg = log -p
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ls = ls-files
+	ign = ls-files -o -i --exclude-standard
+	glog = log --graph --pretty=format:'%Cred%h%Creset %C(cyan)%an%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	flog = show --pretty=format: --name-only
+	cat = cat-file -p
+

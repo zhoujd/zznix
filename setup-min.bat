@@ -22,6 +22,9 @@ bin\7z.exe x -y lib\lib.7z -olib > %TEMP_LOG%
 echo setup .bash_addpath
 copy /y home\zhoujd\.bash_pathmin home\zhoujd\.bash_addpath
 
+echo setup git config file
+copy /y home\zhoujd\.gitcfg-for-min home\zhoujd\.gitconfig
+
 rem clean temp log file
 del %TEMP_LOG%
 
