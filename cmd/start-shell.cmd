@@ -1,7 +1,7 @@
 @rem This is for start shell
 
-@set ZZNIX=c:/zznix
-@set HOME=%ZZNIX%/home/zhoujd
+@set ZZNIX_HOME=c:/zznix
+@set HOME=%ZZNIX_HOME%/home/zhoujd
 @set SELECT=sh
 
 @if %SELECT% == csh goto 1
@@ -9,14 +9,14 @@
 @goto END
 
 :1
-@%ZZNIX%/bin/csh.exe -l
+@%ZZNIX_HOME%/bin/csh.exe -l
 @goto END
 
 :2
-@%ZZNIX%/bin/sh.exe --login -i
+@%ZZNIX_HOME%/bin/sh.exe --login -i
 @goto END
 
 :END
-@set ZZNIX=
+@set ZZNIX_HOME=
 @set HOME=
 @set SELECT=
