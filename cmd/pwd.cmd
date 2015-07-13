@@ -1,1 +1,1 @@
-@bash -c "pwd -W" 
+@sh -c "pwd -W" 
