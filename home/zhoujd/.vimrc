@@ -54,6 +54,7 @@ set expandtab
 set smarttab
 " no sound
 set vb t_vb=
+set noeb
 
 if has("gui_running")
   set number
