@@ -27,17 +27,8 @@ fi
 
 # self bash-setting from zzemacs
 if [ -d $HOME/zzemacs ] ; then
-    export PATH=$HOME/zzemacs/bin:$HOME/zzemacs/libexec:$PATH
-    for i in $HOME/zzemacs/etc/profile.d/*.sh ; do
-        if [ -r "$i" ]; then
-            if [ "${-#*i}" != "$-" ]; then
-                . "$i"
-            else
-                . "$i" >/dev/null 2>&1
-            fi
-        fi
-    done
-fi
+    . $HOME/zzemacs/etc/profile
+fi 
 
 # source .bash_profile
 if [ -f ${HOME}/.bash_profile ] ; then
