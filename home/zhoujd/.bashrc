@@ -26,7 +26,7 @@ if [ -f $HOME/.bash_addpath ] ; then
 fi
 
 # self bash-setting from zzemacs
-if [ -d $HOME/zzemacs ] ; then
+if [ -f $HOME/zzemacs/etc/profile ] ; then
     . $HOME/zzemacs/etc/profile
 fi 
 
