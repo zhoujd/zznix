@@ -15,6 +15,8 @@ home/zhoujd/.lesshst
 home/zhoujd/.history
 home/zhoujd/.phistory
 home/zhoujd/.git-credentials
+home/zhoujd/.bash_addpath
+home/zhoujd/.bash_proxy
 known_hosts
 .bash_history
 hg-serve.pid

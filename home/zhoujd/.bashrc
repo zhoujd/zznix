@@ -30,6 +30,11 @@ if [ -f $HOME/zzemacs/etc/profile ] ; then
     . $HOME/zzemacs/etc/profile
 fi 
 
+# proxy setting
+if [ -f $HOME/.bash_proxy ] ; then
+    . $HOME/.bash_proxy
+fi
+
 # source .bash_profile
 if [ -f ${HOME}/.bash_profile ] ; then
     . ${HOME}/.bash_profile
