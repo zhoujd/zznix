@@ -43,3 +43,6 @@ export LESSCHARSET=utf-8
 
 # set default protocol for 'plink'
 export PLINK_PROTOCOL=ssh
+
+# set git editor
+export GIT_EDITOR="nano"
