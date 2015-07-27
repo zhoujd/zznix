@@ -74,6 +74,9 @@ bin\7z.exe x -y doc\git\html.7z -odoc\git > %TEMP_LOG%
 echo install lib
 bin\7z.exe x -y lib\lib.7z -olib > %TEMP_LOG%
 
+echo install winscp
+bin\7z.exe x -y share\winscp\winscp.7z -oshare\winscp > %TEMP_LOG%
+
 rem clean temp log file
 del %TEMP_LOG%
 
