@@ -37,3 +37,5 @@ alias cls='clear'        # only on win7
 alias nano='nano -w'
 alias more='less'
 alias lcsh='csh -l'
+alias unix2dos='dos2unix --u2d'
+alias dos2unix='dos2unix --d2u'
