@@ -7,7 +7,7 @@
 			<ServersBox Visible="0" Width="201" Height="509" Dock="left" Autohide="0"/>
 			<Toolbar Visible="0"/>
 			<MainMenu Visible="0"/>
-			<StartPage HideOnTab="1"/>
+			<StartPage HideOnTab="0"/>
 		</GUI>
 		<General>
 			<TabCaption>1</TabCaption>
