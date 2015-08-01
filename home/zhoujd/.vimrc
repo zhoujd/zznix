@@ -52,9 +52,12 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+
 " no sound
-set vb t_vb=
-set noeb
+if !has("gui_running")
+    set vb t_vb=
+    set noeb
+endif
 
 if has("gui_running")
   set number
