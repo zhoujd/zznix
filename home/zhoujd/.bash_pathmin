@@ -9,8 +9,11 @@ ADD_PATH=(
     /share/console2
     /share/xz/bin_x86-64
     /share/mc
+    /c/Python27
 )
 
 for path in ${ADD_PATH[@]} ; do
-    PATH=$path:$PATH
+    if [ -d $path ]; then
+        PATH=$path:$PATH
+    fi
 done
