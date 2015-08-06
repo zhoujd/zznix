@@ -24,6 +24,9 @@ set shortmess=atI
 set gcr=n:block-blinkon0
 set listchars=tab:\^\ ,trail:.,extends:>,precedes:<,eol:$
 
+" Allow backspacing over everything in insert mode
+set bs=indent,eol,start
+
 " No scrollbar
 "set guioptions-=l
 "set guioptions-=L
