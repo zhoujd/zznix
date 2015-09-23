@@ -1,0 +1,1 @@
+rd "%APPDATA%\DXVA Checker" /s

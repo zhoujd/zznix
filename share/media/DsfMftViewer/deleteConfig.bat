@@ -1,0 +1,1 @@
+rd "%APPDATA%\DsfMft Viewer" /s
