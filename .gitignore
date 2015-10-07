@@ -40,7 +40,7 @@ lib/tcl8.5/
 lib/tk8.5/
 doc/git/html/
 
-share/multiviewer/Multiviewer.config
+Multiviewer.config
 mtputty.xml
 mc.hot
 mc.ini
