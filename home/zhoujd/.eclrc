@@ -1,14 +1,14 @@
-;;setting asdf libs path
-#-:asdf 
+;;;; -*- Lisp -*-
+;;; ASDF configure
+#-asdf
 (require :asdf)
-(setf asdf:*central-registry*
-      ;; Default directories, usually just the ``current directory''
-      '(*default-pathname-defaults*
-
-        ;; Additional places where ASDF can find
-        ;; system definition files
-        #p"c:/lisp/systems/"
-        ))
+(mapc
+ #'(lambda (path)
+     (let ((full-path (merge-pathnames path (user-homedir-pathname))))
+       (pushnew full-path asdf:*central-registry* :test #'equal)))
+ '(
+   "lisp/system/"
+   ))
 
 ;;; The following lines added by ql:add-to-init-file:
 #-quicklisp
@@ -16,6 +16,3 @@
                                        (user-homedir-pathname))))
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
-
-(require :cmp)
-(setf C::*COMPILE-IN-CONSTANTS* t)
