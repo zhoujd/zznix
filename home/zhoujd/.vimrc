@@ -9,9 +9,11 @@ if has("win32")
 endif
 
 " coding system
-let &termencoding=&encoding
 set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,sjis,cp936,big5,latin1,gbk
+set fileencodings=utf-8-bom,ucs-bom,utf-8,cp936,gb18030,ucs,big5
+
+" coding for term
+let &termencoding=&encoding
 
 " Font setting
 set guifont=Microsoft\ YaHei\ Mono:h11:cANSI
@@ -21,7 +23,6 @@ set guifontset=-*-Microsoft\ YaHei\ Mono-medium-r-normal--11-*-*-*-*-*-iso8859-1
 set shortmess=atI
 set gcr=n:block-blinkon0
 set listchars=tab:\^\ ,trail:.,extends:>,precedes:<,eol:$
-set lines=27 columns=108
 
 " No scrollbar
 "set guioptions-=l
@@ -49,9 +50,12 @@ set softtabstop=4
 set shiftwidth=4
 set noexpandtab
 set smarttab
+
 if has("gui_running")
   set number
+  set lines=27 columns=108  
 endif
+
 set history=1000
 set ignorecase
 set hlsearch
