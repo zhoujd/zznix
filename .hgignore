@@ -1,5 +1,17 @@
 syntax: glob
 .git/
+home/zhoujd/tmp/
+home/zhoujd/.bash_history
+home/zhoujd/.breadcrumb
+home/zhoujd/.emacs-bmk-bmenu-state.el
+home/zhoujd/.geiser_history.racket
+home/zhoujd/.gitconfig
+home/zhoujd/.recentf
+home/zhoujd/.slime-history.eld
+home/zhoujd/.smex-items
+home/zhoujd/.hgrc
 
 syntax: regexp
 .elc
+home/zhoujd/zz.*
+home/zhoujd/\..+/
