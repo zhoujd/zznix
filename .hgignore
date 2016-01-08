@@ -11,6 +11,7 @@ home/zhoujd/.slime-history.eld
 home/zhoujd/.smex-items
 home/zhoujd/.hgrc
 home/zhoujd/.gitk
+home/zhoujd/hg-serve.pid
 
 syntax: regexp
 .elc
