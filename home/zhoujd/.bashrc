@@ -14,6 +14,7 @@ fi
 alias ls='ls --show-control-chars --color=always'
 alias ll='ls -l'
 alias dir='ls -C'
+alias pwd='pwd -W'
 
 export LS_COLORS='di=1'
 

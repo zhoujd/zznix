@@ -12,7 +12,6 @@ home/zhoujd/.smex-items
 home/zhoujd/.hgrc
 home/zhoujd/.gitk
 home/zhoujd/hg-serve.pid
-bin/python
 
 syntax: regexp
 .elc
