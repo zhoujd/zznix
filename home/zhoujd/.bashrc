@@ -16,6 +16,7 @@ alias ll='ls -l'
 alias dir='ls -C'
 alias pwd='pwd -W'
 
+
 export MAKE_MODE=unix
 export LS_COLORS='di=1'
 

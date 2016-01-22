@@ -13,6 +13,7 @@ home/zhoujd/.hgrc
 home/zhoujd/.gitk
 hg-serve.pid
 Multiviewer.config
+git-core/
 
 syntax: regexp
 .elc
