@@ -10,12 +10,13 @@ else
     fi    
 fi
 
-##for chinese file name show
+# for chinese file name show
 alias ls='ls --show-control-chars --color=always'
 alias ll='ls -l'
 alias dir='ls -C'
 alias pwd='pwd -W'
 
+# set ls folder color
 export MAKE_MODE=unix
 export LS_COLORS='di=1'
 
