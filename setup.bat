@@ -12,6 +12,9 @@ bin\add_path.exe /user %CD%\home\zhoujd\zzemacs\bin
 echo add %CD%\share\putty to user path
 bin\add_path.exe /user %CD%\share\putty
 
+echo add %CD%\share\ssh2 to user path
+bin\add_path.exe /user %CD%\share\ssh2
+
 echo setup end ...
 pause
 
