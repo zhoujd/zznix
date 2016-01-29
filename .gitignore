@@ -3,9 +3,6 @@
 *.*~
 *.pyc
 *.o
-
-zz*/
-.*/
 .bash_history
 .breadcrumb
 .gitconfig
@@ -16,4 +13,13 @@ zz*/
 .elcrc
 .hgrc
 
+zz*/
+.*/
+
+
+libexec/git-core/
+lib/perl5/
+lib/tcl8/
+lib/tcl8.5/
+lib/tk8.5/
 
