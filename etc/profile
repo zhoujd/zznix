@@ -51,7 +51,7 @@ if [ ! -d "$HOME" ]; then
 fi
 
 # normalize HOME to unix path
-HOME="$(cd "/home/zhoujd/." ; pwd)"
+HOME="$(cd "/home/zhoujd" ; pwd)"
 
 export PATH="$HOME/bin:$PATH"
 
