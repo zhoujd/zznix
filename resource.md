@@ -9,6 +9,7 @@ zznix resource
 
     <http://msysgit.github.io/><br>
     <http://code.google.com/p/msysgit/downloads/list?q=full+installer+official+git><br>
+    <http://planetozh.com/blog/2012/11/efficient-git-setup-on-windows/><br>
 
 3. Putty && Xming for x11 forward
 
@@ -23,3 +24,8 @@ localhost:0
 4. GEdit for windows
 
     <http://ftp.gnome.org/pub/gnome/binaries/win32/gedit/>
+
+5. Others
+
+    <http://superuser.com/><br>
+    <http://stackoverflow.com/><br>

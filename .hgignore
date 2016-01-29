@@ -13,7 +13,11 @@ home/zhoujd/.hgrc
 home/zhoujd/.gitk
 hg-serve.pid
 Multiviewer.config
-git-core/
+libexec/git-core
+lib/perl5
+lib/tcl8
+lib/tcl8.5
+lib/tk8.5
 
 syntax: regexp
 .elc

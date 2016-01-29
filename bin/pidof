@@ -1,0 +1,11 @@
+#!/bin/sh
+# return pid of a process
+ 
+[[ $@ ]] || { echo "Usage: pidof <executable, eg prog.exe>"; exit 1; }
+ 
+PIDOF=$(/c/Windows/system32/tasklist | grep "$1" | tr -s " " | cut -d" " -f2)
+ 
+if [ "$PIDOF" != "" ]; then
+echo $PIDOF;
+fi
+
