@@ -15,6 +15,7 @@ alias ls='ls --show-control-chars --color=always'
 alias ll='ls -l'
 alias dir='ls -C'
 alias pwd='pwd -W'
+alias sshX='ssh +X'
 
 # set ls folder color
 export MAKE_MODE=unix
