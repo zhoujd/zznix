@@ -1,14 +1,10 @@
-# PS1 setting
+####.bashrc for zznix
 
-if [ $TERM == emacs ]; then
-    PS1='\[\033[32m\]\u@\h \[\033[33m\]\w\[\033[0m\]$ '
-elif [ $TERM == xterm ]; then
-    PS1='\[\033[32m\]\u@\h \[\033[33m\]\w\[\033[0m\]$ '
-else
-    if [ -z "$PS1" ]; then
-        PS1='\u@\h \w\$ '
-    fi    
-fi
+# PS1 setting
+if [ -z "$PS1" -o "$TERM" == "emacs" ]; then
+    PS1='[\u@\h $(pwd | sed -e s!.*/home/zhoujd!~!)]$ '
+fi    
+
 
 # for chinese file name show
 alias ls='ls --show-control-chars --color=always'
