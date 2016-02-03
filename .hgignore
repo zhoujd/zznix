@@ -1,6 +1,6 @@
 syntax: glob
 .git/
-home/zhoujd/tmp/
+home/zhoujd/tmp
 home/zhoujd/.breadcrumb
 home/zhoujd/.emacs-bmk-bmenu-state.el
 home/zhoujd/.geiser_history.racket
@@ -14,6 +14,7 @@ home/zhoujd/.gitk
 hg-serve.pid
 Multiviewer.config
 libexec/git-core
+doc/git/html
 lib/perl5
 lib/tcl8
 lib/tcl8.5

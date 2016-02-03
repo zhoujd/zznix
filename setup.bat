@@ -27,28 +27,34 @@ echo add %CD%\share\console2 to user path
 bin\add_path.exe /user %CD%\share\console2
 
 echo import reg file: env_zznix.reg 
-reg import misc\env_zznix.reg
+regedit /s misc\env_zznix.reg
 
 echo import reg file: git_bg_gui.reg 
-reg import misc\git_bg_gui.reg
+regedit /s misc\git_bg_gui.reg
 
 echo import reg file: git_bg_shell.reg 
-reg import misc\git_bg_shell.reg
+regedit /s misc\git_bg_shell.reg
 
 echo import reg file: git_gui.reg 
-reg import misc\git_gui.reg
+regedit /s misc\git_gui.reg
 
 echo import reg file: git_shell.reg 
-reg import misc\git_shell.reg
+regedit /s misc\git_shell.reg
 
 echo import reg file: ms_bg_dos.reg 
-reg import misc\ms_bg_dos.reg
+regedit /s misc\ms_bg_dos.reg
 
 echo import reg file: ms_dos.reg 
-reg import misc\ms_dos.reg
+regedit /s misc\ms_dos.reg
+
+echo import reg file: fixed_cn.reg
+regedit /s share\console2\fixed_cn.reg
 
 echo install git-core
 bin\7z.exe x -y libexec\git-core.7z -olibexec > %TEMP_LOG%
+
+echo install git-doc
+bin\7z.exe x -y doc\git\html.7z -odoc\git > %TEMP_LOG%
 
 echo install lib
 bin\7z.exe x -y lib\lib.7z -olib > %TEMP_LOG%
