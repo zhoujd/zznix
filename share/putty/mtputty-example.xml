@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MTPutty version="1.0">
 	<Globals>
-		<PuttyLocation>putty.exe -load x11-forward</PuttyLocation>
+		<PuttyLocation>kitty.exe -load x11-setting</PuttyLocation>
 		<GUI>
-			<Pos Left="197" Top="94" Right="1189" Bottom="701" Maximized="0"/>
-			<ServersBox Visible="0" Width="201" Height="509" Dock="left" Autohide="0"/>
+			<Pos Left="87" Top="113" Right="1016" Bottom="652" Maximized="0"/>
+			<ServersBox Visible="0" Width="224" Height="441" Dock="right" Autohide="0"/>
 			<Toolbar Visible="0"/>
 			<MainMenu Visible="0"/>
 			<StartPage HideOnTab="0"/>
