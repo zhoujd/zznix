@@ -194,38 +194,6 @@
 		</tab>
 	</tabs>
 	<external_commands>
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-
-		
-		
-		
-		
-		
-		
-		
-
 		<external_command id="1" value="wscript C%:\zznix\share\console2\external\command1.wsf"/>
 		<external_command id="2" value="wscript C%:\zznix\share\console2\external\command2.wsf"/>
 		<external_command id="3" value="wscript C%:\zznix\share\console2\external\command3.wsf"/>
