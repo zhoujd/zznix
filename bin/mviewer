@@ -1,3 +1,0 @@
-#!/bin/sh
-
-start /zach/share/media/multiviewer/MultiViewer_a2rgb10 "$@"

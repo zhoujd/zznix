@@ -5,4 +5,4 @@ if [ ! $# = 4  ]; then
     exit 1
 fi
 
-start /zach/cmd/plink-cmd.wsf $@
+start /zznix/cmd/plink-cmd.wsf $@

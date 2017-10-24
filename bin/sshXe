@@ -1,4 +1,4 @@
 #!/bin/sh
 # start remote emacs
 
-/zach/share/ssh2/ssh2 +X "$@" emacs &
+/zznix/share/ssh2/ssh2 +X "$@" emacs &
