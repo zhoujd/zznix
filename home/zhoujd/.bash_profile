@@ -7,7 +7,7 @@
 
 prompt_short()
 {
-    pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zhoujd!-!
+    pwd | sed -e s!.*/home/zhoujd!-!
 }
 
 # non-printable characters must be enclosed inside \[ and \]
