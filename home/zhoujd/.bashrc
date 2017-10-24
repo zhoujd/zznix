@@ -20,6 +20,12 @@ export PLINK_PROTOCOL=ssh
 # set DISPLAY environment
 export DISPLAY=localhost:0.0
 
+# mount zznix
+if [ -f $HOME/.bash_mount ] ; then
+    . $HOME/.bash_mount
+fi
+
+
 # add path for mini setup
 if [ -f $HOME/.bash_addpath ] ; then
     . $HOME/.bash_addpath

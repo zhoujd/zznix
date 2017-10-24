@@ -13,7 +13,7 @@
 @goto END
 
 :2
-@%ZZNIX_HOME%/bin/sh.exe --login -i
+@C:/Git/bin/sh.exe --login -i
 @goto END
 
 :END
