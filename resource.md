@@ -13,8 +13,7 @@ zznix resource
 
 3. Putty && Xming for x11 forward
 
-    Connection-->SSH-->X11-->Enable X11 forwarding, X display location ==>
-localhost:0
+    Connection-->SSH-->X11-->Enable X11 forwarding, X display location ==> localhost:0
 
     <http://www.putty.org/><br>
     <http://sourceforge.net/projects/xming/><br>
