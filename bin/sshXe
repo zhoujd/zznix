@@ -1,4 +1,0 @@
-#!/bin/sh
-# start remote emacs
-
-/share/ssh2/ssh2 +X "$@" emacs &

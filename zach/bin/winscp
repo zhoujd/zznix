@@ -1,0 +1,3 @@
+#!/bin/sh
+
+start /zach/share/winscp/winscp.exe "$@"

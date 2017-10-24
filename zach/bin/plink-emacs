@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ ! $# = 3  ]; then
+    echo "Usage: $0 <user> <passwd> <ip>"
+    exit 1
+fi
+
+start /zach/cmd/plink-cmd.wsf $@ emacs
