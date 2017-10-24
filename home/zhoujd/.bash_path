@@ -1,0 +1,18 @@
+# add zznix interval path
+ADD_PATH=(
+    /zznix/bin
+    /zznix/cmd
+    /zznix/share/putty
+    /zznix/share/ssh2
+    /zznix/share/nano
+    /zznix/share/console2
+    /zznix/share/xz/bin_x86-64
+    /zznix/share/mc
+    /c/Python27
+)
+
+for path in ${ADD_PATH[@]} ; do
+    if [ -d $path ]; then
+        PATH=$path:$PATH
+    fi
+done

@@ -11,12 +11,6 @@ export LESSCHARSET=utf-8
 # set default protocol for 'plink'
 export PLINK_PROTOCOL=ssh
 
-# set git && hg editor
-#export GIT_EDITOR="nano"
-#export HGEDITOR="nano"
-#export GIT_SSH="/share/putty/TortoisePlink -ssh"
-#export GIT_SSH="/bin/ssh"
-
 # set DISPLAY environment
 export DISPLAY=localhost:0.0
 
@@ -26,16 +20,16 @@ if [ -f $HOME/.bash_mount ] ; then
 fi
 
 # add path for mini setup
-if [ -f $HOME/.bash_addpath ] ; then
-    . $HOME/.bash_addpath
+if [ -f $HOME/.bash_path ] ; then
+    . $HOME/.bash_path
+fi
+
+# proxy setting
+if [ -f $HOME/.bash_proxy ] ; then
+    . $HOME/.bash_proxy
 fi
 
 # self bash-setting from zzemacs
 if [ -f $HOME/zzemacs/etc/profile ] ; then
     . $HOME/zzemacs/etc/profile
 fi 
-
-# proxy setting
-if [ -f $HOME/.bash_proxy ] ; then
-    . $HOME/.bash_proxy
-fi
