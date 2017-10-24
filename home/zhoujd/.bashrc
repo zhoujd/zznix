@@ -25,7 +25,6 @@ if [ -f $HOME/.bash_mount ] ; then
     . $HOME/.bash_mount
 fi
 
-
 # add path for mini setup
 if [ -f $HOME/.bash_addpath ] ; then
     . $HOME/.bash_addpath
@@ -39,9 +38,4 @@ fi
 # proxy setting
 if [ -f $HOME/.bash_proxy ] ; then
     . $HOME/.bash_proxy
-fi
-
-# source .bash_profile
-if [ -f ${HOME}/.bash_profile ] ; then
-    . ${HOME}/.bash_profile
 fi
