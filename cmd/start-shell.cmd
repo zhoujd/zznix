@@ -1,6 +1,7 @@
 @rem This is for start shell
 
-@set ZZNIX_HOME=c:/zznix
+@set ZZNIX_HOME=C:/zznix
+@set SH_ROOT=C:/Git/bin
 @set HOME=%ZZNIX_HOME%/home/zhoujd
 @set SELECT=sh
 
@@ -13,10 +14,11 @@
 @goto END
 
 :2
-@C:/Git/bin/sh.exe --login -i
+@%SH_ROOT%/sh.exe --login -i
 @goto END
 
 :END
 @set ZZNIX_HOME=
+@set SH_ROOT=
 @set HOME=
 @set SELECT=
