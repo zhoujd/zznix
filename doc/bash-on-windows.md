@@ -2,6 +2,7 @@ Bash on Windows
 ===========================
 
 # Manager with LxRun.exe command line
+  URL: https://msdn.microsoft.com/en-us/commandline/wsl/install-win10
 
     $ LxRun.exe
     Performs administrative operations on the LX subsystem
