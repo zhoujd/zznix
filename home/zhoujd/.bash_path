@@ -8,6 +8,8 @@ ADD_PATH=(
     /zznix/share/console2
     /zznix/share/xz/bin_x86-64
     /zznix/share/mc
+    /zznix/share/nasm
+    /zznix/share/nasm/rdoff
     /c/Python27
 )
 
