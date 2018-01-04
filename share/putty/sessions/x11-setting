@@ -2,7 +2,7 @@ PortKnocking\\
 ACSinUTF\0\
 Comment\\
 CtrlTabSwitch\0\
-Password\600v3\
+Password\b6b3p\
 ForegroundOnBell\0\
 SaveWindowPos\0\
 WindowState\0\
@@ -113,7 +113,7 @@ CapsLockCyr\0\
 Printer\\
 UTF8Override\1\
 CJKAmbigWide\0\
-LineCodePage\\
+LineCodePage\UTF-8\
 Wordness224\2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2\
 Wordness192\2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2\
 Wordness160\1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\
@@ -176,7 +176,7 @@ TryPalette\0\
 UseSystemColours\0\
 FontVTMode\4\
 FontQuality\3\
-FontHeight\12\
+FontHeight\13\
 FontCharSet\0\
 FontIsBold\0\
 Font\Microsoft%20YaHei%20Mono\
