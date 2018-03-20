@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/zznix/share/ssh2/scp2 "$@"
