@@ -28,14 +28,14 @@
 			<color use="0" r="0" g="0" b="0"/></font>
 		<window title="Console" icon="" main_title_format="?U([%u] )?N({%u} )%m?s( - %s)" tab_title_format="%n. ?U([%u] )?N({%u} )%t?s( - %s)" use_tab_icon="1" use_tab_title="1" trim_tab_titles="20" trim_tab_titles_right="0"/>
 		<fullscreen start_in_fullscreen="0" fullscreen_monitor="0">
-			<controls show_menu="1" show_toolbar="1" show_searchbar="1" show_statusbar="1" show_tabs="1" hide_single_tab="1" tabs_on_bottom="0" hide_tab_icons="0" hide_tab_close_button="0" show_scrollbars="1"/>
-			<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0"/></fullscreen>
-		<controls show_menu="1" show_toolbar="1" show_searchbar="1" show_statusbar="0" show_tabs="1" hide_single_tab="1" tabs_on_bottom="0" hide_tab_icons="0" hide_tab_close_button="0" show_scrollbars="1"/>
+			<controls show_menu="1" show_toolbar="1" show_searchbar="1" show_statusbar="1" show_tabs="1" hide_single_tab="1" tabs_on_bottom="0" hide_tab_icons="0" hide_tab_close_button="0" hide_tab_new_button="0" show_scrollbars="1"/>
+			<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0" active="1"/></fullscreen>
+		<controls show_menu="1" show_toolbar="1" show_searchbar="1" show_statusbar="0" show_tabs="1" hide_single_tab="1" tabs_on_bottom="0" hide_tab_icons="0" hide_tab_close_button="0" hide_tab_new_button="0" show_scrollbars="1"/>
 		<styles caption="1" resizable="1" taskbar_button="1" border="1" inside_border="2" split_bar_size="0" tray_icon="0" quake_like="0" quake_animation_time="300" jumplist="0" integrated_ime="0" hide_when_inactive="0" per_monitor_dpi="0" keep_view_theme="0">
 			<selection_color r="255" g="255" b="255"/>
 			<highlight_color r="191" g="191" b="191"/></styles>
 		<position x="-1" y="-1" save_position="0" w="-1" h="-1" save_size="0" z_order="0" dock="-1" snap="-1" save_state="0" state="-1"/>
-		<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0"/></appearance>
+		<transparency type="0" active_alpha="255" inactive_alpha="255" r="0" g="0" b="0" active="1"/></appearance>
 	<behavior>
 		<copy_paste copy_on_select="1" clear_on_copy="1" sensitive_copy="1" no_wrap="1" eol_spaces="1" trim_spaces="1" rtf="1" copy_newline_char="0" include_left_delimiter="0" include_right_delimiter="0" left_delimiters=" ([" right_delimiters=" )]"/>
 		<scroll page_scroll_rows="0"/>
@@ -55,7 +55,7 @@
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="50" command="newtab2"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="51" command="newtab3"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="52" command="newtab4"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab5"/>
+		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="53" command="newtab5"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab6"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab7"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="newtab8"/>
@@ -166,13 +166,6 @@
 	</hotkeys>
 	<external_commands>
 	</external_commands>
-	<external_command id="1" value="wscript C%:\zznix\share\console2\external\command1.wsf"/>
-	<external_command id="2" value="wscript C%:\zznix\share\console2\external\command2.wsf"/>
-	<external_command id="3" value="wscript C%:\zznix\share\console2\external\command3.wsf"/>
-	<external_command id="4" value="wscript C%:\zznix\share\console2\external\command4.wsf"/>
-	<external_command id="5" value="wscript C%:\zznix\share\console2\external\command5.wsf %d"/>
-	<external_command id="6" value="wscript C%:\zznix\share\console2\external\command6.wsf"/>
-	<external_command id="7" value="wscript C%:\zznix\share\console2\external\command7.wsf"/>
 	<mouse>
 		<actions>
 			<action ctrl="0" shift="0" alt="0" button="1" name="copy"/>
@@ -217,5 +210,8 @@
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
 			</background>
+		</tab>
+		<tab title="Git-cmd" use_default_icon="0">
+			<console shell="C:\Git\git-cmd.exe" init_dir="c:\zznix\home\zhoujd" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 		</tab>
 	</tabs></settings>
