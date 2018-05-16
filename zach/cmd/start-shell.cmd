@@ -10,7 +10,7 @@
 @goto END
 
 :1
-@%ZZNIX_HOME%/bin/csh.exe -l
+@%ZZNIX_HOME%/zach/bin/csh.exe -l
 @goto END
 
 :2

@@ -28,7 +28,7 @@ sub diff_emacs {
     my $diff_a = shift;
     my $diff_b = shift;
 
-    my $diff_select = "cmd //c start c:/zznix/cmd/emacs-diff.cmd $diff_a $diff_b";
+    my $diff_select = "cmd //c start c:/zznix/zach/cmd/emacs-diff.cmd $diff_a $diff_b";
     (system("$diff_select") == 0) || die "Cannot run $diff_select $!";
 }
 

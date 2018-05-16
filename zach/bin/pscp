@@ -1,3 +1,3 @@
 #!/bin/sh
 
-/zznix/share/putty/pscp "$@"
+/zach/share/putty/pscp "$@"
