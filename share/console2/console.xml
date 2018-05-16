@@ -182,7 +182,7 @@
 	<snippets dir=""/>
 	<tabs>
 		<tab title="Git" icon="C:\Git\git-bash.exe" use_default_icon="0">
-			<console shell="C:\Git\usr\bin\bash.exe" init_dir="c:\zznix\home\zhoujd" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0">
+			<console shell="C:\Git\bin\bash.exe" init_dir="C:\Git" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0">
 				<env var="HOME" value="C:/zznix/home/zhoujd" check="1"/>
 			</console>
 			<cursor style="0" r="255" g="255" b="255"/>
