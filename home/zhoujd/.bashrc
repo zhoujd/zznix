@@ -1,23 +1,12 @@
-####.bashrc for zznix
+#### .bashrc
 
-# set ls folder color
-export MAKE_MODE=unix
-export PAGER=less
-export LESS=-FRSX
-export LESSCHARSET=utf-8
-export PLINK_PROTOCOL=ssh
-export DISPLAY=localhost:0.0
-
-# load bash setting
-BASH_SETTING=(
-    ~/.bash_ps
-    ~/.bash_alias
-    ~/.bash_mount
-    ~/.bash_path
-    ~/.bash_proxy
-    ~/.bash_emacs
-)
-
-for file in ${BASH_SETTING[@]} ; do
-    test -f $file && . $file
+# source bash configure from zzemacs/etc
+for i in ~/.bashrc.d/*.sh ; do
+    if [ -r "$i" ]; then
+        if [ "${-#*i}" != "$-" ]; then
+            . "$i"
+        else
+            . "$i" >/dev/null 2>&1
+        fi
+    fi
 done
