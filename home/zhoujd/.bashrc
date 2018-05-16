@@ -8,24 +8,16 @@ export LESSCHARSET=utf-8
 export PLINK_PROTOCOL=ssh
 export DISPLAY=localhost:0.0
 
-# load base setting
-BASE_SETTING=(
+# load bash setting
+BASH_SETTING=(
     ~/.bash_ps
     ~/.bash_alias
     ~/.bash_mount
     ~/.bash_path
     ~/.bash_proxy
+    ~/.bash_emacs
 )
 
-for file in ${BASE_SETTING[@]} ; do
-    test -f $file && . $file
-done
-
-# load other setting
-OTHER_SETTING=(
-    ~/zzemacs/etc/profile
-)
-
-for file in ${OTHER_SETTING[@]} ; do
+for file in ${BASH_SETTING[@]} ; do
     test -f $file && . $file
 done
