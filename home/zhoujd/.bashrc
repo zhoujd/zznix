@@ -9,12 +9,17 @@ export PLINK_PROTOCOL=ssh
 export DISPLAY=localhost:0.0
 
 # load bash setting
-test -f ~/.bash_ps    && . ~/.bash_ps
-test -f ~/.bash_alias && . ~/.bash_alias
-test -f ~/.bash_mount && . ~/.bash_mount
-test -f ~/.bash_path  && . ~/.bash_path
-test -f ~/.bash_proxy && . ~/.bash_proxy
+BASH_SETTING=(
+    ~/.bash_ps
+    ~/.bash_alias
+    ~/.bash_mount
+    ~/.bash_path
+    ~/.bash_proxy
 
-# self bash-setting from zzemacs
-test -f ~/zzemacs/etc/profile && . ~/zzemacs/etc/profile
+    # base setting from zzemacs
+    ~/zzemacs/etc/profile
+)
 
+for file in ${BASH_SETTING[@]} ; do
+    test -f $file && . $file
+done
