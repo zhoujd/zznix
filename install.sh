@@ -38,4 +38,3 @@ EOF
 
 Install_Bashrc
 Install_Minttyrc
-Install_Fstab
