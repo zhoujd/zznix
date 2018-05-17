@@ -4,7 +4,6 @@ alias ls='ls --show-control-chars --color=always'
 alias ll='ls -alF'
 alias l='ls -CF'
 alias dir='ls -C'        # only on win7
-alias pwd='pwd -W'       # only on win7
 alias cls='clear'        # only on win7
 alias nano='nano -w'
 alias more='less'
