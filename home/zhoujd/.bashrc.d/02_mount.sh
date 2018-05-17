@@ -1,2 +1,4 @@
-test -d /zach || mount -f c:/zznix/zach /zach
-test -d /home || mount -f c:/zznix/home /home
+## auto mount defined in C:\Git\etc\fstab 
+
+#test -d /zach || mount -f c:/zznix/zach /zach
+#test -d /home || mount -f c:/zznix/home /home
