@@ -1,7 +1,8 @@
 # add zznix interval path
 ADD_PATH=(
-    /zznix/bin
-    /zznix/cmd
+    /zach/bin
+    /zach/libexec
+    /zach/libexec/git-flow
 )
 
 for path in ${ADD_PATH[@]} ; do
