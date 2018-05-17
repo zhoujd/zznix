@@ -12,4 +12,4 @@ alias lcsh='csh -l'
 alias unix2dos='dos2unix --u2d'
 alias dos2unix='dos2unix --d2u'
 alias scp='pscp'
-
+alias zznix='cd /c/zznix'
