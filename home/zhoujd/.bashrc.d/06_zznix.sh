@@ -2,11 +2,11 @@
 zznix()
 {
     case $1 in 
-        home )
-            cd c:/zznix
+        -h | --help )
+            echo "This is zznix help"
             ;;
         * )
-            echo "zznix home  : change current folder to c:/zznix"
+            cd /c/zznix
             ;;
     esac
 }
