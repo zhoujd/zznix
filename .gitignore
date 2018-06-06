@@ -32,6 +32,7 @@
 .bash_proxy
 .viminfo
 .netrwhist
+.gambit_history
 
 _viminfo
 
