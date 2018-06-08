@@ -2,19 +2,18 @@
 
 ;; Load asdf3
 #-asdf
-(load (merge-pathnames "zzstumpwm/lisp/asdf.lisp"
+(load (merge-pathnames "common-lisp/asdf.lisp"
                        (user-homedir-pathname)))
 
 ;; Setup asdf
 (asdf:initialize-source-registry
  `(:source-registry
    (:tree (:home "common-lisp"))
-   (:tree (:home "zzstumpwm/lisp"))
    :inherit-configuration))
 
 ;; The following lines added by ql:add-to-init-file:
 #-quicklisp
-(let ((quicklisp-init (merge-pathnames "zzstumpwm/quicklisp/setup.lisp"
+(let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
                                        (user-homedir-pathname))))
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
