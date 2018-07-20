@@ -7,6 +7,6 @@ ADD_PATH=(
 
 for path in ${ADD_PATH[@]} ; do
     if [ -d $path ]; then
-        PATH=$path:$PATH
+        export PATH=$path:$PATH
     fi
 done
