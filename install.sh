@@ -2,7 +2,7 @@
 
 INSTALL_ROOT=`pwd`
 
-Install_Bashrc()
+install_Bashrc()
 {
 echo "Install .bash_profile to $USERPROFILE"
 cat > $USERPROFILE\\.bash_profile <<EOF
@@ -12,7 +12,7 @@ export HOME="C:/zznix/home/zhoujd"
 EOF
 }
 
-Install_Minttyrc()
+install_Minttyrc()
 {
 echo "Install .minttyrc to $USERPROFILE"
 cat > $USERPROFILE\\.minttyrc <<EOF
@@ -26,7 +26,7 @@ CursorBlinks=no
 EOF
 }
 
-Install_Fstab()
+install_fstab()
 {
 echo "Install zznix mount point to C:/Git/etc/fstab"
 cat >> C:/Git/etc/fstab <<EOF
@@ -36,5 +36,5 @@ C:/zznix/zach /zach ntfs binary,noacl,posix=0,user 0 0
 EOF
 }
 
-Install_Bashrc
-Install_Minttyrc
+install_bashrc
+install_minttyrc
