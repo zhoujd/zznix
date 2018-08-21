@@ -4,6 +4,7 @@ Putty
 1. Useful URLs
 
 	    <http://chaifeng.com/blog/2007/06/putty_200611.html>
+        <https://planethawleywood.com/2017/10/12/KiTTY-vs-PuTTY/>
 
 2. TortoisePlink
 
