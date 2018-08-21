@@ -4,7 +4,8 @@ Putty
 1. Useful URLs
 
 	    <http://chaifeng.com/blog/2007/06/putty_200611.html>
-        <https://planethawleywood.com/2017/10/12/KiTTY-vs-PuTTY/>
+        <https://planethawleywood.com/2017/10/12/KiTTY-vs-PuTTY>
+        <https://github.com/AlexAkulov/putty-color-themes>
 
 2. TortoisePlink
 
