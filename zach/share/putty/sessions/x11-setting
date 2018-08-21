@@ -4,7 +4,7 @@ SCPAutoPwd\0\
 ACSinUTF\0\
 Comment\\
 CtrlTabSwitch\0\
-Password\55222\
+Password\66133\
 ForegroundOnBell\0\
 SaveWindowPos\0\
 WindowState\0\
@@ -279,7 +279,7 @@ TerminalSpeed\38400,38400\
 TerminalType\putty-256color\
 TCPKeepalives\0\
 TCPNoDelay\1\
-PingIntervalSecs\0\
+PingIntervalSecs\10\
 PingInterval\0\
 WarnOnClose\1\
 CloseOnExit\1\
