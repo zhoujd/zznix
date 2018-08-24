@@ -91,6 +91,9 @@ set laststatus=2
 set cmdheight=1
 set ruler
 
+" Default the statusline when entering Vim
+hi statusline ctermfg=15 guibg=gray
+
 " Diff setting
 set diffexpr=MyDiff()
 function MyDiff()
