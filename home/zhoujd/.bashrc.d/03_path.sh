@@ -13,3 +13,5 @@ for new_entry in ${ADD_PATH[@]} ; do
         esac
     fi
 done
+
+export PATH

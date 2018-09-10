@@ -3,6 +3,7 @@
 .emacs.d/
 .slime/
 .ssh/
+.gnupg/
 
 *.elc
 *.*~
