@@ -1,4 +1,5 @@
 ;;;This is .emacs for zhoujd.
+(require 'package)
 (package-initialize)
 
 (defvar zzemacs-path "~/zzemacs")
