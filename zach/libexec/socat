@@ -1,0 +1,4 @@
+#!/bin/sh
+
+/zach/share/socat/socat $@ 2>/dev/null
+

@@ -1,4 +1,0 @@
-#!/bin/sh
-
-/zach/bin/socat $@ 2>/dev/null
-
