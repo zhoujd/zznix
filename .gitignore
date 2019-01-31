@@ -48,3 +48,4 @@ mc.ini
 PUTTY.chw
 nano.log
 httplog.log
+.Xauthority*
