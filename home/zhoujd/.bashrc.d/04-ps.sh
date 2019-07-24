@@ -9,8 +9,7 @@ PS1='\[\033[33m\]$(prompt_short) \[\033[36m\]$(__git_ps1 "%s")\[\033[0m\]
 $ '
 
 # set PS1 prompt for user@host
-export USER=zhoujd
-USERHOST='\[\033[32m\]${USER}@\h '
+USERHOST='\[\033[32m\]\u@\h '
 PS1=${USERHOST}${PS1}
 
 # set window title
