@@ -1,0 +1,17 @@
+<job id="sshd">
+  <script language="JScript">
+    var sshd_path   = "/usr/bin/sshd";
+    var sh_path = "C:/Git/bin/bash"
+    var sh_param = "-l -c"
+    var sh_home = "C:/zznix/home/zhoujd"
+
+    var cmdLine = sh_path + " " + sh_param + " " + sshd_path;
+    var objShell = WScript.CreateObject("WScript.Shell");
+    var objEnv = objShell.Environment("Process");
+    objEnv("HOME") = sh_home;
+    var ret = objShell.Run(cmdLine, 0, true);
+    if (ret != 0) {
+       WScript.Echo("sshd run " + cmdLine + " failed. error: " + ret);
+    }
+  </script>
+</job>
