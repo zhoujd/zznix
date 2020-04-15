@@ -18,5 +18,5 @@ PS1=${TITLEBAR}${PS1}
 
 # emacs PS1 setting
 if [ "$TERM" == "emacs" ]; then
-    PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zhoujd!~!)]$ '
+    PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/jiandon!~!)]$ '
 fi
