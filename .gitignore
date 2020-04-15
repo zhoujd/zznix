@@ -49,3 +49,5 @@ PUTTY.chw
 nano.log
 httplog.log
 .Xauthority*
+.tig_history
+
