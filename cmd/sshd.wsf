@@ -3,7 +3,7 @@
     var sshd_path   = "/usr/bin/sshd";
     var sh_path = "C:/Git/bin/bash";
     var sh_param = "-l -c";
-    var sh_home = "C:/zznix/home/zhoujd";
+    var sh_home = "C:/zznix/home/jiandon";
 
     var cmdLine = sh_path + " " + sh_param + " " + sshd_path;
     var objShell = WScript.CreateObject("WScript.Shell");
