@@ -236,7 +236,7 @@ BackspaceIsDelete\1\
 PassiveTelnet\0\
 RFCEnviron\0\
 RemoteCommand\\
-PublicKeyFile\C%3A%5Czznix%5Chome%5Czhoujd%5C.ssh%5Cid_rsa.ppk\
+PublicKeyFile\C%3A%5Czznix%5Chome%5Cjiandon%5C.ssh%5Cid_rsa.ppk\
 SSH2DES\0\
 LogHost\\
 SshProt\3\
