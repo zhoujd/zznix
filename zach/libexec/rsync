@@ -1,0 +1,6 @@
+#!/bin/sh
+# rsync
+
+RSYNC_PATH=/zach/share/rsync/msys/rsync.exe
+
+cmd //c $RSYNC_PATH "$@"
