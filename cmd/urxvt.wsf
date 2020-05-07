@@ -1,0 +1,17 @@
+<job id="sshd">
+  <script language="JScript">
+    var urxvt_path   = "/usr/bin/urxvt";
+    var sh_path = "C:/Windows/System32/bash.exe";
+    var sh_param = "-l -c";
+    var sh_home = "C:/zznix/home/jiandon";
+
+    var cmdLine = sh_path + " " + sh_param + " " + urxvt_path;
+    var objShell = WScript.CreateObject("WScript.Shell");
+    var objEnv = objShell.Environment("Process");
+    objEnv("HOME") = sh_home;
+    var ret = objShell.Run(cmdLine, 0, true);
+    if (ret != 0) {
+       WScript.Echo("urxvt run " + cmdLine + " failed. error: " + ret);
+    }
+  </script>
+</job>
