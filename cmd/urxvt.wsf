@@ -7,6 +7,9 @@
 
     var cmdLine = sh_path + " " + sh_param + " " + urxvt_path;
     var objShell = WScript.CreateObject("WScript.Shell");
+    if (WScript.Arguments.Count() == 1) {
+        objShell.CurrentDirectory = WScript.Arguments(0);
+    }
     var objEnv = objShell.Environment("Process");
     objEnv("HOME") = sh_home;
     var ret = objShell.Run(cmdLine, 0, true);

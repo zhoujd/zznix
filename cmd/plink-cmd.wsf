@@ -1,7 +1,7 @@
 <job id="plink-cmd">
   <script language="JScript">
     if (WScript.Arguments.Count() == 0) {
-        WScript.Echo("plink-cmd.wsf <ip> <user> <passwd> <app-name>");
+        WScript.Echo("plink-cmd.wsf <user> <passwd> <ip> <app-name>");
         WScript.Quit();
     }
 
