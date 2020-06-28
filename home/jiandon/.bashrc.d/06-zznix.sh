@@ -1,12 +1,25 @@
+## 06-zznix.sh
 
-zznix()
+z()
 {
     case $1 in 
         -h | --help )
-            echo "This is zznix help"
+            echo "This is for go to zznix"
             ;;
         * )
             cd /c/zznix
+            ;;
+    esac
+}
+
+w()
+{
+    case $1 in 
+        -h | --help )
+            echo "This is for go to work"
+            ;;
+        * )
+            cd /c/work
             ;;
     esac
 }
