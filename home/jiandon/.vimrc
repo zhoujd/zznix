@@ -17,8 +17,13 @@ let &termencoding=&encoding
 
 " Font setting
 if has("gui_running")
-  set guifont=Consolas:h12:cANSI
-  set guifontset=-*-Consolas-medium-r-normal--12-*-*-*-*-*-iso8859-1,fixed
+  if has("gui_gtk2")
+    set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 15
+  elseif has("gui_macvim")
+    set guifont=Anonymous\ Pro\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
 endif
 
 " UI setting
@@ -86,7 +91,16 @@ set incsearch
 set gdefault
 
 " Status line setting
-set statusline=%<%f%m%r\ %y\ (%{&fileformat})\ \ (ascii=\%b,hex=\%B)\ \ (%l,%c)\ %p%%\ \ %=[%{strftime(\"%H:%M,%d/%m/%Y\")}]
+set statusline=
+set statusline+=%f%m%r
+set statusline+=\ %y
+set statusline+=\ (%{&fileformat})
+set statusline+=\ (ascii=\%b,hex=\%B)
+set statusline+=\ (%l,%c)
+set statusline+=\ %p%%
+set statusline+=%=
+set statusline+=[%{strftime(\"%H:%M,%d/%m/%Y\")}]
+
 set laststatus=2
 set cmdheight=1
 set ruler

@@ -1,6 +1,6 @@
 ## 06-zznix.sh
 
-z()
+zx()
 {
     case $1 in 
         -h | --help )
@@ -12,7 +12,7 @@ z()
     esac
 }
 
-w()
+ws()
 {
     case $1 in 
         -h | --help )
