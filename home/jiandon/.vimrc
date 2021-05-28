@@ -18,11 +18,12 @@ let &termencoding=&encoding
 " Font setting
 if has("gui_running")
   if has("gui_gtk2") || has("gui_gtk3")
-    set guifont=WenQuanYi\ Zen\ Hei\ Mono\ 15
+    set guifont=IBM\ Plex\ Mono\ 12
+    set guifontwide=Droid\ Sans\ Fallback\ 14
   elseif has("gui_macvim")
-    set guifont=Anonymous\ Pro\ Regular:h14
+    set guifont=SF\ Mono:h12
   elseif has("gui_win32")
-    set guifont=JetBrains\ Mono:h12:cANSI
+    set guifont=Microsoft\ YaHei\ Mono:h12
   endif
 endif
 
@@ -101,7 +102,7 @@ set statusline+=\ (ascii=\%b,hex=\%B)
 set statusline+=\ (%l,%c)
 set statusline+=\ %p%%
 set statusline+=%=
-set statusline+=[%{strftime(\"%H:%M,%d/%m/%Y\")}]
+set statusline+=%{strftime(\"%a\ %b\ %d\ %H:%M\ %p\ %U\")}
 
 set laststatus=2
 set cmdheight=1
