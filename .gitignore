@@ -50,4 +50,5 @@ nano.log
 httplog.log
 .Xauthority*
 .tig_history
+.tramp_history
 
