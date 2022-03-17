@@ -12,4 +12,6 @@ README
 
 ## configure
 
-    copy .keynavrc C:\Users\<user>
+    Tildes (~) in paths are expanded to the value of %HOME% if it's set,
+    with fallback to %USERPROFILE% (usually C:\Users\<username>).
+    copy .keynavrc C:\Users\<username>
