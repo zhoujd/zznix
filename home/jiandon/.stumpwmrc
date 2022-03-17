@@ -1,0 +1,44 @@
+;;;; stumpwm configure -*-lisp-*-
+;;
+
+(defpackage :zwm
+  (:use :common-lisp
+        :stumpwm
+        :stumpwm-user))
+
+(in-package :zwm)
+
+(defvar *zz-load-directory*
+  (directory-namestring
+   (truename (merge-pathnames (user-homedir-pathname)
+                              ".stumpwmrc")))
+  "A directory with initially loaded files.")
+
+(defun zz-load (filename)
+  "Load a file FILENAME (without extension) from `*zz-load-directory*'."
+  (let ((file (merge-pathnames (concat "stumpwmrc.d/" filename ".lisp")
+                               *zz-load-directory*)))
+    (if (probe-file file)
+        (load file)
+        (format *error-output* "File '~a' doesn't exist." file))))
+
+(mapc
+ #'zz-load
+ (list
+  "macro-setting"
+  "common-setting"
+  "env-setting"
+  "font-setting"
+  "tool-setting"
+  "other-setting"
+  "system-setting"
+  "app-setting"
+  "prog-setting"
+  "float-setting"
+  "group-setting"
+  "menu-setting"
+  "keymap-setting"
+  "key-setting"
+  "nkey-setting"
+  "fkey-setting"
+  ))

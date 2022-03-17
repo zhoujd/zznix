@@ -1,0 +1,121 @@
+!!!! urxvt.ad
+!! urxvt --help 2>&1 | sed -n '/:  /s/^ */! URxvt*/gp'
+!! urxvt -iconFile /usr/share/pixmaps/urxvt_48x48.svg
+!! <Ctrl><S> stops transfer towards a terminal (the "freeze")
+!! <Ctrl><Q> resumes the transfer
+
+!! general
+URxvt.intensityStyles: false
+
+!! transparency
+URxvt.background: [90]#000000
+URxvt.depth: 32
+
+!! mouse scroll or Shift+Page Up
+URxvt.scrollBar: false
+URxvt.cursorColor: white
+
+URxvt.termName: rxvt-256color
+URxvt.geometry: 88x24
+URxvt.loginShell: true
+URxvt.saveLines: 4096
+
+!! border
+URxvt.externalBorder: 1
+URxvt.internalBorder: 0
+
+URxvt.lineSpace: 0
+URxvt.letterSpace: -1
+URxvt.fading: 30
+
+!! disable iso 14755 mode
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! disable bell
+URxvt.urgentOnBell: false
+URxvt.visualBell: false
+
+!! urxvt fonts
+URxvt.font: xft:JetBrains Mono NL:size=13, \
+            xft:Droid Sans Fallback:size=13
+
+!! urxvt icon
+URxvt.iconFile: /usr/share/pixmaps/urxvt_48x48.svg
+
+!! Extensions
+URxvt.perl-ext-common: default,eval,url-select,keyboard-select,tabbedex,selection-to-clipboard,font-size
+URxvt.colorUL: #4682B4
+
+!! eval
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+
+!! url-select
+URxvt.url-select.launcher: google-chrome
+URxvt.url-select.underline: true
+URxvt.keysym.M-u: perl:url-select:select_next
+
+!! keyboard-select ctrl+alt+[c|v]
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-q: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+!! tabbedex 'ctrl+d' to close tab
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+URxvt.tabbed.autohide: yes
+URxvt.tabbed.new-button: no
+URxvt.tabbed.title: yes
+URxvt.tabbed.no-tabbedex-keys: yes
+URxvt.keysym.C-t: perl:tabbedex:new_tab
+URxvt.keysym.S-Left: perl:tabbedex:prev_tab
+URxvt.keysym.S-Right: perl:tabbedex:next_tab
+URxvt.keysym.M-p: perl:tabbedex:prev_tab
+URxvt.keysym.M-n: perl:tabbedex:next_tab
+URxvt.keysym.M-b: perl:tabbedex:move_tab_left
+URxvt.keysym.M-f: perl:tabbedex:move_tab_right
+URxvt.keysym.S-Up: perl:tabbedex:rename_tab
+URxvt.keysym.S-Down: perl:tabbedex:new_tab
+URxvt.keysym.C-1: perl:tabbedex:goto_tab_1
+URxvt.keysym.C-2: perl:tabbedex:goto_tab_2
+URxvt.keysym.C-3: perl:tabbedex:goto_tab_3
+URxvt.keysym.C-4: perl:tabbedex:goto_tab_4
+URxvt.keysym.C-5: perl:tabbedex:goto_tab_5
+URxvt.keysym.C-6: perl:tabbedex:goto_tab_6
+URxvt.keysym.C-7: perl:tabbedex:goto_tab_7
+URxvt.keysym.C-8: perl:tabbedex:goto_tab_8
+URxvt.keysym.C-9: perl:tabbedex:goto_tab_9
+
+!! font-size
+URxvt.keysym.C-0:        font-size:reset
+URxvt.keysym.C-minus:    font-size:decrease
+URxvt.keysym.C-equal:    font-size:increase
+URxvt.keysym.C-question: font-size:show
+
+!! ctrl/alt + arrow
+URxvt.keysym.M-Up:      \033[1;3A
+URxvt.keysym.M-Down:    \033[1;3B
+URxvt.keysym.M-Right:   \033[1;3C
+URxvt.keysym.M-Left:    \033[1;3D
+URxvt.keysym.M-Prior:   \033[5;3~
+URxvt.keysym.M-Next:    \033[6;3~
+URxvt.keysym.M-End:     \033[1;3F
+URxvt.keysym.M-Home:    \033[1;3H
+
+URxvt.keysym.C-Up:      \033[1;5A
+URxvt.keysym.C-Down:    \033[1;5B
+URxvt.keysym.C-Right:   \033[1;5C
+URxvt.keysym.C-Left:    \033[1;5D
+URxvt.keysym.C-Prior:   \033[5;5~
+URxvt.keysym.C-Next:    \033[6;5~
+URxvt.keysym.C-End:     \033[1;5F
+URxvt.keysym.C-Home:    \033[1;5H
+
+!! alt + F1-F12
+URxvt.keysym.M-F1: perl:url-select:select_next
+URxvt.keysym.M-F2: perl:keyboard-select:activate
+URxvt.keysym.M-F3: perl:keyboard-select:search
+URxvt.keysym.M-F4: eval:paste_clipboard
+URxvt.keysym.M-F5: perl:tabbedex:new_tab

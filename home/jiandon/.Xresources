@@ -1,23 +1,7 @@
-!For Zachary Zhou on Linux
-!~/.Xresources
-!xrdb -load .Xresources
+!!!! .Xresources
+!!xrdb -load .Xresources
+!!xrdb -merge .Xresources
 
-XTerm*locale: true
-XTerm*utf8Title: true
-XTerm*fontMenu*fontdefault*Label: Default
-XTerm*faceName: Lucida Console
-XTerm*faceNameDoublesize: LiHei Pro
-XTerm*faceSize: 10
-XTerm*faceSize1: 10
-XTerm*faceSize2: 10
-XTerm*faceSize3: 10
-XTerm*faceSize4: 10
-XTerm*faceSize5: 10
-XTerm*faceSize6: 10
-XTerm.cjkWidth: true
-XTerm*background: black
-XTerm*foreground: white
-XTerm*scrollBar: false
-XTerm*rightScrollBar: true
-XTerm*jumpScroll: true
-XTerm*SaveLines: 1000
+#include ".xrdb/common.ad"
+#include ".xrdb/urxvt.ad"
+#include ".xrdb/xterm.ad"
