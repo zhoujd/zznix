@@ -51,4 +51,6 @@ httplog.log
 .Xauthority*
 .tig_history
 .tramp_history
-
+~/common-lisp  
+~/quicklisp
+~/lisp
