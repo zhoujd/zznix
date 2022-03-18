@@ -16,3 +16,8 @@ WIN10 Startup
     - Add your input method
     - Remove Microsoft Pinyin
 
+## Disable windows key
+
+    https://www.tomsguide.com/how-to/how-to-disable-the-windows-key
+    https://www.majorgeeks.com/files/details/winkill.html
+
