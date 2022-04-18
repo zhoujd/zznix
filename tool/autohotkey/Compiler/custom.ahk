@@ -23,3 +23,8 @@ return
     Send, {RAlt Up}
 return
 
+; Disable Left Windows Key
+LWin::Return
+
+; Disable Right Windows Key
+RWin::Return
