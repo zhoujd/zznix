@@ -12,6 +12,9 @@
 .bash_history
 .breadcrumb
 .gitconfig
+.git-prompt.sh
+.gitconfig.1source
+.gitconfig.url
 .gitk
 .recentf
 .smex-items
