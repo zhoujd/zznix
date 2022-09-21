@@ -9,7 +9,7 @@
     KeyWait, LAlt
 return
 
-; Make Alt+Something still work:
+; Make Alt+Something still work
 ~LAlt Up::
     Send, {LAlt Up}
 return
@@ -18,7 +18,7 @@ return
     KeyWait, RAlt
 return
 
-; Make Alt+Something still work:
+; Make Alt+Something still work
 ~RAlt Up::
     Send, {RAlt Up}
 return
@@ -28,3 +28,10 @@ LWin::Return
 
 ; Disable Right Windows Key
 RWin::Return
+
+; Remap Capslock -> RControl
+Capslock::RControl
+
+; Remap RControl -> Rwin
+RControl::RWin
+
