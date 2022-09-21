@@ -4,6 +4,13 @@
 ; trigger the input language change. The other, more common sequence would be
 ; [Press Alt], [Press Shift], [Release  Alt], [Release Shift], but AutoHotKey
 ; would block it before it reaches Windows if the "#If" isn't there.
+
+; Remap Capslock -> RControl
+Capslock::RControl
+
+; Remap RControl -> Rwin
+RControl::RWin
+
 #If not GetKeyState("LShift", "P")
 ~LAlt::
     KeyWait, LAlt
@@ -28,10 +35,3 @@ LWin::Return
 
 ; Disable Right Windows Key
 RWin::Return
-
-; Remap Capslock -> RControl
-Capslock::RControl
-
-; Remap RControl -> Rwin
-RControl::RWin
-
