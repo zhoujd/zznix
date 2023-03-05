@@ -4,13 +4,12 @@
 @REM Option Three: Use the Run Box
 @REM
 
-@REM mklink  <target>  <source>
+@REM Run mklink  <target>  <source>
 mklink /d c:\Git\zach c:\zznix\zach
 mklink /d c:\Git\home c:\zznix\home
 
-@REM setx system environment
-c:\zznix\cmd\setx.exe HOME C:\zznix\home\jiandon -m
+@REM Run install.sh
+c:\Git\bin\bash c:\zznix\install.sh
 
-@REM Please Reboot
 
 pause

@@ -2,17 +2,17 @@
 
 INSTALL_ROOT=`pwd`
 
-install_Bashrc()
+install_bashrc()
 {
 echo "Install .bash_profile to $USERPROFILE"
 cat > $USERPROFILE\\.bash_profile <<EOF
 ### zznix .bash_profile
-export HOME="C:/zznix/home/zhoujd"
+export HOME="/home/jiandon"
 . \$HOME/.bash_profile
 EOF
 }
 
-install_Minttyrc()
+install_minttyrc()
 {
 echo "Install .minttyrc to $USERPROFILE"
 cat > $USERPROFILE\\.minttyrc <<EOF
