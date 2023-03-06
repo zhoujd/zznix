@@ -4,8 +4,8 @@ INSTALL_ROOT=`pwd`
 
 install_bashrc()
 {
-echo "Install .bash_profile to $USERPROFILE"
-cat > $USERPROFILE\\.bash_profile <<EOF
+    echo "Install .bash_profile to $USERPROFILE"
+    cat > $USERPROFILE\\.bash_profile <<EOF
 ### zznix .bash_profile
 export HOME="/home/jiandon"
 . \$HOME/.bash_profile
@@ -14,8 +14,8 @@ EOF
 
 install_minttyrc()
 {
-echo "Install .minttyrc to $USERPROFILE"
-cat > $USERPROFILE\\.minttyrc <<EOF
+    echo "Install .minttyrc to $USERPROFILE"
+    cat > $USERPROFILE\\.minttyrc <<EOF
 BoldAsFont=no
 CursorType=block
 Locale=en_US
@@ -29,8 +29,8 @@ EOF
 
 install_fstab()
 {
-echo "Install zznix mount point to C:/Git/etc/fstab"
-cat >> C:/Git/etc/fstab <<EOF
+    echo "Install zznix mount point to C:/Git/etc/fstab"
+    cat >> C:/Git/etc/fstab <<EOF
 # This is zznix mount points
 C:/zznix/home /home ntfs binary,noacl,posix=0,user 0 0
 C:/zznix/zach /zach ntfs binary,noacl,posix=0,user 0 0
