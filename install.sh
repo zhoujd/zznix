@@ -23,6 +23,7 @@ Charset=UTF-8
 Font=Microsoft YaHei Mono
 FontHeight=12
 CursorBlinks=no
+BellType=0
 EOF
 }
 
