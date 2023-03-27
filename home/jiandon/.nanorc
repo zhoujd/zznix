@@ -16,7 +16,7 @@ set nowrap
 set mouse
 
 ##scroll smooth
-set smooth
+#set smooth
 
 ##case sensitive search
 set casesensitive
