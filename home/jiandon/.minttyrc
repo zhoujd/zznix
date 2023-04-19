@@ -7,3 +7,5 @@ FontHeight=12
 CursorBlinks=no
 BellType=0
 Scrollbar=none
+RewrapOnResize=no
+Term=xterm-256color
