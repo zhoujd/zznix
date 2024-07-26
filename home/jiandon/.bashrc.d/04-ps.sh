@@ -1,12 +1,11 @@
 
 prompt_short()
 {
-    pwd | sed -e s!.*/home/jiandon!-!
+    pwd | sed -e s!.*/home/jiandon!~!
 }
 
 # non-printable characters must be enclosed inside \[ and \]
-PS1='\[\033[33m\]$(prompt_short) \[\033[36m\]$(__git_ps1 "%s")\[\033[0m\]
-$ '
+PS1='\[\033[33m\]$(prompt_short) \[\033[0m\]$ '
 
 # set PS1 prompt for user@host
 USERHOST='\[\033[32m\]\u@\h '

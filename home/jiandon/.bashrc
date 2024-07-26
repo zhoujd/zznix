@@ -1,12 +1,6 @@
 #### .bashrc
 
-# source bash configure from zzemacs/etc
+# load script in ~/.bashrc.d
 for i in ~/.bashrc.d/*.sh ; do
-    if [ -r "$i" ]; then
-        if [ "${-#*i}" != "$-" ]; then
-            . "$i"
-        else
-            . "$i" >/dev/null 2>&1
-        fi
-    fi
+    [ -r "$i" ] && . "$i" >/dev/null 2>&1
 done
