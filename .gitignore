@@ -4,6 +4,7 @@
 .slime/
 .ssh/
 .gnupg/
+.fonts/
 
 *.elc
 *.*~

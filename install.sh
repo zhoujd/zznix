@@ -7,7 +7,7 @@ install_bashrc()
     echo "Install .bash_profile to $USERPROFILE"
     cat > $USERPROFILE\\.bash_profile <<EOF
 ### zznix .bash_profile
-export HOME="/home/jiandon"
+export HOME="/home/zach"
 . \$HOME/.bash_profile
 EOF
 }
