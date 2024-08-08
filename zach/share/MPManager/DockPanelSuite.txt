@@ -1,0 +1,7 @@
+DockPanel Suite is now being actively developed on GitHub:
+
+http://github.com/dockpanelsuite
+
+The latest binaries are available on the download page:
+
+http://github.com/dockpanelsuite/dockpanelsuite/downloads
