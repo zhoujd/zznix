@@ -1,7 +1,7 @@
 # prompt short
 prompt_short()
 {
-    pwd | sed -e s!.*/home/jiandon!~!
+    pwd | sed -e s!.*/home/zach!~!
 }
 
 # non-printable characters must be enclosed inside \[ and \]
@@ -17,5 +17,5 @@ PS1=${TITLEBAR}${PS1}
 
 # emacs PS1 setting
 if [ "$TERM" == "emacs" ]; then
-    PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/jiandon!~!)]$ '
+    PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zach!~!)]$ '
 fi
