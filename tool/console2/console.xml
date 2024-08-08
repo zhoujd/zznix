@@ -185,7 +185,7 @@
 	<tabs>
 		<tab title="Git" icon="C:\Git\git-bash.exe" use_default_icon="0">
 			<console shell="C:\Git\bin\bash.exe" init_dir="C:\Git" priority="4" run_as_user="0" user="" net_only="0" run_as_admin="0">
-				<env var="HOME" value="C:/zznix/home/jiandon" check="1"/>
+				<env var="HOME" value="C:/zznix/home/zach" check="1"/>
 			</console>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
@@ -207,7 +207,7 @@
 			<console shell="powershell" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 		</tab>
 		<tab title="Clisp" icon="C:\Lisp\clisp\clisp.exe" use_default_icon="0">
-			<console shell="C:\Lisp\clisp\clisp.exe -K full" init_dir="C:\zznix\home\jiandon" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<console shell="C:\Lisp\clisp\clisp.exe -K full" init_dir="C:\zznix\home\zach" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -216,6 +216,6 @@
 			</background>
 		</tab>
 		<tab title="GitCmd" use_default_icon="0">
-			<console shell="C:\Git\git-cmd.exe" init_dir="c:\zznix\home\jiandon" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<console shell="C:\Git\git-cmd.exe" init_dir="c:\zznix\home\zach" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
 		</tab>
 	</tabs></settings>
