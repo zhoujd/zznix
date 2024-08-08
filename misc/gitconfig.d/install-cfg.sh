@@ -1,44 +1,8 @@
 #!/bin/sh
 
-### http://gitbook.liuhui998.com/index.html
-## git submodule add url path/to/name
-## git submodule init
-## git submodule foreach git pull
-## git submodule update
-## git cherry-pick xxx-commit-id
-## git pull --squash another
-## git update-index --assume-unchanged /path/to/file
-## git update-index --no-assume-unchanged /path/to/file
-## find -type d -empty -exec touch {}/.gitignore \;
-
-### Build from source
-## sudo apt install libssl-dev libcurl4-openssl-dev libexpat1-dev
-## sudo yum install openssl-devel libcurl-devel expat-devel perl-devel
-## wget https://github.com/git/git/archive/v2.16.6.zip
-## unzip v2.16.6.zip
-## cd git-2.16.6
-## make prefix=/opt/git all
-## make prefix=/opt/git install
-## echo /opt/git/bin >> /etc/environment # or others
-
-### Get work root
-## git rev-parse --show-toplevel
-
-### GitHub Token
-## GITHUB_TOKEN="xxxxxxxxxxxxxxx"
-## git config --global url."https://${GITHUB_TOKEN}@github.com/zhoujd".insteadOf "https://github.com/zhoujd"
-## git config --file=~/.gitconfig-url url."https://${GITHUB_TOKEN}@github.com/zhoujd".insteadOf "https://github.com/zhoujd"
-## cat ~/.gitconfig-url
-## [url "https://${GITHUB_TOKEN}@github.com/zhoujd"]
-##	insteadOf = https://github.com/zhoujd
-
 echo "git global setup start"
 
-if [ "$OS" = "Windows_NT" ] ; then
-    SCRIPT_ROOT=$(cd $(dirname $0) && pwd -W)
-else
-    SCRIPT_ROOT=$(cd $(dirname $0) && pwd)
-fi
+SCRIPT_ROOT=$(cd $(dirname $0) && pwd -W)
 
 ## clear ~/.gitconfig
 echo "remove ~/.gitconfig and setting git configure ..."
@@ -65,19 +29,17 @@ git config --global user.email  "zchrzhou@gmail.com"
 ## output color
 git config --global color.ui    "true"
 
-## not check file mode on windows
-if [ "$OS" = "Windows_NT" ] ; then
-    ## cr && lf
-    git config --global core.autocrlf false
-    git config --global core.safecrlf true
-    git config --global core.filemode false
+## cr && lf
+git config --global core.autocrlf false
+git config --global core.safecrlf true
+git config --global core.filemode false
 
-    ## Chinese characters support in filenames
-    git config --global core.unicode true
-    git config --global core.quotepath false
-    git config --global i18n.commitencoding utf-8
-    git config --global i18n.logoutputencoding utf-8
-fi
+## Chinese characters support in filenames
+git config --global core.unicode true
+git config --global core.quotepath false
+git config --global gui.encoding utf-8,gbk
+git config --global i18n.commitencoding utf-8,gdk
+git config --global i18n.logoutputencoding utf-8,gbk
 
 ## alias
 git config --global alias.st    "status"
@@ -143,12 +105,7 @@ git config --global http.proxy $http_proxy
 ## git config --global http.sslverify false
 
 ## http://stackoverflow.com/questions/11693074/git-credential-cache-is-not-a-git-command
-if [ "$OS" = "Windows_NT" ] ; then
-    git config --global credential.helper wincred
-else
-    ## sudo apt install ca-certificates
-    git config --global credential.helper "cache --timeout=3600"
-fi
+git config --global credential.helper wincred
 
 ### git diff is called by git with 7 parameters:
 ### path old-file old-hex old-mode new-file new-hex new-mode
@@ -181,10 +138,8 @@ if [ -f $GITCONFIG_URL ]; then
 fi
 
 ## update gitconfig for cmd using
-if [ "$OS" = "Windows_NT" ] ; then
-    if [ ! $(cd "$HOME" ; pwd -W) = $(cd $USERPROFILE ; pwd -W) ] ; then
-        cp -f ~/.gitconfig $USERPROFILE
-    fi
+if [ ! $(cd "$HOME" ; pwd -W) = $(cd $USERPROFILE ; pwd -W) ] ; then
+    cp -f ~/.gitconfig $USERPROFILE
 fi
 
 echo "git global setup end"
