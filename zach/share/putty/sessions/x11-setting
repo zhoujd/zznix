@@ -299,5 +299,6 @@ SCPAutoPwd\0\
 NoFocusReporting\1\
 LinesAtAScroll\-1\
 SSHTunnelInTitle\0\
+OSC52WarnBeforeClipboardSync\0\
 PortKnocking\\
 DisableAltGr\0\
