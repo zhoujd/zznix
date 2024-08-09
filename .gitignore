@@ -1,50 +1,13 @@
+## .gitignore
+
 .hg/
-.config/
-.emacs.d/
-.slime/
-.ssh/
-.gnupg/
-.fonts/
 
 *.elc
 *.*~
 *.pyc
 *.o
-.bash_history
-.breadcrumb
-.gitconfig
-.git-prompt.sh
-.gitconfig-1source
-.gitconfig-url
-.gitk
-.recentf
-.smex-items
-.sbclrc
-.elcrc
-.hgrc
-.sdirs
-.hgk
-.phistory
-.history
-.emacs-bmk-bmenu-state.el
-.geiser_history.racket
-.lesshst
-.recently-used.xbel
-.slime-history.eld
-.wget-hsts
-.git-credentials
-.bash_addpath
-.bash_proxy
-.viminfo
-.netrwhist
-.gambit_history
-99-proxy.sh
 
 _viminfo
-
-zz*/
-tmp/
-work/
 
 Multiviewer.config
 mtputty.xml
@@ -53,11 +16,3 @@ mc.ini
 PUTTY.chw
 nano.log
 httplog.log
-.Xauthority*
-.tig_history
-.tramp_history
-~/common-lisp
-~/quicklisp
-~/lisp
-~/.local
-~/.zach
