@@ -3,6 +3,8 @@ ADD_PATH=(
     /zach/bin
     /zach/libexec
     /zach/libexec/git-flow
+    ~/.local/bin
+    ~/.zach/bin
 )
 
 for new_entry in ${ADD_PATH[@]} ; do

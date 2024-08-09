@@ -59,3 +59,5 @@ httplog.log
 ~/common-lisp
 ~/quicklisp
 ~/lisp
+~/.local
+~/.zach
