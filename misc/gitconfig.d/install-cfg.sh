@@ -37,9 +37,9 @@ git config --global core.filemode false
 ## Chinese characters support in filenames
 git config --global core.unicode true
 git config --global core.quotepath false
-git config --global gui.encoding utf-8,gbk
-git config --global i18n.commitencoding utf-8,gdk
-git config --global i18n.logoutputencoding utf-8,gbk
+git config --global gui.encoding utf-8
+git config --global i18n.commitencoding utf-8
+git config --global i18n.logoutputencoding utf-8
 
 ## alias
 git config --global alias.st    "status"
@@ -85,12 +85,11 @@ git config --global alias.sts   "stash show --text"
 git config --global alias.ls    "ls-files"
 git config --global alias.ign   "ls-files -o -i --exclude-standard"
 git config --global alias.cat   "cat-file -p"
-git config --global alias.flog  "show --pretty=format: --name-only"
-git config --global alias.last  "log -1 HEAD"
+git config --global alias.flog  "show --pretty=format: --name-only -1"
 
 ## git log
-git config --global alias.glog  "log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset' --abbrev-commit"
-git config --global alias.hlog  '!git glog -10'
+git config --global alias.glog  "log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset' --abbrev-commit -10"
+git config --global alias.hlog  'log --oneline -10'
 
 ## git daemon
 git config --global alias.srv   '!git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose'
