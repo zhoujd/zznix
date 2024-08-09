@@ -84,14 +84,14 @@ git config --global alias.stp   "stash pop"
 git config --global alias.sts   "stash show --text"
 git config --global alias.ls    "ls-files"
 git config --global alias.ign   "ls-files -o -i --exclude-standard"
-git config --global alias.cat   "cat-file -p"
+git config --global alias.cat   "cat-file -p HEAD"
 git config --global alias.flog  "show --pretty=format: --name-only -1"
 
-## git log
+## log
 git config --global alias.glog  "log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset' --abbrev-commit -10"
 git config --global alias.hlog  'log --oneline -10'
 
-## git daemon
+## daemon
 git config --global alias.srv   '!git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose'
 git config --global alias.hub   '!git daemon --base-path=. --export-all --enable=receive-pack --reuseaddr --informative-errors --verbose'
 
