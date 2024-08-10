@@ -5,10 +5,10 @@ INSTALL_ROOT=`pwd`
 install_bashrc()
 {
     echo "Install .bash_profile to $USERPROFILE"
-    cat > $USERPROFILE\\.bash_profile <<EOF
-### zznix .bash_profile
+    cat > $USERPROFILE\\.bashrc <<EOF
+### zznix .bashrc
 export HOME="/home/zach"
-. \$HOME/.bash_profile
+. \$HOME/.bashrc
 EOF
 }
 
