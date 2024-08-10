@@ -1,4 +1,4 @@
 ## .gitignore
 
-
-
+PortableSettings/KnownHosts.xml
+PortableSettings/SavedConnections/
