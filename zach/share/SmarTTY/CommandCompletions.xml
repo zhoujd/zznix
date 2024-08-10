@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<CommandCompletionDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Completions>
+		<CommandCompletion>
+			<Command>mkdir</Command>
+			<Description>create a directory</Description>
+			<SuppressAutoTriggers>true</SuppressAutoTriggers>
+			<Options>
+				<Option>
+					<Value>-m</Value>
+					<ShortDescription>set file mode</ShortDescription>
+					<LongDescription>
+						<Summary>-m, --mode=MODE</Summary>
+						<Info>set a file mode (as in chmod)</Info>
+					</LongDescription>
+					<LongDescription2></LongDescription2>
+				</Option>
+				<Option>
+					<Value>-p</Value>
+					<ShortDescription>make parent directories</ShortDescription>
+					<LongDescription>
+						<Summary>-p, --parents</Summary>
+						<Info>no error if existing, make parent directories as needed</Info>
+					</LongDescription>
+				</Option>
+				<Option>
+					<Value>-v</Value>
+					<ShortDescription>verbose mode</ShortDescription>
+					<LongDescription>
+						<Summary>-v, --verbose</Summary>
+						<Info>print a message for each created directory</Info>
+					</LongDescription>
+				</Option>
+			</Options>
+		</CommandCompletion>
+		<CommandCompletion>
+			<Command>export</Command>
+			<Description>define an environment variable</Description>
+			<SuppressAutoTriggers>true</SuppressAutoTriggers>
+		</CommandCompletion>
+	</Completions>
+</CommandCompletionDatabase>
