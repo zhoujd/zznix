@@ -91,6 +91,9 @@ git config --global alias.dname "diff --pretty=format: --name-only"
 git config --global alias.glog  "log --graph --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset %Cgreen(%cr)%Creset' --abbrev-commit -10"
 git config --global alias.hlog  'log --oneline -10'
 
+## list aliases
+git config --global alias.la    "!git config -l | grep alias | cut -c 7-"
+
 ## daemon
 git config --global alias.srv   '!git daemon --base-path=. --export-all --reuseaddr --informative-errors --verbose'
 git config --global alias.hub   '!git daemon --base-path=. --export-all --enable=receive-pack --reuseaddr --informative-errors --verbose'
