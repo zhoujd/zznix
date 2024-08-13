@@ -118,7 +118,7 @@ TermHeight\24\
 Font\Consolas\
 FontIsBold\0\
 FontCharSet\0\
-FontHeight\12\
+FontHeight\10\
 FontQuality\3\
 FontVTMode\4\
 UseSystemColours\0\
@@ -299,6 +299,5 @@ SCPAutoPwd\0\
 NoFocusReporting\1\
 LinesAtAScroll\-1\
 SSHTunnelInTitle\0\
-OSC52WarnBeforeClipboardSync\0\
 PortKnocking\\
 DisableAltGr\0\
