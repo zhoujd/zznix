@@ -45,7 +45,7 @@ git config --global i18n.logoutputencoding utf-8
 git config --global alias.st    "status"
 git config --global alias.ci    "commit"
 git config --global alias.cae   "commit --amend"
-git config --global alias.ca    "commit --amend --no-edit"
+git config --global alias.ca    "commit --amend --reset-author --no-edit"
 git config --global alias.br    "branch"
 git config --global alias.co    "checkout"
 git config --global alias.fp    "format-patch"
