@@ -35,6 +35,8 @@
 .viminfo
 .netrwhist
 .gambit_history
+.gdbinit
+.gdbinit.d/
 
 zz*/
 tmp/
