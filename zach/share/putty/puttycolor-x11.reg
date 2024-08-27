@@ -1,6 +1,6 @@
 Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\x11-setting]
+[HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\x11-settings]
 "Colour0"="215,208,199"
 "Colour1"="255,255,255"
 "Colour2"="21,21,21"
