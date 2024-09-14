@@ -155,7 +155,7 @@ Colour19\66,113,123\
 Colour20\221,221,221\
 Colour21\221,221,221\
 RawCNP\0\
-UTF8linedraw\0\
+UTF8linedraw\1\
 PasteRTF\0\
 MouseIsXterm\0\
 RectSelect\0\
@@ -299,5 +299,6 @@ SCPAutoPwd\0\
 NoFocusReporting\1\
 LinesAtAScroll\-1\
 SSHTunnelInTitle\0\
+OSC52WarnBeforeClipboardSync\0\
 PortKnocking\\
 DisableAltGr\0\
