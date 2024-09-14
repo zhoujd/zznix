@@ -3,7 +3,7 @@
     var urxvt_path   = "/usr/bin/urxvt";
     var sh_path = "C:/Windows/System32/bash.exe";
     var sh_param = "-l -c";
-    var sh_home = "C:/zznix/home/jiandon";
+    var sh_home = "C:/zznix/home/zach";
 
     var cmdLine = sh_path + " " + sh_param + " " + urxvt_path;
     var objShell = WScript.CreateObject("WScript.Shell");
