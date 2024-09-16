@@ -24,12 +24,14 @@ install_minttyrc()
     cat > $USERPROFILE\\.minttyrc <<EOF
 BoldAsFont=no
 CursorType=block
-Locale=en_US
+Locale=zh_CN
 Charset=UTF-8
-Font=Microsoft YaHei Mono
-FontHeight=12
+Font=JetBrains Mono NL
+FontHeight=10
 CursorBlinks=no
 BellType=0
+Columns=92
+Rows=25
 EOF
 }
 
