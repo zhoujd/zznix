@@ -1,14 +1,24 @@
 "" .vimrc
 set nocompatible
 
-" OS(unix/win32) setting
-if has("win32") && has("gui_running")
-  source $VIMRUNTIME/vimrc_example.vim
-  source $VIMRUNTIME/mswin.vim
-  behave mswin
+" Language
+if !has("gui_running")
+  language en_US.utf8
+else
+  set langmenu=en_US
+  let $LANG='en_US'
 endif
 
-" coding system
+" OS(unix/win32) setting
+if has("win32")
+  if has("gui_running")
+    source $VIMRUNTIME/vimrc_example.vim
+    source $VIMRUNTIME/mswin.vim
+    behave mswin
+  endif
+endif
+
+" coding for system
 set encoding=utf-8
 set fileencodings=utf-8-bom,ucs-bom,utf-8,cp936,gb18030,ucs,big5
 
@@ -47,21 +57,16 @@ if !has("win32")
   set guioptions-=T
 endif
 
+" Set Vim-specific sequences for RGB colors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " Color scheme setting
-if has("gui_running")
-  colo desert
-endif
+colorscheme desert
 
 " No temp files
 set noundofile
 set nobackup
 set noswapfile
-
-" Persistent undo
-"set undodir=~/.vim/undodir
-"set undofile
-"set undolevels=1000  "maximum number of changes that can be undone
-"set undoreload=10000 "maximum number lines to save for undo on a buffer reload
 
 syntax on
 
@@ -82,9 +87,11 @@ if !has("gui_running")
   set noeb
 endif
 
-if has("win32") && has("gui_running")
-  set number
-  set lines=27 columns=108
+if has("win32")
+  if has("gui_running")
+    set number
+    set lines=27 columns=108
+  endif
 endif
 
 set history=1000
@@ -95,23 +102,18 @@ set gdefault
 
 " Status line setting
 set statusline=
-set statusline+=%f%m%r
-set statusline+=\ %y
-set statusline+=\ (%{&fileformat})
-set statusline+=\ (ascii=\%b,hex=\%B)
-set statusline+=\ (%l,%c)
-set statusline+=\ %p%%
-set statusline+=%=
-if has("win32")
-  set statusline+=%{strftime(\"%a\ %b\ %d\ %H:%M\")}
-else
-  set statusline+=%{strftime(\"%a\ %b\ %d\ %l:%M\ %p\")}
-endif
-set statusline+=\ %=
+set statusline+=\[%n]                                   "buffernr
+set statusline+=\ %<%F\                                 "File+path
+set statusline+=\ %=\ %{''.(&fenc!=''?&fenc:&enc).''}\  "Encoding
+set statusline+=\ %{(&bomb?\",BOM\":\"\")}\             "Encoding2
+set statusline+=\ %{&ff}\                               "FileFormat (dos/unix..)
+set statusline+=\ row:%l/%L\ col:%c\ (%p%%)\            "Rownumber/total (%)
+set statusline+=\ \ %m%r%w\ %P\                         "Modified? Readonly? Top/bot
 
+" Default the statusline when entering Vim
 set laststatus=2
 set cmdheight=1
 set ruler
 
 " Default the statusline when entering Vim
-hi statusline ctermfg=green guibg=grey
+hi statusline ctermfg=black guibg=grey
