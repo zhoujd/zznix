@@ -5,34 +5,27 @@ INSTALL_ROOT=`pwd`
 install_bashrc()
 {
     echo "Install .bash_profile to $USERPROFILE"
-    cat > $USERPROFILE\\.bash_profile <<EOF
+    cat > $USERPROFILE/.bash_profile <<EOF
 ### zznix .bash_profile
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 EOF
     echo "Install .bashrc to $USERPROFILE"
-    cat > $USERPROFILE\\.bashrc <<EOF
+    cat > $USERPROFILE/.bashrc <<EOF
 ### zznix .bashrc
 export HOME="/home/zach"
 . \$HOME/.bashrc
 EOF
+        echo "Install bashrc Done"
 }
 
-install_minttyrc()
+install_others()
 {
     echo "Install .minttyrc to $USERPROFILE"
-    cat > $USERPROFILE\\.minttyrc <<EOF
-BoldAsFont=no
-CursorType=block
-Locale=zh_CN
-Charset=UTF-8
-Font=JetBrains Mono NL
-FontHeight=12
-CursorBlinks=no
-BellType=0
-Columns=92
-Rows=25
-EOF
+    cp -v C:/zznix/home/zach/.minttyrc $USERPROFILE
+    echo "Install .vimrc to $USERPROFILE"
+    cp -v C:/zznix/home/zach/.vimrc $USERPROFILE
+    echo "Install others Done"
 }
 
 install_fstab()
@@ -46,4 +39,4 @@ EOF
 }
 
 install_bashrc
-install_minttyrc
+install_others
