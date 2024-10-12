@@ -28,8 +28,8 @@ let &termencoding=&encoding
 " Font setting
 if has("gui_running")
   if has("gui_gtk")
-    set guifont=IBM\ Plex\ Mono\ 12
-    set guifontwide=Droid\ Sans\ Fallback\ 14
+    set guifont=SF\ Mono\ 13
+    set guifontwide=SF\ Mono\ SC\ 13
   elseif has("gui_macvim")
     set guifont=SF\ Mono:h12
   elseif has("gui_win32")
@@ -58,8 +58,8 @@ if !has("win32")
 endif
 
 " Set Vim-specific sequences for RGB colors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 " Color scheme setting
 colorscheme desert
 
@@ -102,13 +102,13 @@ set gdefault
 
 " Status line setting
 set statusline=
-set statusline+=\[%n]                                   "buffernr
+set statusline+=\[%n]                                   "Buffernr
 set statusline+=\ %<%F\                                 "File+path
 set statusline+=\ %=\ %{''.(&fenc!=''?&fenc:&enc).''}\  "Encoding
 set statusline+=\ %{(&bomb?\",BOM\":\"\")}\             "Encoding2
 set statusline+=\ %{&ff}\                               "FileFormat (dos/unix..)
 set statusline+=\ row:%l/%L\ col:%c\ (%p%%)\            "Rownumber/total (%)
-set statusline+=\ %m%r%w\ %P\                           "Modified? Readonly? Top/bot
+set statusline+=\ %m%r%w\ %P\                           "Modified? Readonly? Top/Bot/All
 
 " Default the statusline when entering Vim
 set laststatus=2
@@ -116,4 +116,4 @@ set cmdheight=1
 set ruler
 
 " Default the statusline when entering Vim
-hi statusline ctermfg=black guibg=grey
+hi statusline ctermfg=green guibg=grey
