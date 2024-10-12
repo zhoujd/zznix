@@ -31,9 +31,9 @@ if has("gui_running")
     set guifont=SF\ Mono\ 13
     set guifontwide=SF\ Mono\ SC\ 13
   elseif has("gui_macvim")
-    set guifont=SF\ Mono\ SC:h12
+    set guifont=SF\ Mono\ SC:h11
   elseif has("gui_win32")
-    set guifont=SF\ Mono\ SC:h12
+    set guifont=SF\ Mono\ SC:h11
   endif
 endif
 
