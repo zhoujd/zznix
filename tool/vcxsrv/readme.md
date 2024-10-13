@@ -15,3 +15,11 @@ XcXsrv README
 create shorcut: "C:\Program Files\VcXsrv\vcxsrv.exe" :0 -multiwindow -clipboard -wgl -dpi 82
 copy shortcut to: start -> run -> "shell:startup"
 ```
+
+## DPI
+
+```
+Estimate the DPI resolution of your monitor by dividing its number of horizontal pixels by its width in inches.
+Example: 1920 pixels on a 44 cm wide monitor yields
+( 1920 pixels ) / ( 44 cm ) * ( 2.54 cm/inch ) ~= ( 110 pixels/inch)
+```
