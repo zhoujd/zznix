@@ -1,0 +1,5 @@
+## .gitignore
+
+config/connections.xml
+config/key
+config/layout.xml 
