@@ -20,3 +20,8 @@ Putty
     
 	<https://ttyplus.com/multi-tabbed-putty/>
 	PuTTY location "C:\zznix\share\putty\putty.exe  -load x11-forward"
+
+
+## PuTTY for win32 storing configuration into file
+
+    <http://jakub.kotrla.net/putty/>
