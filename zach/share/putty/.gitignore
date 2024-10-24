@@ -1,9 +1,5 @@
 ## .gitignore
 
-sessions/Default%20Settings
-mtputty.elf
-mtputty.dock.xml
-mtputty.sessions.xml
 PUTTY.RND
-x11-temp.reg
+putty-x11-temp.reg
 
