@@ -1,4 +1,5 @@
 ## .gitignore
 
 sessions/Default%20Settings
+sshhostkeys/
 PUTTY.RND
