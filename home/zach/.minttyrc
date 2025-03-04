@@ -8,3 +8,6 @@ CursorBlinks=no
 BellType=0
 Columns=92
 Rows=29
+MiddleClickAction=extend
+RightClickAction=paste
+Term=xterm-256color
