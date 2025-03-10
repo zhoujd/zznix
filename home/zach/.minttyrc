@@ -11,3 +11,4 @@ Rows=29
 MiddleClickAction=extend
 RightClickAction=paste
 Term=xterm-256color
+Scrollbar=none
