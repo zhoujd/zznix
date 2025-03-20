@@ -5,12 +5,11 @@ Samba
 
 ```
 ## https://learn.microsoft.com/zh-cn/windows-server/storage/file-server/smb-signing?tabs=powershell
-## Open PowerShell win admin
-## Enable SMB signature
-> Set-SmbClientConfiguration -RequireSecuritySignature $true
-> Set-SmbServerConfiguration -RequireSecuritySignature $true
+## Open PowerShell win admin, then run command lines and input "Y" to confirm
+PS C:\> Set-SmbClientConfiguration -RequireSecuritySignature $true
+PS C:\> Set-SmbServerConfiguration -RequireSecuritySignature $true
 
-## SMB signature status
-> Get-SmbClientConfiguration | FL RequireSecuritySignature
-> Get-SmbServerConfiguration | FL RequireSecuritySignature
+## SMB signature status (true: enabled, false: disabled)
+PS C:\> Get-SmbClientConfiguration | FL RequireSecuritySignature
+PS C:\> Get-SmbServerConfiguration | FL RequireSecuritySignature
 ```
