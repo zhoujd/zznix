@@ -1,0 +1,8 @@
+<job id="lockscreen">
+  <script language="JScript">
+    var objShell = WScript.CreateObject("WScript.Shell");
+    objShell.Run("regedit /S EnableLockWorkstation.reg", 0, true);
+    objShell.Run("rundll32.exe user32.dll,LockWorkStation", 0, true);
+    objShell.Run("regedit /S DisableLockWorkstation.reg", 0, true);
+  </script>
+</job>
