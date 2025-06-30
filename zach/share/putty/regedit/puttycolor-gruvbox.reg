@@ -3,9 +3,9 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\x11-settings]
 "Colour0"="235,219,178"
 "Colour1"="235,219,178"
-"Colour2"="29,32,33"
-"Colour3"="29,32,33"
-"Colour4"="29,32,33"
+"Colour2"="0,0,0"
+"Colour3"="0,0,0"
+"Colour4"="0,0,0"
 "Colour5"="235,219,178"
 "Colour6"="29,32,33"
 "Colour7"="146,131,116"
