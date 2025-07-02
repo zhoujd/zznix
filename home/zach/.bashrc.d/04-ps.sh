@@ -5,7 +5,7 @@ prompt_short()
 }
 
 # non-printable characters must be enclosed inside \[ and \]
-PS1='\[\033[33m\]\W\[\033[0m\]$ '
+PS1='\[\033[1;34m\]\W\[\033[0m\]$ '
 
 # set PS1 prompt for user@host
 USERHOST='\[\033[32m\]\u@\h '
