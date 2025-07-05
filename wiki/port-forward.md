@@ -62,3 +62,23 @@ Give the rule a name and click “Finish.”
 Step 9: Verify the Rule
 You should be able to see the new rule listed in the Inbound Rules list.
 ```
+
+## Netsh commands for Interface Portproxy
+
+```
+## https://technet.microsoft.com/es-es/library/cc731068.aspx
+## Add forwarding
+netsh interface portproxy add v4tov4 listenport=4422 listenaddress=192.168.1.111 connectport=80 connectaddress=192.168.0.33
+
+## Query forwarding
+netsh interface portproxy show all
+
+Listen on ipv4:             Connect to ipv4:
+
+Address         Port        Address         Port
+--------------- ----------  --------------- ----------
+192.168.10.104  4422        192.168.56.102  22
+
+## Remove forwarding
+netsh interface portproxy delete v4tov4 listenport=4422 listenaddress=192.168.1.111
+```
