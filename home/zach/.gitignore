@@ -37,6 +37,8 @@
 .gambit_history
 .gdbinit
 .gdbinit.d/
+.gitconfig-work
+.gitconfig-url
 
 zz*/
 tmp/
