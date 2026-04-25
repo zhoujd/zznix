@@ -66,7 +66,7 @@ Printer\\
 UTF8Override\1\
 CJKAmbigWide\0\
 LineCodePage\UTF-8\
-CtrlShiftCV\none\
+CtrlShiftCV\explicit\
 CtrlShiftIns\explicit\
 MousePaste\explicit\
 MouseAutocopy\1\
@@ -118,7 +118,7 @@ FontQuality\3\
 FontHeight\6\
 FontCharSet\0\
 FontIsBold\0\
-Font\SF%20Mono%20SC\
+Font\SF%20Mono\
 TermHeight\25\
 TermWidth\90\
 WinTitle\\
@@ -163,7 +163,7 @@ RemoteQTitleAction\1\
 NoRemoteClearScroll\0\
 NoRemoteWinTitle\0\
 NoAltScreen\0\
-NoRemoteResize\0\
+NoRemoteResize\1\
 NoMouseReporting\0\
 NoApplicationCursors\0\
 NoApplicationKeys\0\
