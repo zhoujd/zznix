@@ -104,4 +104,7 @@ shell:
 
 # 9. KEY
 key_bindings:
-  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
+  - { key: Return, mods: Control|Shift, action: SpawnNewInstance }
+  - { key: N,      mods: Control|Shift, action: SpawnNewInstance }
+  - { key: Space,  mods: Control|Shift, action: ToggleViMode }
+  - { key: Q,      mods: Control|Shift, action: ToggleViMode }
