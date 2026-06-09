@@ -16,6 +16,10 @@ TITLEBAR='\[\033]0; $(prompt_short)\007\]'
 PS1=${TITLEBAR}${PS1}
 
 # emacs PS1 setting
-if [ "$TERM" == "emacs" ]; then
-    PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zach!~!)]$ '
-fi
+case $TERM in
+   xterm* | emacs )
+     PS1='[\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zach!~!)]$ '
+     ;;
+esac
+
+
