@@ -1,9 +1,6 @@
 # Save this file to: ~/.config/alacritty/alacritty.yml
 # ==============================================================================
 
-# Add this at the very top or bottom of your file (0 spaces)
-working_directory: c:/zznix/home/zach
-
 # 1. WINDOW ENVIRONMENT & SETTINGS
 window:
   dimensions:
@@ -25,7 +22,7 @@ window:
 
 # 2. SCROLLBACK HISTORY
 scrolling:
-  history: 10000
+  history: 8192
   multiplier: 3
 
 # 3. TYPOGRAPHY & FONTS
