@@ -93,7 +93,7 @@ mouse_bindings:
 # 7. BELL CONFIGURATION
 bell:
   animation: EaseOutExpo
-  duration: 150
+  duration: 0
 
 # 8. TERMINAL
 shell:
