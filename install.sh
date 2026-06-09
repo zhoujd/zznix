@@ -13,10 +13,10 @@ EOF
     echo "Install .bashrc to $USERPROFILE"
     cat > $USERPROFILE/.bashrc <<EOF
 ### zznix .bashrc
-export HOME="/home/zach"
+export HOME="/c/zznix/home/zach"
 . \$HOME/.bashrc
 EOF
-        echo "Install bashrc Done"
+    echo "Install bashrc Done"
 }
 
 install_others()
