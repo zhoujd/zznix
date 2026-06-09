@@ -1,23 +1,8 @@
-# prompt short
-prompt_short()
-{
-    pwd | sed -e s!.*/home/zach!~!
-}
+### .bashrc
 
-# non-printable characters must be enclosed inside \[ and \]
-PS1='\[\033[1;34m\]\W\[\033[0m\]$ '
-
-# set PS1 prompt for user@host
-USERHOST='\[\033[32m\]\u@\h '
-PS1=${USERHOST}${PS1}
+# PS1
+PS1='\[\033[32m\]\u@\h \W\[\033[0m\]$ '
 
 # set window title
-TITLEBAR='\[\033]0; $(prompt_short)\007\]'
+TITLEBAR='\[\033]0;\W $$@\h\007\]'
 PS1=${TITLEBAR}${PS1}
-
-# emacs PS1 setting
-case $TERM in
-    xterm* | emacs )
-        PS1="${TITLEBAR}\[\033[32m\]\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zach!~!)\[\033[0m\]$ "
-        ;;
-esac
