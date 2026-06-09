@@ -17,7 +17,7 @@ PS1=${TITLEBAR}${PS1}
 
 # emacs PS1 setting
 case $TERM in
-   xterm* | emacs )
-     PS1='${USERHOST}\[\033[32m\]\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zach!~!)\[\033[0m\]$ '
-     ;;
+    xterm* | emacs )
+        PS1="${USERHOST}\[\033[32m\]\u@\h $(pwd | sed -e s!.*/zznix/*!/! | sed -e s!.*/home/zach!~!)\[\033[0m\]$ "
+        ;;
 esac
