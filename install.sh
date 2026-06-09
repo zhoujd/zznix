@@ -25,6 +25,8 @@ install_others()
     cp -v C:/zznix/home/zach/.minttyrc $USERPROFILE
     echo "Install .vimrc to $USERPROFILE"
     cp -v C:/zznix/home/zach/.vimrc $USERPROFILE
+    echo "Install alacritty files"
+    cp -rv C:/zznix/tool/alacritty $APPDATA
     echo "Install others Done"
 }
 
