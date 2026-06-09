@@ -40,5 +40,23 @@ C:/zznix/zach /zach ntfs binary,noacl,posix=0,user 0 0
 EOF
 }
 
-install_bashrc
-install_others
+
+case $1 in
+    bashrc|-b )	
+        install_bashrc
+        ;;
+    others|-o )
+        install_others
+        ;;
+    fstab|-f )
+        install_fstab
+        ;;
+    all|-a )
+        install_bashrc
+        install_others
+        ;;
+    * )
+        echo "$(basename $0) {bashrc|-b|others|-o|fstab|-f|all|-a}"
+        ;;
+esac
+

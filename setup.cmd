@@ -9,7 +9,7 @@ mklink /d c:\Git\zach c:\zznix\zach
 mklink /d c:\Git\home c:\zznix\home
 
 @REM Run install.sh
-c:\Git\bin\bash c:\zznix\install.sh
+c:\Git\bin\bash c:\zznix\install.sh all
 
 
 pause
