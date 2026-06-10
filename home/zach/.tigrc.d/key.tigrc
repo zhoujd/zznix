@@ -1,0 +1,123 @@
+### key.tigrc
+
+## generic move
+bind generic V        view-pager
+bind generic <Ctrl-s> find-next
+bind generic <Ctrl-r> find-prev
+bind generic <Ctrl-v> move-page-down
+bind generic <Esc>v   move-page-up
+bind generic <Ctrl-f> scroll-right
+bind generic <Ctrl-b> scroll-left
+bind generic <Ctrl-g> refresh
+
+## g move, view-grep view-help
+bind generic g        move-first-line
+bind generic E        view-grep
+bind generic ?        view-help
+
+## G move to tail (default: toggle commit-title-graph)
+bind generic G        move-last-line
+bind main    G        move-last-line
+
+## Alt-g :toggle commit-title-graph
+bind main    <Esc>g   :toggle commit-title-graph
+
+## vertical-split
+bind main    <Esc>s   :toggle vertical-split
+bind refs    <Esc>s   :toggle vertical-split
+bind diff    <Esc>s   :toggle vertical-split
+
+## C commit
+bind generic C        !git commit
+bind refs    C        !git commit
+bind main    C        !git commit
+bind generic <Esc>c   !git commit --allow-empty
+bind generic +        !git commit --amend --allow-empty
+bind status  A        ?git commit --amend --no-edit --reset-author
+
+## F fech
+bind generic F        ?git fetch %(remote)
+bind main    F        ?git fetch %(remote)
+bind status  F        ?git fetch %(remote)
+
+## U pull
+bind generic U        ?git pull %(remote)
+bind main    U        ?git pull %(remote)
+bind status  U        ?git pull %(remote)
+
+## P push
+bind generic P        ?git push %(remote) %(repo:head)
+bind main    P        ?git push %(remote) %(repo:head)
+bind status  P        ?git push %(remote) %(repo:head)
+
+## ^ reset --soft
+bind main    ^        ?git reset --soft %(commit)
+bind diff    ^        ?git reset --soft %(commit)
+bind refs    ^        ?git reset --soft %(branch)
+bind status  ^        ?git reset --soft HEAD
+
+## H reset --hard
+bind main    H        ?git reset --hard %(commit)
+bind diff    H        ?git reset --hard %(commit)
+bind refs    H        ?git reset --hard %(branch)
+bind status  H        ?git reset --hard HEAD
+
+## Alt-D delete/rm/drop
+bind refs    <Esc>D   ?git branch -d %(branch)
+bind status  <Esc>D   ?git clean -d -f -- %(file)
+bind stash   <Esc>D   ?git stash drop %(stash)
+bind tree    <Esc>D   ?git rm %(file)
+
+## Alt-d difftool
+bind main    <Esc>d   ?git difftool %(commit)
+bind diff    <Esc>d   ?git difftool %(commit)
+
+## x clean
+bind main    x        ?git clean -d -f
+bind status  x        ?git clean -d -f
+
+## ! revert
+bind main    !        ?git revert %(commit)
+
+## K cherry-pick (default: 'C')
+bind main    K        ?git cherry-pick %(commit)
+bind diff    K        ?git cherry-pick %(commit)
+
+## Alt-k checkout -n (--no-commit)
+bind main    <Esc>k   ?git cherry-pick -n %(commit)
+bind diff    <Esc>k   ?git cherry-pick -n %(commit)
+
+## = checkout
+bind main    =        ?git checkout %(branch)
+bind refs    =        ?git checkout %(branch)
+bind main    <Esc>=   ?git checkout %(commit)
+
+## T tag
+bind main    T        ?git tag "%(prompt Enter tag name: )" %(commit)
+bind refs    T        ?git tag "%(prompt Enter tag name: )" %(branch)
+
+## B checkout -b
+bind main    B        ?git checkout -b "%(prompt Enter branch name: )" %(branch)
+bind refs    B        ?git checkout -b "%(prompt Enter branch name: )" %(branch)
+bind main    <Esc>b   ?git checkout -b "%(prompt Enter branch name: )" %(commit)
+
+## M merge
+bind main    M        ?git merge %(branch)
+bind diff    M        ?git merge %(branch)
+bind refs    M        ?git merge %(branch)
+bind main    <Esc>m   ?git merge %(commit)
+bind diff    <Esc>m   ?git merge %(commit)
+
+## R rebase
+bind main    R        ?git rebase %(branch)
+bind diff    R        ?git rebase %(branch)
+bind refs    R        ?git rebase %(branch)
+bind main    <Esc>r   ?git rebase %(commit)
+bind diff    <Esc>r   ?git rebase %(commit)
+
+## I rebase -I
+bind main    I        ?git rebase -i %(branch)
+bind diff    I        ?git rebase -i %(branch)
+bind refs    I        ?git rebase -i %(branch)
+bind main    <Esc>i   ?git rebase -i %(commit)
+bind diff    <Esc>i   ?git rebase -i %(commit)

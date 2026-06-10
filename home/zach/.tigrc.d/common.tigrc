@@ -1,0 +1,21 @@
+### common.tigrc
+
+# UI display settings
+set vertical-split = false
+set refresh-mode = auto
+set ignore-case = true
+set mouse = false
+
+# View settings
+set main-view = line-number:no,interval=5 author:no date:no id:yes commit-title:yes,graph,refs,overflow=no
+set tree-view = line-number:no,interval=5 mode file-size:units author:no date:relative id:no file-name
+set refs-view = line-number:no,interval=5 date:no author:no ref id:yes commit-title
+set stash-view = line-number:no,interval=5 date:no author:no id:yes commit-title
+set blame-view = id:yes author:full date:relative line-number:yes,interval=1 text
+
+# Pager based views
+set pager-view = line-number:no,interval=5 text
+set stage-view = line-number:no,interval=5 text
+set log-view = line-number:no,interval=5 text
+set blob-view = line-number:no,interval=5 text
+set diff-view = line-number:no,interval=5 text:yes,commit-title-overflow=no
