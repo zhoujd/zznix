@@ -14,11 +14,7 @@ alias lt='ls -ltr'                 # sort by date
 alias lh='ls -lh'                  # ls for -h
 alias lm='ls -al | more'           # pipeline to more
 
-alias dir='ls -C'                  # only on win7
-alias cls='clear'                  # only on win7
+alias c='clear'
 alias nano='nano -w'
-alias more='less'
-alias lcsh='csh -l'
 alias unix2dos='dos2unix --u2d'
 alias dos2unix='dos2unix --d2u'
-alias sh='sh --login -i'
