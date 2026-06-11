@@ -71,7 +71,6 @@ bindings = [
   # Remap on Windows
   { key = "Space",  mods = "Control", chars = "\u0000" },
   { key = "Slash",  mods = "Control", chars = "\u001f" },
-  { key = "Alt",    mods = "Alt",     chars = "\u001b" },
   { key = "Key1",   mods = "Alt",     chars = "\u001b1" },
   { key = "Key2",   mods = "Alt",     chars = "\u001b2" },
   { key = "Key3",   mods = "Alt",     chars = "\u001b3" },
