@@ -52,11 +52,11 @@ multiplier = 3
 save_to_clipboard = true
 
 [font]
-size = 11
+size = 11.0
 normal = { family = "JetBrains Mono", style = "Regular" }
-bold = { family = "JetBrains Mono", style = "bold" }
-italic = { family = "JetBrains Mono", style = "italic" }
-bold_italic = { family = "JetBrains Mono", style = "bold italic" }
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+bold_italic = { family = "JetBrains Mono", style = "Bold Italic" }
 
 [terminal]
 shell = { program = "C:/Git/bin/bash", args = ["--login", "-i"] }
