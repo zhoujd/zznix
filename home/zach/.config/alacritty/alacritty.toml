@@ -84,8 +84,18 @@ bindings = [
 
 [keyboard]
 bindings = [
-  { key = "Space",  mods = "Control", chars = "\u0000" },  # Windows
-  { key = "Slash",  mods = "Control", chars = "\u001f" },  # Windows
+  { key = "Space",  mods = "Control", chars = "\u0000"  },
+  { key = "Slash",  mods = "Control", chars = "\u001f"  },
+  { key = "Key1",   mods = "Alt",     chars = "\u001b1" },
+  { key = "Key2",   mods = "Alt",     chars = "\u001b2" },
+  { key = "Key3",   mods = "Alt",     chars = "\u001b3" },
+  { key = "Key4",   mods = "Alt",     chars = "\u001b4" },
+  { key = "Key5",   mods = "Alt",     chars = "\u001b5" },
+  { key = "Key6",   mods = "Alt",     chars = "\u001b6" },
+  { key = "Key7",   mods = "Alt",     chars = "\u001b7" },
+  { key = "Key8",   mods = "Alt",     chars = "\u001b8" },
+  { key = "Key9",   mods = "Alt",     chars = "\u001b9" },
+  { key = "Minus",  mods = "Alt",     chars = "\u001b-" },
   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "N",      mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "Space",  mods = "Control|Shift", action = "ToggleViMode" },
