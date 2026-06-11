@@ -5,7 +5,7 @@
 live_config_reload = true
 
 [window]
-dimensions = { columns = 110, lines = 32 }
+dimensions = { columns = 110, lines = 30 }
 padding = { x = 4, y = 0 }
 opacity = 0.95
 blur = true
