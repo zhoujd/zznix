@@ -1,6 +1,5 @@
 ## .gitignore
 
-.config/
 .emacs.d/
 .slime/
 .ssh/
