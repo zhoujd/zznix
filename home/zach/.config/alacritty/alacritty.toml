@@ -75,7 +75,7 @@ style = "Italic"
 
 [terminal.shell]
 args = ["--login", "-i"]
-program = "c:/Git/bin/bash"
+program = "C:/Git/bin/bash"
 
 [mouse]
 bindings = [
@@ -84,6 +84,8 @@ bindings = [
 
 [keyboard]
 bindings = [
+  { key = "Space",  mods = "Control", chars = "\u0000" },  # Windows
+  { key = "Slash",  mods = "Control", chars = "\u001f" },  # Windows
   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "N",      mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "Space",  mods = "Control|Shift", action = "ToggleViMode" },
