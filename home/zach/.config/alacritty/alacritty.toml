@@ -5,17 +5,10 @@
 live_config_reload = true
 
 [window]
-decorations = "Full"
-dynamic_title = true
+dimensions = { columns = 110, lines = 32 }
+padding = { x = 4, y = 0 }
 opacity = 0.95
-
-[window.dimensions]
-columns = 110
-lines = 32
-
-[window.padding]
-x = 2
-y = 2
+blur = true
 
 [colors.primary]
 background = "#000000"
@@ -59,23 +52,14 @@ multiplier = 3
 save_to_clipboard = true
 
 [font]
-size = 11.0
+size = 11
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { family = "JetBrains Mono", style = "bold" }
+italic = { family = "JetBrains Mono", style = "italic" }
+bold_italic = { family = "JetBrains Mono", style = "bold italic" }
 
-[font.normal]
-family = "JetBrains Mono"
-style = "Regular"
-
-[font.bold]
-family = "JetBrains Mono"
-style = "Bold"
-
-[font.italic]
-family = "JetBrains Mono"
-style = "Italic"
-
-[terminal.shell]
-args = ["--login", "-i"]
-program = "C:/Git/bin/bash"
+[terminal]
+shell = { program = "C:/Git/bin/bash", args = ["--login", "-i"] }
 
 [mouse]
 bindings = [
