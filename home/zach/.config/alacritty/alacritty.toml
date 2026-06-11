@@ -84,6 +84,7 @@ bindings = [
 
 [keyboard]
 bindings = [
+  # Remap on Windows
   { key = "Space",  mods = "Control", chars = "\u0000"  },
   { key = "Slash",  mods = "Control", chars = "\u001f"  },
   { key = "Key1",   mods = "Alt",     chars = "\u001b1" },
@@ -96,6 +97,7 @@ bindings = [
   { key = "Key8",   mods = "Alt",     chars = "\u001b8" },
   { key = "Key9",   mods = "Alt",     chars = "\u001b9" },
   { key = "Minus",  mods = "Alt",     chars = "\u001b-" },
+  # Shotkeys
   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "N",      mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "Space",  mods = "Control|Shift", action = "ToggleViMode" },
