@@ -1,0 +1,1 @@
+/home/zach/zzstumpwm/misc/.vim
