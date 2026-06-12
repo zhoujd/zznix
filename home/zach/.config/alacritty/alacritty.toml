@@ -46,7 +46,7 @@ style = "Block"
 duration = 0
 
 [scrolling]
-history = 10000
+history = 5000
 multiplier = 3
 
 [selection]
