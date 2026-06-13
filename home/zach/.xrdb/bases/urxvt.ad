@@ -1,0 +1,76 @@
+!!!! urxvt.ad
+!! urxvt --help 2>&1 | sed -n '/:  /s/^ */! URxvt*/gp'
+!! urxvt -iconFile /usr/share/pixmaps/urxvt_48x48.svg
+!! <Ctrl><S> stops transfer towards a terminal (the "freeze")
+!! <Ctrl><Q> resumes the transfer
+
+!! transparency
+urxvt.depth: 32
+URxvt.background: [90]#000000
+
+!! mouse scroll or Shift+Page Up
+URxvt.scrollBar: false
+URxvt.scrollstyle: plain
+
+!! scrollin the alternate screen
+URxvt.secondaryScreen: true
+URxvt.secondaryScroll: true
+
+URxvt.termName: rxvt-256color
+URxvt.geometry: 94x24
+URxvt.loginShell: true
+URxvt.saveLines: 8192
+
+!! border
+URxvt.borderWidth: 0
+URxvt.externalBorder: 0
+URxvt.internalBorder: 2
+
+URxvt.lineSpace: 0
+URxvt.letterSpace: -1
+URxvt.fading: 30
+
+!! disable iso 14755 mode
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!! disable bell
+URxvt.urgentOnBell: false
+URxvt.visualBell: false
+
+!! urxvt fonts
+URxvt.intensityStyles: false
+URxvt.allow_bold: false
+URxvt.font: xft:SF Mono:size=13:autohint=true,xft:PingFang SC:size=13:autohint=true
+URxvt.boldFont: xft:SF Mono:size=13:autohint=true,xft:PingFang SC:size=13:autohint=true
+
+!! urxvt icon
+URxvt.iconFile: /usr/share/pixmaps/urxvt_48x48.svg
+
+!! input method
+!! ibus or fcitx
+URxvt.inputMethod: ibus
+
+!! Extensions
+!! default path: /usr/local/lib/urxvt/perl:~/.urxvt/ext
+URxvt.perl-ext-common: default,fullscreen,eval,keyboard-select,selection-to-clipboard,font-size,newterm
+
+!! fullscreen
+URxvt.keysym.C-S-F: perl:fullscreen:switch
+
+!! eval
+URxvt.keysym.C-S-V: eval:paste_clipboard
+URxvt.keysym.C-S-Y: eval:paste_primary
+
+!! keyboard-select ctrl+alt+[c|v]
+URxvt.keysym.C-S-Escape: perl:keyboard-select:activate
+URxvt.keysym.C-S-Q: perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
+
+!! searchable-scrollback (enabled by default)
+!! <Meta><S> incremental scrollback search
+!! Up/Down/Return (upwards/downwards/stay)
+URxvt.keysym.C-S-S: searchable-scrollback:start
+
+!! newterm
+URxvt.keysym.C-S-Return: perl:newterm

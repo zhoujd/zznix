@@ -1,0 +1,13 @@
+!!!! autoload.ad
+
+!! theme
+#include "themes/gruvbox.ad"
+
+!! common
+#include "bases/common.ad"
+
+!! urxvt
+#include "bases/urxvt.ad"
+
+!! xterm
+#include "bases/xterm.ad"
