@@ -1,2 +1,7 @@
 ### 07-emacs.sh
-## No need load emacs bash setting for zznix
+
+me() {
+   local bin=/zach/bin/me 
+   $bin $@
+   clear
+}
