@@ -11,6 +11,9 @@ Capslock::RControl
 ; Remap RControl -> Rwin
 RControl::RWin
 
+; Remap RAlt -> LAlt
+RAlt::LAlt
+
 #If not GetKeyState("LShift", "P")
 ~LAlt::
     KeyWait, LAlt
