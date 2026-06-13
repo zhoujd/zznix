@@ -27,6 +27,8 @@ install_others()
     cp -v C:/zznix/home/zach/.vimrc $USERPROFILE
     echo "Install alacritty files"
     cp -rv C:/zznix/home/zach/.config/alacritty $APPDATA
+    echo "Install terminfo files"
+    tic -sx C:/zznix/misc/terminfo/alacritty.ti
     echo "Install others Done"
 }
 
