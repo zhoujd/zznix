@@ -1,0 +1,4 @@
+#!/bin/sh
+# $0 -l user host
+
+/zach/share/ssh2/ssh2 +X "$@"
