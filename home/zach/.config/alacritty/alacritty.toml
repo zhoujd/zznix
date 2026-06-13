@@ -5,7 +5,6 @@
 live_config_reload = true
 
 [env]
-HOME = "C:/zznix/home/zach"
 TERM = "xterm-256color"
 
 [window]
