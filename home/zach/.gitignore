@@ -5,6 +5,8 @@
 .ssh/
 .gnupg/
 .fonts/
+.local/
+.zach/
 
 .bash_history
 .breadcrumb
@@ -38,16 +40,14 @@
 .gdbinit.d/
 .gitconfig-work
 .gitconfig-url
-
-zz*/
-tmp/
-work/
-
 .Xauthority*
 .tig_history
 .tramp_history
+
 common-lisp/
 quicklisp/
 lisp/
-.local/
-.zach/
+tmp/
+work/
+
+zz*/
