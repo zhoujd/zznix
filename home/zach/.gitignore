@@ -8,6 +8,7 @@
 .local/
 .zach/
 
+.ash_history
 .bash_history
 .breadcrumb
 .gitconfig
