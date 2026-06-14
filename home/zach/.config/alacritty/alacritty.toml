@@ -1,6 +1,5 @@
 # Alacritty Configuration Example (TOML Format)
 
-# Live config reload (updates instantly when you save this file)
 [general]
 import = [
   "themes/gruvbox.toml",
