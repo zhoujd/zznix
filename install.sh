@@ -1,19 +1,21 @@
 #!/bin/sh
 
-INSTALL_ROOT=`pwd`
+SCRIPT_ROOT=$(cd $(dirname $0) && pwd)
+USER_HOME=$SCRIPT_ROOT/home/zach
+MISC=$SCRIPT_ROOT/misc
 
 install_bashrc()
 {
     echo "Install .bash_profile to $USERPROFILE"
     cat > $USERPROFILE/.bash_profile <<EOF
-### zznix .bash_profile
+### .bash_profile
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 EOF
     echo "Install .bashrc to $USERPROFILE"
     cat > $USERPROFILE/.bashrc <<EOF
-### zznix .bashrc
-export HOME="/c/zznix/home/zach"
+### .bashrc
+export HOME="$USER_HOME"
 . \$HOME/.bashrc
 EOF
     echo "Install bashrc Done"
@@ -22,13 +24,13 @@ EOF
 install_others()
 {
     echo "Install .minttyrc to $USERPROFILE"
-    cp -v C:/zznix/home/zach/.minttyrc $USERPROFILE
+    cp -v $USER_HOME/.minttyrc $USERPROFILE
     echo "Install .vimrc to $USERPROFILE"
-    cp -v C:/zznix/home/zach/.vimrc $USERPROFILE
+    cp -v $USER_HOME/.vimrc $USERPROFILE
     echo "Install alacritty files"
-    cp -rv C:/zznix/home/zach/.config/alacritty $APPDATA
+    cp -rv $USER_HOME/.config/alacritty $APPDATA
     echo "Install terminfo files"
-    tic -sx C:/zznix/misc/terminfo/alacritty.ti
+    tic -sx $MISC/terminfo/alacritty.ti
     echo "Install others Done"
 }
 
@@ -44,7 +46,7 @@ EOF
 
 
 case $1 in
-    bashrc|-b )	
+    bashrc|-b )
         install_bashrc
         ;;
     others|-o )
@@ -61,4 +63,3 @@ case $1 in
         echo "$(basename $0) {bashrc|-b|others|-o|fstab|-f|all|-a}"
         ;;
 esac
-
