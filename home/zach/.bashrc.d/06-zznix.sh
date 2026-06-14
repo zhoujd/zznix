@@ -19,7 +19,7 @@ ws()
             echo "This is for go to work"
             ;;
         * )
-            cd /c/work
+            cd $HOME/work
             ;;
     esac
 }
