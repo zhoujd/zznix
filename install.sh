@@ -2,7 +2,6 @@
 
 SCRIPT_ROOT=$(cd $(dirname $0) && pwd)
 USER_HOME=$SCRIPT_ROOT/home/zach
-MISC=$SCRIPT_ROOT/misc
 
 install_bashrc()
 {
@@ -27,10 +26,8 @@ install_others()
     cp -v $USER_HOME/.minttyrc $USERPROFILE
     echo "Install .vimrc to $USERPROFILE"
     cp -v $USER_HOME/.vimrc $USERPROFILE
-    echo "Install alacritty files"
+    echo "Install alacritty config to $APPDATA"
     cp -rv $USER_HOME/.config/alacritty $APPDATA
-    echo "Install terminfo files"
-    tic -sx $MISC/terminfo/alacritty.ti
     echo "Install others Done"
 }
 
