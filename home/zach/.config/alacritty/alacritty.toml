@@ -3,7 +3,7 @@
 # Live config reload (updates instantly when you save this file)
 [general]
 import = [
-  "C:/zznix/home/zach/.config/alacritty/themes/gruvbox.toml",
+  "themes/gruvbox.toml",
 ]
 live_config_reload = true
 
