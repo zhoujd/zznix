@@ -1,4 +1,4 @@
-# Alacritty Configuration Example (TOML Format)
+# Alacritty Configuration
 
 [general]
 import = [
