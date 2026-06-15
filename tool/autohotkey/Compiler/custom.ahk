@@ -38,3 +38,10 @@ LWin::Return
 
 ; Disable Right Windows Key
 RWin::Return
+
+; Disable Game Bar Keys
+#UseHook
+#!w::Return
+#!r::Return
+#!g::Return
+#g::Return
