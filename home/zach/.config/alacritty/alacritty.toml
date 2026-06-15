@@ -2,7 +2,7 @@
 
 [general]
 import = [
-  "themes/gruvbox.toml",
+  "themes/mocha.toml",
 ]
 live_config_reload = true
 
