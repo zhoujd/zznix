@@ -60,6 +60,7 @@ bindings = [
   { key = "Key9",   mods = "Alt",     chars = "\u001b9" },
   { key = "Minus",  mods = "Alt",     chars = "\u001b-" },
   # Shotkeys
+  { key = "L",      mods = "Control|Shift", chars  = "printf \"\\033c\"\n" },
   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "N",      mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "Space",  mods = "Control|Shift", action = "ToggleViMode" },
