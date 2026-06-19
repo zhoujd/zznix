@@ -17,6 +17,6 @@ alias lm='ls -al | more'           # pipeline to more
 alias c='clear'
 alias nano='nano -w'
 alias less='less -RS#3~g'
-alias which='type --all'
+alias which='type -all'
 alias unix2dos='dos2unix --u2d'
 alias dos2unix='dos2unix --d2u'
