@@ -1,7 +1,7 @@
 ## 05-alias.sh
 
 # for chinese file name show
-alias ls='ls --show-control-chars --color=always'
+alias ls='ls --color=always'
 alias ll='ls -alF'
 alias l='ls -CF'
 alias la='ls -Al'                  # show hide files
