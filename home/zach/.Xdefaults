@@ -1,5 +1,5 @@
 !!!! .Xdefaults
+!!xrdb -load .Xresources
+!!xrdb -merge .Xresources
 
-#include ".xrdb/common.ad"
-#include ".xrdb/urxvt.ad"
-#include ".xrdb/xterm.ad"
+#include ".xrdb/autoload.ad"
