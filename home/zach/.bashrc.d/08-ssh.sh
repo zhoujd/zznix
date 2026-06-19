@@ -1,4 +1,5 @@
-## ssh hostname
+### 08-ssh.sh
+
 _ssh() 
 {
     local cur prev opts

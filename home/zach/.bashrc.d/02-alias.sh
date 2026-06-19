@@ -1,4 +1,4 @@
-## 05-alias.sh
+### 02-alias.sh
 
 # for chinese file name show
 alias ls='ls --color=always'
@@ -16,5 +16,6 @@ alias lm='ls -al | more'           # pipeline to more
 
 alias c='clear'
 alias nano='nano -w'
+alias less='less -RS#3~g'
 alias unix2dos='dos2unix --u2d'
 alias dos2unix='dos2unix --d2u'

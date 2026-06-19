@@ -1,4 +1,4 @@
-# add zznix interval path
+### add zznix interval path
 
 ADD_PATH=(
     ~/.local/bin

@@ -1,4 +1,4 @@
-# 01-common.sh
+### 01-common.sh
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
