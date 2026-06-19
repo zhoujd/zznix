@@ -6,6 +6,7 @@ ADD_PATH=(
     /usr/bin
     /zach/bin
     /zach/libexec
+    /c/w64devkit/bin
 )
 for new_entry in ${ADD_PATH[@]} ; do
     if [ -d $new_entry ]; then
