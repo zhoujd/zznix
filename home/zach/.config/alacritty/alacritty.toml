@@ -65,4 +65,7 @@ bindings = [
   { key = "N",      mods = "Control|Shift", action = "SpawnNewInstance" },
   { key = "Space",  mods = "Control|Shift", action = "ToggleViMode" },
   { key = "Q",      mods = "Control|Shift", action = "ToggleViMode" },
+  { key = "Enter",  mode = "Vi|~Search",    action = "Copy" },
+  { key = "Enter",  mode = "Vi|~Search",    action = "ClearSelection" },
+  { key = "Enter",  mode = "Vi|~Search",    action = "ToggleViMode" },
 ]
