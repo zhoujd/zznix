@@ -30,7 +30,7 @@ multiplier = 3
 save_to_clipboard = true
 
 [font]
-size = 10.5
+size = 11
 
 [font.normal]
 family = "SF Mono SC"
