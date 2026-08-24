@@ -33,8 +33,8 @@ save_to_clipboard = true
 size = 11
 
 [font.normal]
-family = "SF Mono SC"
-style = "Regular"
+family = "Maple Mono Normal NL CN"
+# style = "Regular"
 
 [terminal]
 shell = { program = "C:/Git/bin/bash", args = ["--login", "-i"] }
