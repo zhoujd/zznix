@@ -34,7 +34,7 @@ size = 11
 
 [font.normal]
 family = "Maple Mono Normal NL CN"
-# style = "Regular"
+style = "Regular"
 
 [terminal]
 shell = { program = "C:/Git/bin/bash", args = ["--login", "-i"] }
