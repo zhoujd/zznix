@@ -26,6 +26,8 @@ install_others()
     cp -v $USER_HOME/.minttyrc $USERPROFILE
     echo "Install .vimrc to $USERPROFILE"
     cp -v $USER_HOME/.vimrc $USERPROFILE
+	echo "Install .tmux.conf to $USERPROFILE"
+    cp -v $USER_HOME/.tmux.conf $USERPROFILE
     rm -rf $USERPROFILE/vimfiles
     cp -rv $USER_HOME/.vim $USERPROFILE/vimfiles
     echo "Install alacritty config to $APPDATA"
