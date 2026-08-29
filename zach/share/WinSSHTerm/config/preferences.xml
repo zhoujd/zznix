@@ -22,13 +22,12 @@
   <TerminalColorScheme2>H4sIAAAAAAAEAOPi5GhmFJjCKDGNkYuT4wijwGlGiTOMXCwCMhJKcFJbwgwo+Y5R4AWjxFVUSXaOD4wCvhKByAxugQ2MEnEIBgfHPkaBA4wS6SgsNYFuRolLjCis24wC0RIzUFlaAgsZUVmcHJcYBS6BtSCYAGDqCUDJAAAA</TerminalColorScheme2>
   <ConnectionWebRequestHttpBasicAuthUser>
   </ConnectionWebRequestHttpBasicAuthUser>
-  <VerifyKey>NFOMq5Am0/o/H7dNUqkwy9/f43lxdqw/eTrlwO0h8S+rJZWQBda76sOtKURVas3g8CYFPHL9u19DQm8IKCKZpQ==</VerifyKey>
+  <VerifyKey>BlsPdwURERmGrdCLt2xFQULlctT5w3e5Y9WcNNgMJSWtINYEGjNNzL/qvSI7kztwdj9V8n1oXh57BBeyiy0piQ==</VerifyKey>
   <CopyFilesJumpSeverUseNativeTunnelFeature>True</CopyFilesJumpSeverUseNativeTunnelFeature>
-  <TerminalXDisplayLocation>
-  </TerminalXDisplayLocation>
+  <TerminalXDisplayLocation>:0</TerminalXDisplayLocation>
   <CopyFilesCustomParams>/rawsettings SendBuf=0 SshSimple=0 utf=1 /sessionname="{{CON.NAME}} ({{CON.USER}}@{{CON.HOST}})" /newinstance</CopyFilesCustomParams>
-  <ViewShowQuickConnectInMenuBar>True</ViewShowQuickConnectInMenuBar>
-  <TerminalTerminalType>0</TerminalTerminalType>
+  <ViewShowQuickConnectInMenuBar>False</ViewShowQuickConnectInMenuBar>
+  <TerminalTerminalType>1</TerminalTerminalType>
   <ClusterModeColumnCount>2</ClusterModeColumnCount>
   <ShortcutTerminalToggleFullScreen>1</ShortcutTerminalToggleFullScreen>
   <GeneralTileWindowsCounterclockwise>True</GeneralTileWindowsCounterclockwise>
@@ -43,7 +42,7 @@
   <ShortcutNextTab>0</ShortcutNextTab>
   <TerminalCustomPuttyLocation>C:\zznix\zach\share\putty\putty.exe</TerminalCustomPuttyLocation>
   <XServerArguments>LW11bHRpd2luZG93IC1jbGlwYm9hcmQgLXdnbCAtbm90cmF5aWNvbg==</XServerArguments>
-  <ConnectionsSharedFileTemplVars>ufWaKiMfVbCXsMYrZbZSmwqBh9a6SHB+qY0kJqW5ZTI=</ConnectionsSharedFileTemplVars>
+  <ConnectionsSharedFileTemplVars>GgoKi8euWrVUDQZMCO/GpncMKPi2sdtrMIeDk28dYFA=</ConnectionsSharedFileTemplVars>
   <TerminalCopyPaste>0</TerminalCopyPaste>
   <ShortcutMouseToggleMultiInput>1</ShortcutMouseToggleMultiInput>
   <TerminalJumpServerMode>0</TerminalJumpServerMode>
@@ -62,7 +61,7 @@
   <WslStarterUser>
   </WslStarterUser>
   <ScriptRunnerEnablePtyAllocation>True</ScriptRunnerEnablePtyAllocation>
-  <WindowSize>1173, 683</WindowSize>
+  <WindowSize>1096, 736</WindowSize>
   <GeneralConnectionConfigWindowOnRightSide>False</GeneralConnectionConfigWindowOnRightSide>
   <WindowPrevLocation>
   </WindowPrevLocation>
@@ -85,7 +84,7 @@
   </MultiInputScriptsCurrentScript>
   <GeneralCloseDetachedTerminalWindows>0</GeneralCloseDetachedTerminalWindows>
   <CheckForWinSCP>False</CheckForWinSCP>
-  <TerminalSendTCPKeepalives>0</TerminalSendTCPKeepalives>
+  <TerminalSendTCPKeepalives>1</TerminalSendTCPKeepalives>
   <ShortcutCloseTab>0</ShortcutCloseTab>
   <ConnectionGroups>
   </ConnectionGroups>
@@ -136,14 +135,14 @@
   <TerminalColorScheme5>H4sIAAAAAAAEAONi4CIaAgDWv+wALAAAAA==</TerminalColorScheme5>
   <ShortcutMouseSelectInvisibleTabs>1</ShortcutMouseSelectInvisibleTabs>
   <TerminalTabColors4>H4sIAAAAAAAEAOPi5GhmFJjCKDGNkYtFQEZCiYuNw1MgVCIMAA2s+3IZAAAA</TerminalTabColors4>
-  <MultiInputButtons>H4sIAAAAAAAEAONi42IQYpBi4KISDQAP9lBdUAAAAA==</MultiInputButtons>
+  <MultiInputButtons>H4sIAAAAAAAEAONi42IQYpBi4BriNABaMJQUyAAAAA==</MultiInputButtons>
   <ShortcutPrevTab>0</ShortcutPrevTab>
-  <ConnectionsSharedFileHiddenTemplVars>ufWaKiMfVbCXsMYrZbZSmwqBh9a6SHB+qY0kJqW5ZTI=</ConnectionsSharedFileHiddenTemplVars>
+  <ConnectionsSharedFileHiddenTemplVars>GgoKi8euWrVUDQZMCO/GpncMKPi2sdtrMIeDk28dYFA=</ConnectionsSharedFileHiddenTemplVars>
   <PageantCustomLocation>C:\zznix\zach\share\putty\pageant.exe</PageantCustomLocation>
   <TerminalColorSchemeNames>H4sIAAAAAAAEAOPi4WI0EGJ3Li0uyc815ELmGaHwjFF4Jig8UwC08RN/RgAAAA==</TerminalColorSchemeNames>
   <SearchRememberLastTriggeredConnection>True</SearchRememberLastTriggeredConnection>
   <WslStarterAutoCloseWindow>True</WslStarterAutoCloseWindow>
-  <WindowLocation>2386, 184</WindowLocation>
+  <WindowLocation>118, 22</WindowLocation>
   <ShortcutMouseCloseTab>0</ShortcutMouseCloseTab>
   <TerminalFontSize>6</TerminalFontSize>
   <JumpServerCustomPlinkLocationEnabled>True</JumpServerCustomPlinkLocationEnabled>
@@ -174,4 +173,15 @@
   <TerminalColorScheme6>H4sIAAAAAAAEAONi4CIaAgDWv+wALAAAAA==</TerminalColorScheme6>
   <WindowAppearance>Normal</WindowAppearance>
   <ShortcutSendToQuickConnect>1</ShortcutSendToQuickConnect>
+  <LaunchToolsDontResetReturnVars>True</LaunchToolsDontResetReturnVars>
+  <LaunchToolPassSmallScriptsAsParam>True</LaunchToolPassSmallScriptsAsParam>
+  <GeneralDisableFixForWinKey>False</GeneralDisableFixForWinKey>
+  <GeneralConnectionConfigWindowLayout>vertical</GeneralConnectionConfigWindowLayout>
+  <TerminalNoRemoteWinTitle>1</TerminalNoRemoteWinTitle>
+  <LaunchToolsUsePwshIfAvailable>True</LaunchToolsUsePwshIfAvailable>
+  <CopyFilesIgnoreUseTrustedHostCAsFromPuTTY>False</CopyFilesIgnoreUseTrustedHostCAsFromPuTTY>
+  <GeneralSetCustomPuTTYWindowTitle>True</GeneralSetCustomPuTTYWindowTitle>
+  <GeneralDisableFixForAltTab>False</GeneralDisableFixForAltTab>
+  <GeneralCustomPuTTYWindowTitle>PuTTY - {{CON.USER}}@{{CON.RHOST}}</GeneralCustomPuTTYWindowTitle>
+  <ShortcutCopyFiles>1</ShortcutCopyFiles>
 </Settings>
