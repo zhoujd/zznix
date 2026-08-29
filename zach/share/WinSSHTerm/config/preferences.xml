@@ -19,7 +19,7 @@
   </MultiInputScripts>
   <TerminalCloseOnExit>0</TerminalCloseOnExit>
   <TerminalTabColors3>H4sIAAAAAAAEAOPi5GhmFJjCKDGNkYtFQEZCiYuNw1MgVCIMAA2s+3IZAAAA</TerminalTabColors3>
-  <TerminalColorScheme2>H4sIAAAAAAAEAOPi5GhmFJjCKDGNkYuT4wijwGlGiTOMXCwCMhJKcFJbwgwo+Y5R4AWjxFVUSXaOD4wCvhKByAxugQ2MEnEIBgfHPkaBA4wS6SgsNYFuRolLjCis24wC0RIzUFlaAgsZUVmcHJcYBS6BtSCYAGDqCUDJAAAA</TerminalColorScheme2>
+  <TerminalColorScheme2>H4sIAAAAAAAEAOPi5GhmFJjCKDGNkYuT4wijwGlGiTOMXAxAyCKgLWEGFHzHKPCCUeIqI1BARkIJSrJzfGAU8JUIRGZwC2xglIhDMDg49jEKHGCUSEdhqQl0M0pcYkRh3WYUiJaYgcrSEljIiMri5LjEKHAJrAXBBAAMA3jDwQAAAA==</TerminalColorScheme2>
   <ConnectionWebRequestHttpBasicAuthUser>
   </ConnectionWebRequestHttpBasicAuthUser>
   <VerifyKey>BlsPdwURERmGrdCLt2xFQULlctT5w3e5Y9WcNNgMJSWtINYEGjNNzL/qvSI7kztwdj9V8n1oXh57BBeyiy0piQ==</VerifyKey>
@@ -40,7 +40,7 @@
   <TerminalCustomPuttyLocationEnabled>True</TerminalCustomPuttyLocationEnabled>
   <CopyFilesUseTrustedHostCAsFromPuTTY>True</CopyFilesUseTrustedHostCAsFromPuTTY>
   <ShortcutNextTab>0</ShortcutNextTab>
-  <TerminalCustomPuttyLocation>C:\zznix\zach\share\putty\putty.exe</TerminalCustomPuttyLocation>
+  <TerminalCustomPuttyLocation>C:\zznix\zach\share\putty\PUTTY.EXE</TerminalCustomPuttyLocation>
   <XServerArguments>LW11bHRpd2luZG93IC1jbGlwYm9hcmQgLXdnbCAtbm90cmF5aWNvbg==</XServerArguments>
   <ConnectionsSharedFileTemplVars>GgoKi8euWrVUDQZMCO/GpncMKPi2sdtrMIeDk28dYFA=</ConnectionsSharedFileTemplVars>
   <TerminalCopyPaste>0</TerminalCopyPaste>
@@ -61,7 +61,7 @@
   <WslStarterUser>
   </WslStarterUser>
   <ScriptRunnerEnablePtyAllocation>True</ScriptRunnerEnablePtyAllocation>
-  <WindowSize>1096, 736</WindowSize>
+  <WindowSize>1092, 667</WindowSize>
   <GeneralConnectionConfigWindowOnRightSide>False</GeneralConnectionConfigWindowOnRightSide>
   <WindowPrevLocation>
   </WindowPrevLocation>
@@ -142,7 +142,7 @@
   <TerminalColorSchemeNames>H4sIAAAAAAAEAOPi4WI0EGJ3Li0uyc815ELmGaHwjFF4Jig8UwC08RN/RgAAAA==</TerminalColorSchemeNames>
   <SearchRememberLastTriggeredConnection>True</SearchRememberLastTriggeredConnection>
   <WslStarterAutoCloseWindow>True</WslStarterAutoCloseWindow>
-  <WindowLocation>118, 22</WindowLocation>
+  <WindowLocation>187, 36</WindowLocation>
   <ShortcutMouseCloseTab>0</ShortcutMouseCloseTab>
   <TerminalFontSize>6</TerminalFontSize>
   <JumpServerCustomPlinkLocationEnabled>True</JumpServerCustomPlinkLocationEnabled>
