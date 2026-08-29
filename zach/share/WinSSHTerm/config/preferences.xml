@@ -5,7 +5,7 @@
   <ShortcutLastUsedTab>0</ShortcutLastUsedTab>
   <ConvertKeyChangePassphrase>False</ConvertKeyChangePassphrase>
   <ConnectionFilterCurrentCaseSensitive>False</ConnectionFilterCurrentCaseSensitive>
-  <TerminalColorScheme>0</TerminalColorScheme>
+  <TerminalColorScheme>2</TerminalColorScheme>
   <CheckForPageant>False</CheckForPageant>
   <PuttygenCustomLocation>C:\zznix\zach\share\putty\puttygen.exe</PuttygenCustomLocation>
   <JumpServerCustomPlinkLocation>C:\zznix\zach\share\putty\plink.exe</JumpServerCustomPlinkLocation>
@@ -40,7 +40,7 @@
   <TerminalCustomPuttyLocationEnabled>True</TerminalCustomPuttyLocationEnabled>
   <CopyFilesUseTrustedHostCAsFromPuTTY>True</CopyFilesUseTrustedHostCAsFromPuTTY>
   <ShortcutNextTab>0</ShortcutNextTab>
-  <TerminalCustomPuttyLocation>C:\zznix\zach\share\WinSSHTerm\putty-wst.exe</TerminalCustomPuttyLocation>
+  <TerminalCustomPuttyLocation>C:\zznix\zach\share\putty-portable\putty.exe</TerminalCustomPuttyLocation>
   <XServerArguments>LW11bHRpd2luZG93IC1jbGlwYm9hcmQgLXdnbCAtbm90cmF5aWNvbg==</XServerArguments>
   <ConnectionsSharedFileTemplVars>GgoKi8euWrVUDQZMCO/GpncMKPi2sdtrMIeDk28dYFA=</ConnectionsSharedFileTemplVars>
   <TerminalCopyPaste>0</TerminalCopyPaste>
@@ -61,7 +61,7 @@
   <WslStarterUser>
   </WslStarterUser>
   <ScriptRunnerEnablePtyAllocation>True</ScriptRunnerEnablePtyAllocation>
-  <WindowSize>1084, 666</WindowSize>
+  <WindowSize>1052, 626</WindowSize>
   <GeneralConnectionConfigWindowOnRightSide>False</GeneralConnectionConfigWindowOnRightSide>
   <WindowPrevLocation>
   </WindowPrevLocation>
@@ -142,7 +142,7 @@
   <TerminalColorSchemeNames>H4sIAAAAAAAEAOPi4WI0EGJ3Li0uyc815ELmGaHwjFF4Jig8UwC08RN/RgAAAA==</TerminalColorSchemeNames>
   <SearchRememberLastTriggeredConnection>True</SearchRememberLastTriggeredConnection>
   <WslStarterAutoCloseWindow>True</WslStarterAutoCloseWindow>
-  <WindowLocation>177, 65</WindowLocation>
+  <WindowLocation>150, 81</WindowLocation>
   <ShortcutMouseCloseTab>0</ShortcutMouseCloseTab>
   <TerminalFontSize>6</TerminalFontSize>
   <JumpServerCustomPlinkLocationEnabled>True</JumpServerCustomPlinkLocationEnabled>
