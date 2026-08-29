@@ -40,7 +40,7 @@
   <TerminalCustomPuttyLocationEnabled>True</TerminalCustomPuttyLocationEnabled>
   <CopyFilesUseTrustedHostCAsFromPuTTY>True</CopyFilesUseTrustedHostCAsFromPuTTY>
   <ShortcutNextTab>0</ShortcutNextTab>
-  <TerminalCustomPuttyLocation>C:\zznix\zach\share\putty\PUTTY.EXE</TerminalCustomPuttyLocation>
+  <TerminalCustomPuttyLocation>C:\zznix\zach\share\WinSSHTerm\putty-wst.exe</TerminalCustomPuttyLocation>
   <XServerArguments>LW11bHRpd2luZG93IC1jbGlwYm9hcmQgLXdnbCAtbm90cmF5aWNvbg==</XServerArguments>
   <ConnectionsSharedFileTemplVars>GgoKi8euWrVUDQZMCO/GpncMKPi2sdtrMIeDk28dYFA=</ConnectionsSharedFileTemplVars>
   <TerminalCopyPaste>0</TerminalCopyPaste>
@@ -142,7 +142,7 @@
   <TerminalColorSchemeNames>H4sIAAAAAAAEAOPi4WI0EGJ3Li0uyc815ELmGaHwjFF4Jig8UwC08RN/RgAAAA==</TerminalColorSchemeNames>
   <SearchRememberLastTriggeredConnection>True</SearchRememberLastTriggeredConnection>
   <WslStarterAutoCloseWindow>True</WslStarterAutoCloseWindow>
-  <WindowLocation>187, 36</WindowLocation>
+  <WindowLocation>275, 61</WindowLocation>
   <ShortcutMouseCloseTab>0</ShortcutMouseCloseTab>
   <TerminalFontSize>6</TerminalFontSize>
   <JumpServerCustomPlinkLocationEnabled>True</JumpServerCustomPlinkLocationEnabled>
