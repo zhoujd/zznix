@@ -61,7 +61,7 @@
   <WslStarterUser>
   </WslStarterUser>
   <ScriptRunnerEnablePtyAllocation>True</ScriptRunnerEnablePtyAllocation>
-  <WindowSize>1092, 667</WindowSize>
+  <WindowSize>1084, 666</WindowSize>
   <GeneralConnectionConfigWindowOnRightSide>False</GeneralConnectionConfigWindowOnRightSide>
   <WindowPrevLocation>
   </WindowPrevLocation>
@@ -101,7 +101,7 @@
   <TerminalFont>1</TerminalFont>
   <WindowPrevSize>
   </WindowPrevSize>
-  <ConnectionsShowInMenuBar>True</ConnectionsShowInMenuBar>
+  <ConnectionsShowInMenuBar>False</ConnectionsShowInMenuBar>
   <XServerCustomVcxsrvLocation>C:\Program Files\VcXsrv\vcxsrv.exe</XServerCustomVcxsrvLocation>
   <EnableReattachingTerminalWindows>True</EnableReattachingTerminalWindows>
   <PageantAutomaticStartMode>0</PageantAutomaticStartMode>
@@ -142,7 +142,7 @@
   <TerminalColorSchemeNames>H4sIAAAAAAAEAOPi4WI0EGJ3Li0uyc815ELmGaHwjFF4Jig8UwC08RN/RgAAAA==</TerminalColorSchemeNames>
   <SearchRememberLastTriggeredConnection>True</SearchRememberLastTriggeredConnection>
   <WslStarterAutoCloseWindow>True</WslStarterAutoCloseWindow>
-  <WindowLocation>275, 61</WindowLocation>
+  <WindowLocation>177, 65</WindowLocation>
   <ShortcutMouseCloseTab>0</ShortcutMouseCloseTab>
   <TerminalFontSize>6</TerminalFontSize>
   <JumpServerCustomPlinkLocationEnabled>True</JumpServerCustomPlinkLocationEnabled>
