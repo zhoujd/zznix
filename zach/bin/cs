@@ -1,0 +1,290 @@
+#!/bin/bash
+
+# Define MicroEMACS as the default editor
+EDITOR="me"
+
+# Default color is red if CS_COLOR is not set.
+# Supported shorthand: red, green, yellow, blue, magenta, cyan
+case "${CS_COLOR,,}" in
+    green )   export GREP_COLORS="ms=01;32" ;; # Bold Green
+    yellow )  export GREP_COLORS="ms=01;33" ;; # Bold Yellow
+    blue )    export GREP_COLORS="ms=01;34" ;; # Bold Blue
+    magenta ) export GREP_COLORS="ms=01;35" ;; # Bold Magenta
+    cyan )    export GREP_COLORS="ms=01;36" ;; # Bold Cyan
+    red|* )   export GREP_COLORS="ms=01;31" ;; # Bold Red (Default)
+esac
+
+# Check if terminal supports color and stdout is an interactive TTY
+supports_color() {
+    # Respect the NO_COLOR standard (https://no-color.org)
+    [ -n "${NO_COLOR}" ] && return 1
+    # Return false if stdout is piped or redirected (e.g., into MicroEMACS)
+    [ ! -t 1 ] && return 1
+    # GNU Emacs subshells set INSIDE_EMACS or EMACS and process ANSI color codes
+    if [ -n "${INSIDE_EMACS}" ] || [ -n "${EMACS}" ]; then
+        return 0
+    fi
+    # Check for non-Emacs dumb terminal environments
+    if [ "${TERM}" = "dumb" ]; then
+        return 1
+    fi
+    # Check tput colors capability if available
+    if command -v tput >/dev/null 2>&1; then
+        local ncolors
+        ncolors=$(tput colors 2>/dev/null)
+        if [ -n "$ncolors" ] && [ "$ncolors" -ge 8 ]; then
+            return 0
+        else
+            return 1
+        fi
+    fi
+    return 0
+}
+
+# Disable color if stdout is piped (e.g., inside MicroEMACS)
+if [ ! -t 1 ]; then
+    GREP_COLOR_FLAG="--color=never"
+else
+    GREP_COLOR_FLAG="--color=always"
+fi
+
+# Function to print usage information
+usage() {
+    local app=$(basename $0)
+    cat <<EOF
+Usage:
+$ $app {n} {text/file} [-p]  - Search code (optional -p to pick & open)
+$ $app a {symbol}            - Auto-open specific function/symbol in MicroEMACS
+$ $app h {symbol}            - Show function header via ref tool
+$ $app r | --rebuild         - Force rebuild cscope and ctags tags
+$ $app c | --clean           - Clean up cscope files in current directory
+
+Environment Variables:
+CS_COLOR=color  - Control highlight color (red, green, yellow, blue, magenta, cyan)
+                  Example: CS_COLOR=green cs 5 main
+
+The list of possible values for {n}
+0: Find this C symbol
+1: Find this definition
+2: Find functions called by this function
+3: Find functions calling this function
+4: Find this text string
+5: List functions/definitions using ctags
+6: Find this egrep pattern
+7: Find this file
+8: Find files #including this file
+9: Find places where this symbol is assigned a value
+EOF
+}
+
+# Function to clean up cscope files in the current directory
+clean_cscope() {
+    rm -f ./cscope.files ./cscope.out ./cscope.in.out ./cscope.po.out
+}
+
+# Function to clean up ctags files in the current directory
+clean_ctags() {
+    rm -f ./tags
+}
+
+# Function to force a fresh rebuild of cscope databases
+rebuild_cscope() {
+    # Find C/C++ source and header files while excluding the build directory
+    find . -type f \
+        \( -path "./build" -o -path "./dist" \) -prune -o \
+        \( -name "*.[ch]" -o -name "*.cpp" -o -name "*.hpp" \) \
+        -print > cscope.files
+    # Build cscope index using the generated cscope.files list
+    cscope -bRq -i cscope.files
+}
+
+# Function to force a fresh rebuild ctags databases
+rebuild_ctags() {
+    # Rebuild ctags
+    ctags -u --exclude=build --exclude=dist -R . 2>/dev/null
+}
+
+# Reshapes 'ctags -x' into GNU Emacs 'file:line: <symbol> code' format
+# Passes through lines unchanged if they are already formatted or unrecognized
+format_ctags() {
+    awk '{
+        # Save original line for passthrough fallback
+        orig = $0;
+
+        # Standard 4-column output check: $3 is line number, $4 is filename/path
+        if ($3 ~ /^[0-9]+$/ && $4 ~ /[^ ]+/) {
+            sym = $1; line = $3; file = $4;
+            $1 = $2 = $3 = $4 = "";
+            sub(/^[ \t]+/, "");
+            printf "%s:%s: <%s> %s\n", file, line, sym, $0;
+            next;
+        }
+
+        # Extended/Section tag check (e.g. Markdown headers)
+        line = ""; file = "";
+        for (i = 2; i <= NF; i++) {
+            if ($i ~ /^[0-9]+$/ && (i + 1) <= NF && $(i+1) ~ /[^ ]+/) {
+                sym = $1; line = $i; file = $(i+1);
+                for (j = 1; j <= i + 1; j++) $j = "";
+                sub(/^[ \t]+/, "");
+                printf "%s:%s: <%s> %s\n", file, line, sym, $0;
+                next;
+            }
+        }
+
+        # Fallback passthrough for any other format or blank lines
+        print orig;
+    }'
+}
+
+# Reshapes native 'cscope' into GNU Emacs 'file:line: <func> code' format
+format_cscope() {
+    awk '{
+        file=$1; func_name=$2; line=$3;
+        $1=$2=$3=""; sub(/^[ \t]+/, "");
+        printf "%s:%s <%s> %s\n", file, line, func_name, $0
+    }'
+}
+
+# Check for immediate control flags
+if [ "$1" == "c" ] || [ "$1" == "--clean" ]; then
+    echo "Cleaning up cscope index files in the current directory..."
+    clean_cscope
+    echo "Cleaning up ctags index files in the current directory..."
+    clean_ctags
+    echo "Done."
+    exit 0
+elif [ "$1" == "r" ] || [ "$1" == "--rebuild" ]; then
+    echo "Rebuilding cscope indexes in the current directory..."
+    rebuild_cscope
+    echo "Rebuilding ctags indexes in the current directory..."
+    rebuild_ctags
+    echo "Done."
+    exit 0
+fi
+
+# Determine if the user wants to use 'pick' via the 3rd argument
+USE_PICK=0
+if [ "$3" == "-p" ]; then
+    USE_PICK=1
+fi
+
+# Check if the correct number of arguments is provided for searching
+if [ $# -lt 2 ] || [ $# -gt 3 ]; then
+    usage
+    exit 1
+fi
+
+# Only allow exactly 0-9, 'a' or 'h' as the first parameter
+if [[ ! "$1" =~ ^[0-9ah]$ ]]; then
+    echo "Error: Unrecognized option '$1'."
+    echo ""
+    usage
+    exit 1
+fi
+
+# Function to search upward from the current directory for a specific file
+search_up() {
+    local look=${PWD%/}
+    while [[ -n $look ]]; do
+        [[ -e $look/$1 ]] && { printf '%s\n' "$look"; return; }
+        look=${look%/*}
+    done
+    [[ -e /$1 ]] && echo /
+}
+
+# Handle option 'h' early to show function headers using ref
+if [ "${1}" == "h" ]; then
+    echo "Locating function header for '${2}'..."
+    # Resolve the tags file location to feed into ref -p
+    SEARCH_TAGS=$(search_up "tags")
+
+    # Check if tags exists and convert it to an ABSOLUTE path to avoid sub-dir bugs
+    if [ -n "$SEARCH_TAGS" ] && [ -f "$SEARCH_TAGS/tags" ]; then
+        # Cd to the folder momentarily to get the full absolute path
+        ABS_TAGS=$(cd "$SEARCH_TAGS" && pwd)/tags
+        OUTPUT=$(ref -p "$ABS_TAGS" "${2}" 2>&1)
+    else
+        OUTPUT=$(ref "${2}" 2>&1)
+    fi
+
+    # Check if ref failed to find the tag, and offer smart helper info
+    if echo "$OUTPUT" | grep -q "tag not found"; then
+        echo "Error: 'ref' tool could not find the tag '${2}'."
+        echo "Hint: Try running 'cs r' in your current project root directory"
+        echo "      to rebuild the tags index, then try again."
+        exit 1
+    else
+        echo "$OUTPUT" | grep $GREP_COLOR_FLAG -i -E "${2}|$"
+    fi
+    exit 0
+fi
+
+# Handle option 5 early since it relies on ctags instead of cscope
+if [ "${1}" == "5" ]; then
+    if [ $USE_PICK -eq 1 ]; then
+        MATCH=$(ctags -u -R -x . 2>/dev/null | format_ctags | pick)
+        if [ -n "$MATCH" ]; then
+            FILE=$(echo "$MATCH" | cut -d':' -f1)
+            LINE=$(echo "$MATCH" | cut -d':' -f2)
+            echo "Opening $FILE at line $LINE in MicroEMACS..."
+            exec "$EDITOR" +"$LINE" "$FILE"
+        fi
+    else
+        if [ -f "${2}" ]; then
+            echo "Listing functions/definitions in file: ${2}"
+            # Formats single file output to 'file:line: symbol code'
+            ctags -u -x "${2}" 2>/dev/null | format_ctags | grep $GREP_COLOR_FLAG -i -E "${2}|$"
+        else
+            echo "Searching for files matching '${2}' to list functions..."
+            # Formats project recursive output to 'file:line: symbol code'
+            ctags -u -R -x . 2>/dev/null | format_ctags | grep $GREP_COLOR_FLAG -i "${2}"
+        fi
+    fi
+    exit 0
+fi
+
+# Handle option 'a' to directly jump to code using MicroEMACS
+if [ "${1}" == "a" ]; then
+    echo "Locating definition for '${2}'..."
+    MATCH=$(ctags -u -R -x . 2>/dev/null | grep -i "${2}" | pick)
+    if [ -n "$MATCH" ]; then
+        LINE=$(echo "$MATCH" | awk '{print $3}')
+        FILE=$(echo "$MATCH" | awk '{print $4}')
+        echo "Opening $FILE at line $LINE in MicroEMACS..."
+        exec "$EDITOR" +"$LINE" "$FILE"
+    else
+        echo "Error: Symbol '${2}' not found via ctags."
+    fi
+    exit 1
+fi
+
+# Try to find an existing cscope.out in the current directory or its parent directories
+SEARCH=$(search_up "cscope.out")
+
+if [ -n "$SEARCH" ]; then
+    TAG_FILE="$SEARCH/cscope.out"
+elif [ -f "$HOME/.emacs.d/tags/cscope.out" ]; then
+    TAG_FILE="$HOME/.emacs.d/tags/cscope.out"
+else
+    echo "cscope.out not found anywhere. Rebuild a new index in the current directory..."
+    rebuild_cscope
+    TAG_FILE="./cscope.out"
+fi
+
+echo "Use: $TAG_FILE"
+
+# Execute query based on the pick flag control
+if [ $USE_PICK -eq 1 ]; then
+    MATCH=$(cscope -d -f "$TAG_FILE" -R -L${1} ${2} | format_cscope | pick)
+    if [ -n "$MATCH" ]; then
+        FILE=$(echo "$MATCH" | cut -d':' -f1)
+        LINE=$(echo "$MATCH" | cut -d':' -f2)
+        echo "Opening $FILE at line $LINE in MicroEMACS..."
+        exec "$EDITOR" +"$LINE" "$FILE"
+    fi
+else
+    # Execute query, format output to Emacs buffer style, and apply highlighting
+    cscope -d -f "$TAG_FILE" -R -L${1} ${2} | format_cscope | \
+        grep $GREP_COLOR_FLAG -i "${2}"
+fi
