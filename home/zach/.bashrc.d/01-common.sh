@@ -9,3 +9,4 @@ export LESSCHARSET=utf-8
 export PLINK_PROTOCOL=ssh
 export DISPLAY=localhost:0.0
 export ZZNIX=${ZZNIX:-"/c/zznix"}
+export LIBGL_ALWAYS_SOFTWARE=1
