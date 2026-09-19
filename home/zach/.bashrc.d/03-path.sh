@@ -1,6 +1,7 @@
 ### add zznix interval path
 
 ADD_PATH=(
+    /usr/local/bin
     /zach/bin
     /zach/libexec
     ~/.local/bin
