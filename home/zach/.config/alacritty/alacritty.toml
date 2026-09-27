@@ -36,8 +36,9 @@ size = 11.0
 family = "Maple Mono Normal NL NF CN"
 style = "Regular"
 
-[terminal]
-shell = { program = "C:/Git/bin/bash", args = ["--login", "-i"] }
+[terminal.shell]
+program = "C:\\Git\\bin\\bash.exe"
+args = ["--login", "-i"]
 
 [mouse]
 bindings = [
