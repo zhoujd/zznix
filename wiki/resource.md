@@ -40,3 +40,9 @@ zznix resource
     list disk
     select disk <u disk>
     clean
+
+8. Related: The PS Suite (Windows-native TUI tools)
+   
+    psmux  tmux for Windows  https://github.com/psmux/psmux
+    pstop  htop for Windows  https://github.com/psmux/pstop
+    psnet  Network monitor  https://github.com/psmux/psnet
