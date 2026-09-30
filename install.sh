@@ -5,10 +5,9 @@ USER_HOME=$SCRIPT_ROOT/home/zach
 
 install_bashrc()
 {
-    echo "Install .bash_profile to $USERPROFILE"
-    cat > $USERPROFILE/.bash_profile <<EOF
-### .bash_profile
-test -f ~/.profile && . ~/.profile
+    echo "Install .profile to $USERPROFILE"
+    cat > $USERPROFILE/.profile <<EOF
+### .profile
 test -f ~/.bashrc && . ~/.bashrc
 EOF
     echo "Install .bashrc to $USERPROFILE"
@@ -17,7 +16,7 @@ EOF
 export HOME="$USER_HOME"
 . \$HOME/.bashrc
 EOF
-    echo "Install bashrc Done"
+    echo "Install bashrc files done"
 }
 
 install_others()
@@ -32,7 +31,7 @@ install_others()
     cp -rv $USER_HOME/.vim $USERPROFILE/vimfiles
     echo "Install alacritty config to $APPDATA"
     cp -rv $USER_HOME/.config/alacritty $APPDATA
-    echo "Install others Done"
+    echo "Install others done"
 }
 
 install_fstab()
@@ -43,6 +42,7 @@ install_fstab()
 C:/zznix/home /home ntfs binary,noacl,posix=0,user 0 0
 C:/zznix/zach /zach ntfs binary,noacl,posix=0,user 0 0
 EOF
+    echo "Install fstab done"
 }
 
 
