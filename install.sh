@@ -23,13 +23,14 @@ install_others()
 {
     echo "Install .minttyrc to $USERPROFILE"
     cp -v $USER_HOME/.minttyrc $USERPROFILE
+    echo "Install .tmux.conf to $USERPROFILE"
+    cp -v $USER_HOME/.tmux.conf $USERPROFILE
     echo "Install .vimrc to $USERPROFILE"
     cp -v $USER_HOME/.vimrc $USERPROFILE
-	echo "Install .tmux.conf to $USERPROFILE"
-    cp -v $USER_HOME/.tmux.conf $USERPROFILE
-    rm -rf $USERPROFILE/vimfiles
-    cp -rv $USER_HOME/.vim $USERPROFILE/vimfiles
-    echo "Install alacritty config to $APPDATA"
+    echo "Install .vim files to $USERPROFILE"
+    mkdir -p $USERPROFILE/vimfiles
+    cp -rv $USER_HOME/.vim/* $USERPROFILE/vimfiles
+    echo "Install alacritty files to $APPDATA"
     cp -rv $USER_HOME/.config/alacritty $APPDATA
     echo "Install others done"
 }
