@@ -1,7 +1,7 @@
 #!/bin/sh
 
 SCRIPT_ROOT=$(cd $(dirname $0) && pwd)
-USER_HOME=$SCRIPT_ROOT/home/zach
+USER_HOME="C:/zznix/home/zach"
 
 install_bashrc()
 {
