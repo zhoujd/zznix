@@ -1,5 +1,6 @@
 ## .gitignore
 
+.config/git/
 .gdbinit.d/
 .emacs.d/
 .slime/
@@ -51,3 +52,4 @@ lisp/
 tmp/
 work/
 zz*/
+
